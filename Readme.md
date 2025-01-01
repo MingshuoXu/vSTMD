@@ -1,9 +1,9 @@
-**EffDB**: An Efficient Directional Backbone for Small Target Motion Pattern Recognition
+**STMDNet**: A Lightweight Directional Framework for Motion Pattern Recognition of Tiny Target
 ========
 
 ## Introduction
 
-This repository is an official implementation of the <EffDB: An Efficient Directional Backbone for Small Target Motion Pattern Recognition>. The full work is under review for publication, and therefore only selected components are made available at this time.
+This repository is an official implementation of the <STMDNet: A Lightweight Directional Framework for Motion Pattern Recognition of Tiny Target>. The full work is under review for publication, and therefore only selected components are made available at this time.
 
 ## Current Status
 The project is in the pre-publication phase. Some code and data have been omitted to comply with submission guidelines and ensure the integrity of the review process.
