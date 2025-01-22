@@ -9,7 +9,7 @@ function show_result_matlab()
 
     % 定义帧率和标题
     fpsList = [1000, 500, 200, 100];
-    titles = {'colorImg', 'resESTMD', 'resDSTMD', 'resFracSTMD', 'resBackbonev2'};
+    titles = {'colorImg', 'resESTMD', 'resDSTMD', 'resFracSTMD', 'resSTMDNet'};
 
     % 绘制第一行（GroundTruth）
     nexttile(1); % 第一行第一列
@@ -59,7 +59,7 @@ function show_result_matlab()
     end
         
     % 添加每行标题
-    rowTitles = {'ESTMD', 'DSTMD', 'FracSTMD', 'Proposed'};
+    rowTitles = {'ESTMD', 'DSTMD', 'FracSTMD', 'STMDNet(Proposed)'};
     for i = 1:4
         % 在每行第一个子图左侧添加文本
         nexttile((i-1)*5 + 2); 

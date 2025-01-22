@@ -71,6 +71,10 @@ def main(modelName = 'ZBS', datasetName = 'GX010220-1'):
     plt.show()
 
 if __name__ == '__main__':
+    main(modelName = 'ZBS',
+         datasetName = 'GX010220-1')
+    
+    '''
     datasetInfo = {
     'GX010071-1': list(range(1300)),
     'GX010220-1': list(range(1300)),
@@ -90,6 +94,7 @@ if __name__ == '__main__':
     'GX010327-1': list(range(900)),
     'GX010335-1': list(range(1300)),
     'GX010336-1': list(range(1000)),
-    'GX010337-1': list(range(700)),}
+    'GX010337-1': list(range(700)),
+    }
+    '''
 
-    main(datasetName = 'GX010220-1')
