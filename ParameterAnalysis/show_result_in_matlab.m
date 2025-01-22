@@ -7,7 +7,7 @@ G_LEAK_LIST = 0:0.1:1.0;
 [X, Y] = meshgrid(G_LEAK_LIST, ALPHA_LIST);
 
 filePath = fullfile(fileparts(mfilename('fullpath')), ...
-    ['parameter_analysis.json']);
+    'parameter_analysis.json');
 data = jsondecode(fileread(filePath));
 aucCurve = data.aucCurve;
 arCurve = data.arCurve;
@@ -41,8 +41,6 @@ end
 figure('Position', [50, 100, 1000, 300]);
 tiledlayout(1, 2);
 
-
-% 创建新的颜色映射，黑色边界
 colormap(hot);
 clim([0, 1]);
 

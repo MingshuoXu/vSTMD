@@ -9,7 +9,7 @@ def visualize():
         AUCcurveESTMD = loaded_data['AUCcurveESTMD']
         AUCcurveDSTMD = loaded_data['AUCcurveDSTMD']
         AUCcurveFracSTMD = loaded_data['AUCcurveFracSTMD']
-        AUCcurveBackbonev2 = loaded_data['AUCcurveBackbonev2']
+        AUCcurveSTMDNet = loaded_data['AUCcurveSTMDNet']
 
     V_LIST = range(50,2024,50)
     TAU_LIST = [1,5,11,19,29]
@@ -26,8 +26,8 @@ def visualize():
         ax2.plot(V_LIST, AUCcurveDSTMD[i], label='tau=%d, mAUC=%0.2f'%(TAU_LIST[i], mAUC_DSTMD))
         mAUC_FracSTMD = mean(AUCcurveFracSTMD[i])
         ax3.plot(V_LIST, AUCcurveFracSTMD[i], label='tau=%d, mAUC=%0.2f'%(TAU_LIST[i], mAUC_FracSTMD))
-    mAUC_Backbonev2 = mean(AUCcurveBackbonev2)
-    ax4.plot(V_LIST, AUCcurveBackbonev2 , 'r-*', linewidth=2, markeredgewidth=2, label='Proposed, mAUC=%0.2f'%mAUC_Backbonev2)
+    mAUC_STMDNet = mean(AUCcurveSTMDNet)
+    ax4.plot(V_LIST, AUCcurveSTMDNet , 'r-*', linewidth=2, markeredgewidth=2, label='Proposed, mAUC=%0.2f'%mAUC_STMDNet)
 
     ax1.set_xlim(0, 2000)
     ax1.set_ylim(0, 1)

@@ -6,7 +6,7 @@ data1 = jsondecode(fileread('velocity_AUC_curve.json'));
 AUCcurveESTMD = data1.AUCcurveESTMD;
 AUCcurveDSTMD = data1.AUCcurveDSTMD;
 AUCcurveFracSTMD = data1.AUCcurveFracSTMD;
-AUCcurveBackbonev2 = data1.AUCcurveBackbonev2;
+AUCcurveSTMDNet = data1.AUCcurveSTMDNet;
 
 % 速度范围
 vList = 50:50:2000;
@@ -28,8 +28,8 @@ for i = 1:5
     plot(ax3, vList, AUCcurveFracSTMD(i, :), 'DisplayName', sprintf('tau=%d, mAUC = %0.2f', TAU_LIST(i), mean(AUCcurveFracSTMD(i, :))));
     hold(ax3, 'on');
 end
-plot(ax4, vList, AUCcurveBackbonev2, 'r-*', 'LineWidth', 2, 'MarkerEdgeColor', 'r',...
-    'DisplayName', sprintf('without tau, mAUC = %0.2f', mean(AUCcurveBackbonev2)));
+plot(ax4, vList, AUCcurveSTMDNet, 'r-*', 'LineWidth', 2, 'MarkerEdgeColor', 'r',...
+    'DisplayName', sprintf('without tau, mAUC = %0.2f', mean(AUCcurveSTMDNet)));
 
 % 设置图例和轴标签
 set([ax1, ax2, ax3, ax4], 'XLim', [0 2000], 'YLim', [0 1]);

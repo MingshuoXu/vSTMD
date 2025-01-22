@@ -11,7 +11,7 @@ contrastCurve = jsonText.contrastCurve;
 
 jsonText = jsondecode(fileread('velocity_curve.json'));
 curveFracSTMD = jsonText.curveFracSTMD;
-curveBackbonev2 = jsonText.curveBackbonev2;
+curveSTMDNet = jsonText.curveSTMDNet;
 
 sizeList = [0.1:0.1:0.9, 1:10];
 LuminanceList = 0:0.1:1;
@@ -56,7 +56,7 @@ for i = 1:size(curveFracSTMD, 1)
     end
 end
 
-curveB = curveBackbonev2 / max(curveBackbonev2);
+curveB = curveSTMDNet / max(curveSTMDNet);
 plot(vList, curveB, 'r-*', 'LineWidth', 2, 'MarkerEdgeColor', 'k', 'DisplayName', 'Proposed');
 set(gca, 'XScale', 'log');
 xlim([1, 1000]);
