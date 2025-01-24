@@ -1,16 +1,17 @@
-**STMDNet**: A Lightweight Directional Framework for Motion Pattern Recognition of Tiny Target
+**STMDNet**: A Lightweight Directional Framework for Motion Pattern Recognition of Tiny Targets
 ========
 
 ## Introduction
 
-This repository is an official implementation of the <STMDNet: A Lightweight Directional Framework for Motion Pattern Recognition of Tiny Target>. The full work is under review for publication, and therefore only selected components are made available at this time.
-
-## Current Status
-The project is in the pre-publication phase. Some code and data have been omitted to comply with submission guidelines and ensure the integrity of the review process.
+This repository is an official implementation of the <STMDNet: A Lightweight Directional Framework for Motion Pattern Recognition of Tiny Targets> ([Arxiv: STMDNet v1](https://arxiv.org/abs/2501.13054)). The full work is under review for publication, and therefore only selected components are made available at this time.
 
 ## Pioneer Program
 
 To explore the capabilities of STMDNet and STMDNet-F, you can download the repository from [GitHub: Small-Target-Motion-Detectors](https://github.com/MingshuoXu/Small-Target-Motion-Detectors). After downloading, you can run `start_by_matlab.m` using MATLAB or `start_by_python.py` using Python to get started.
+
+## Current Status
+
+The project is in the pre-publication phase. Some code and data have been omitted to comply with submission guidelines and ensure the integrity of the review process.
 
 ## Repository Contents
 - **`out_in_RIST/`**: Final result in the RIST dataset/
