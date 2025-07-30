@@ -8,7 +8,7 @@ import smalltargetmotiondetectors.api.*;
 import smalltargetmotiondetectors.util.iostream.*;
 
 %% Model instantiation
-model = instancing_model('Backbonev2');
+model = instancing_model('STMDNet');
 
 %% input
 fullpath = mfilename('fullpath');

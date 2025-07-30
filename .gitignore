@@ -6,3 +6,20 @@
 **/VisionEgg.log
 "`
 
+
+"`
+comparison_models/FlowDiffuser/
+comparison_models/MemFlow/
+comparison_models/RAFT/
+comparison_models/SEA_RAFT/
+comparison_models/StreamFlow/
+comparison_models/vSTMD/
+"`
+
+"`
+old_**
+"`
+
+"`
+**.zip
+"`

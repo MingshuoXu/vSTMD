@@ -8,7 +8,7 @@ import smalltargetmotiondetectors.api.*;
 import smalltargetmotiondetectors.util.iostream.*;
 
 %% Model instantiation
-model = instancing_model('Backbonev2');
+model = instancing_model('STMDNet');
 
 %% input
 fullpath = mfilename('fullpath');
@@ -58,7 +58,7 @@ end
 
 %%
 figure();
-x1 = 1; x2 = 320;
+x1 = 70; x2 = 270;
 x = [x1:1:x2];
 
 subplot(4,2,1);

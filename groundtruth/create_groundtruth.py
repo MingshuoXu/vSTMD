@@ -11,7 +11,7 @@ NOW_PATH = os.path.dirname(os.path.abspath(__file__))
 TOP_PATH = os.path.dirname(NOW_PATH)
 sys.path.append(TOP_PATH)
 
-import add_package_path
+import stmd_package_path
 from smalltargetmotiondetectors.util.iostream import ImgstreamReader # type: ignore
 
 FPS = 200
