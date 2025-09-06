@@ -5,6 +5,13 @@
 
 This repository is an official implementation of the <vSTMD: Visual Motion Detection for Extremely Tiny Target at Various Velocities>. The full work is under review for publication, and therefore only selected components are made available at this time.
 
+## Sample Videos
+
+<img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_butterfly.gif" alt="flying butterfly" width="45%">
+<img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_flying_bird.gif" alt="flying bird" width="45%">
+<img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F-GX010290-1.mp4" alt="RIST dataset">
+
+
 ## Pioneer Program
 
 To explore the capabilities of vSTMD and vSTMD-F, you can download the repository from [GitHub: Small-Target-Motion-Detectors](https://github.com/MingshuoXu/Small-Target-Motion-Detectors). After downloading, you can run `start_by_python.py` using Python to get started.
