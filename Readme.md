@@ -20,9 +20,9 @@ This repository is an official implementation of the <vSTMD: Visual Motion Detec
 
 The following MP4 files are available for download in higher resolution compared to the GIF previews above. These videos provide clearer details for analysis and demonstration.
 
-- [Download: Flying Butterfly (left GIF above)](./src/vSTMD_F_butterfly.mp4){: download="vSTMD_F_butterfly.mp4"}
-- [Download: Flying Bird (right GIF above)](./src/vSTMD_F_flying_bird.mp4){: download="vSTMD_F_flying_bird.mp4"}
-- [Download: Result for RIST-GX010290-1](./src/vSTMD_F-GX010290-1.mp4){: download="vSTMD_F-GX010290-1.mp4"}
+- <a href="./src/vSTMD_F_butterfly.mp4" download="vSTMD_F_butterfly.mp4">Download: Flying Butterfly (left GIF above)</a>
+- <a href="./src/vSTMD_F_flying_bird.mp4" download="vSTMD_F_flying_bird.mp4">Download: Flying Bird (right GIF above)</a>
+- <a href="./src/vSTMD_F-GX010290-1.mp4" download="vSTMD_F-GX010290-1.mp4">Download: Result for RIST-GX010290-1</a>
 
 
 
