@@ -7,9 +7,20 @@ This repository is an official implementation of the <vSTMD: Visual Motion Detec
 
 ## Sample Videos
 
-<img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_butterfly.gif" alt="flying butterfly" width="45%">
-<img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_flying_bird.gif" alt="flying bird" width="45%">
-<img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F-GX010290-1.mp4" alt="RIST dataset">
+<div style="display: flex; gap: 20px;">
+  <div>
+    <img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_butterfly.gif" alt="flying butterfly" width="90%">
+  </div>
+  <div>
+    <img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_flying_bird.gif" alt="flying bird" width="90%">
+  </div>
+</div>
+
+## mp4 Downloads
+- [Download: Flying Butterfly (left GIF above)](./src/vSTMD_F_butterfly.mp4)
+- [Download: Flying Bird (right GIF above)](./src/vSTMD_F_flying_bird.mp4)
+- [result for RIST-GX010290-1](./src/vSTMD_F-GX010290-1.mp4)
+
 
 
 ## Pioneer Program
