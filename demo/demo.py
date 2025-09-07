@@ -22,6 +22,7 @@ from smalltargetmotiondetectors.util.compute_module import matrix_to_sparse_list
 
 ''' Model instantiation '''
 objModel = instancing_model('vSTMD_F', device=DEVICE)
+# objModel = instancing_model('vSTMD', device=DEVICE)
 
 
 ''' Input '''
