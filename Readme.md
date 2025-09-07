@@ -20,9 +20,9 @@ This repository is an official implementation of the <vSTMD: Visual Motion Detec
 
 The following MP4 files are available for download in higher resolution compared to the GIF previews above. These videos provide clearer details for analysis and demonstration.
 
-- [Download: Flying Butterfly (The first GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_butterfly.mp4)
-- [Download: Flying Bird (The second GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_flying_bird.mp4)
-- [Download: Result for RIST-GX010290-1](https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F-GX010290-1.mp4)
+- [Download: Flying Butterfly (The first GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F_butterfly.mp4)
+- [Download: Flying Bird (The second GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F_flying_bird.mp4)
+- [Download: Result for RIST-GX010290-1](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F-GX010290-1.mp4)
 
 
 ## Pioneer Program
@@ -41,6 +41,8 @@ The project is in the pre-publication phase. Some code and data have been omitte
 
 - **`effective_of_direction/`**: Code for evaluating the effectiveness of direction.
 
+- **`example_result/`**: some example videos and gifs.
+
 - **`experience_in_RIST/`**: evaluation and ablation in RIST.
 
 - **`groundtruth/`**: Some groundtruth in the panoramic datasets
@@ -52,8 +54,6 @@ The project is in the pre-publication phase. Some code and data have been omitte
 - **`response_curve/`**: response curves
 
 - **`result/`**: some evaluation results.
-
-- **`src/`**: some example videos and gifs.
  
 - **`velocity-AUC-curve/`**: module comparison between dynamic-and-correlation and delay-and-correlation.
 
