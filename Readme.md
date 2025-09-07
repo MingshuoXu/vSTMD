@@ -9,10 +9,10 @@ This repository is an official implementation of the <vSTMD: Visual Motion Detec
 
 <div style="display: flex; gap: 20px;">
   <div>
-    <img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_butterfly.gif" alt="flying butterfly" width="90%">
+    <img src="https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F_butterfly.gif" alt="flying butterfly" width="90%">
   </div>
   <div>
-    <img src="https://github.com/mingshuoxu/vSTMD/raw/main/src/vSTMD_F_flying_bird.gif" alt="flying bird" width="90%">
+    <img src="https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F_flying_bird.gif" alt="flying bird" width="90%">
   </div>
 </div>
 
