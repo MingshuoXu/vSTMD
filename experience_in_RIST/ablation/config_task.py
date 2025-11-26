@@ -3,7 +3,7 @@ import sys
 
 ProjectPath = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(ProjectPath)
-import stmd_package_path
+import config
 
 apiOpticFlowPth = os.path.join(ProjectPath, 'comparison_models')
 sys.path.append(apiOpticFlowPth)

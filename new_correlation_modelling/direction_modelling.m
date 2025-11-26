@@ -65,7 +65,7 @@ end
 %%
 figure();
 
-x = [y1:1:y2];
+x = y1:1:y2;
 
 subplot(6,1,1);
 hold on;

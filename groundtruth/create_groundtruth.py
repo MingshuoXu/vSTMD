@@ -1,24 +1,28 @@
 import os
 import sys
+import time
+import copy
+import math
 
 import json
-import math
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 from tqdm import tqdm
+import cv2
+import numpy as np
+
 
 NOW_PATH = os.path.dirname(os.path.abspath(__file__))
 TOP_PATH = os.path.dirname(NOW_PATH)
 sys.path.append(TOP_PATH)
 
-import stmd_package_path
+import config
 from smalltargetmotiondetectors.util.iostream import ImgstreamReader # type: ignore
+from utils import custom_serialize  
 
-FPS = 200
+FPS = 1000
+totalFrame = 3000
 
 
-
-def create_groundtruth(v):
+def create_groundtruth(velocity):
     '''
     mid_x = 540 - 20
     mid_y = 310/2.0
@@ -36,86 +40,105 @@ def create_groundtruth(v):
                         5,
                         5]]
     '''
-    mid_x = 470/2.0
-    mid_y = 310/2.0
+    screenSize = [470, 310]
+    mid_x = screenSize[0]/2.0
+    mid_y = screenSize[1]/2.0
 
-    a = 470 / 2.5  # Length of the horizontal half axis of the ellipse
-    b = 310 / 2.5 # Length of the vertical half axis of the ellipse
-    V_T = v  # velocity
+    a = screenSize[0] / 2.5  # Length of the horizontal half axis of the ellipse
+    b = screenSize[1] / 2.5 # Length of the vertical half axis of the ellipse
 
-
-
-    totalFrame = 500
     # define target position as a function of time
-    groundTruth = [None for _ in range(totalFrame)]
+    groundTruth = [{} for _ in range(totalFrame)]
 
-    for frame in range(totalFrame):
-        t = frame / FPS
-        omega = V_T / math.sqrt(a**2 * math.sin(t)**2 + b**2 * math.cos(t)**2)
+    lastGT = None
+    def get_target_position(frame):
+        fps = 1000
+        t = frame/fps
+        omega = velocity / math.sqrt(a**2 * math.sin(t)**2 + b**2 * math.cos(t)**2)
         x = mid_x + a * math.cos(omega * t)
         y = mid_y + b * math.sin(omega * t)
-        groundTruth[frame] = [[x-4,y-5,7,7]]
+        return (x, y)
+
+    for frame in range(totalFrame):
+        GT = get_target_position(frame)
+
+        if frame > 0:
+            direction = np.arctan2(-(GT[1] - lastGT[1]), (GT[0] - lastGT[0])) 
+            if direction < 0:
+                direction += 2*np.pi
+        else:
+            direction = None
+            
+        lastGT = copy.deepcopy(GT)
+        groundTruth[frame] = {'bbox': [GT[0]-4, GT[1]-4, 7, 7],
+                              'direction': direction}
     
     return groundTruth
 
 
 def save_groundtruth(groundTruth, v):
-    # 将列表打包到一个字典中
-    data = {'groundTruth': groundTruth}
+    os.makedirs(os.path.join(NOW_PATH, 'Bgr_dire=Leftward_v=250'), exist_ok=True)
 
     with open(os.path.join(NOW_PATH,
-                           'SingleTarget-TW-5-TH-5-TV-'+str(v)+'-TL-0-Rightward-Amp-0-Theta-0-TemFre-2-SamFre-'+str(FPS)+'.json'), 
-              'w') as file:
-        json.dump(data, file)
+                            'Bgr_dire=Leftward_v=250',
+                            f'ET-Target_Num=1_W=5_H=5_V={v}_L=0-Traj=Ellipse_FPS={FPS}.json'),
+              'w') as f:
+        groundTruth = custom_serialize(groundTruth, indent=2)
+        f.write(groundTruth)
     
     
 def show_groundtruth(v):
+    
 
     with open(os.path.join(NOW_PATH,
-                           'SingleTarget-TW-5-TH-5-TV-'+str(v)+'-TL-0-Rightward-Amp-0-Theta-0-TemFre-2-SamFre-'+str(FPS)+'.json'), 
+                            'Bgr_dire=Leftward_v=250',
+                            f'ET-Target_Num=1_W=5_H=5_V={v}_L=0-Traj=Ellipse_FPS={FPS}.json'),
               'r') as file:
-        data = json.load(file)
-        groundTruth = data['groundTruth']
+        groundTruth = json.load(file)
 
     # 设置输入路径
-    inputpath = os.path.join('D:/STMD_Dataset', 'PanoramaStimuli', 'BV-250-Leftward',
-        'SingleTarget-TW-5-TH-5-TV-'+str(v)+'-TL-0-Rightward-Amp-0-Theta-0-TemFre-2-SamFre-'+str(FPS),
-        'PanoramaStimuli*.tif')
+    inputpath = os.path.join('D:/', 'STMD_Dataset', 'vSTMD_Panorama_Stimuli', 'Bgr_dire=Leftward_v=250',
+        f'ET-Target_Num=1_W=5_H=5_V={v}_L=0-Traj=Ellipse_FPS={FPS}',
+        'vSTMD_Panorama_Stimuli*.tif')
 
     # 创建图像流读取器
     objIptStream = ImgstreamReader(inputpath)
 
-    # 创建一个图形和坐标轴
-    fig, ax = plt.subplots()
+    cv2.namedWindow('visulization')
 
     # 迭代每一帧
-    for t in range(500):
+    for t in range(totalFrame):
         _, colorImg = objIptStream.get_next_frame()
 
-        # 清除前一帧的绘制
-        ax.clear()
+        colorImg = cv2.cvtColor(colorImg, cv2.COLOR_RGB2BGR)
 
-        # 显示图像
-        ax.imshow(colorImg, cmap='gray', interpolation='none')
-        ax.set_title(f'Frame {t}')
-
+        
         # 绘制 groundTruth 数据
-        if groundTruth[t] is not None:
-            for bbox in groundTruth[t]:
-                x, y, w, h = bbox
-                rect = patches.Rectangle((x, y), w, h, linewidth=0.5, edgecolor='r', facecolor='none')
-                ax.add_patch(rect)
+        bbox = groundTruth[t]['bbox']
+        x, y, w, h = bbox
+        colorImg = cv2.rectangle(colorImg, (int(x), int(y)), (int(x+w), int(y+h)), (0, 0, 255), 1)
 
-        # 暂停以显示图像，并刷新绘图窗口
-        plt.pause(0.001)
+        direction = groundTruth[t]['direction']
+        if direction is not None:
+            arraw_len = 20
+            x_end = int(x + arraw_len * math.cos(direction))
+            y_end = int(y - arraw_len * math.sin(direction))
+            cv2.arrowedLine(colorImg, (int(x+3), int(y+3)), (x_end+3, y_end+3), (0, 0, 255), 1, tipLength=0.2)
 
-    # 关闭图形窗口
-    plt.close()
+        cv2.putText(colorImg, f"Frame: {t}", (10, 30),
+                cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+        cv2.imshow('visulization', colorImg)
+
+        key = cv2.waitKey(1)
+        if key == 27:  # 按下 'Esc' 键退出
+            break
+
+    cv2.destroyAllWindows()
 
 
 if __name__ == '__main__':
-    for v in tqdm(range(100, 2024, 100), desc='Creating Groundtruth'):
-        gt = create_groundtruth(v)
-        save_groundtruth(gt, v)
+    # for v in tqdm(range(50, 3001, 50), desc='Creating Groundtruth'):
+    #     gt = create_groundtruth(v)
+    #     save_groundtruth(gt, v)
 
-    show_groundtruth(1000)
+    show_groundtruth(100)
