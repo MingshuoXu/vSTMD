@@ -15,7 +15,8 @@ stmdModelList = (
     'STMDPlus',  # with contrast patheway
     'ApgSTMD',  # with attention and prediction mechanism
     'FeedbackSTMD', 'FSTMD',  # with Feedback pathway
-    'vSTMD', 'vSTMD_F'  # proposed model
+    'vSTMD', # proposed model
+    'vSTMD_F',  # proposed model
     )
 
 
@@ -23,7 +24,9 @@ stmdModelList = (
 opticflowModelList = ('RAFT', 'SEA_RAFT',
                       'MemFlow', 'StreamFlow', 'DpFlow', 'FlowDiffuser') 
 
-directionalStmdList = ('DSTMD', 'STMDPlus', 'ApgSTMD', 'vSTMD', 'vSTMD_F') 
+directionalStmdList = ('DSTMD', 'STMDPlus', 'ApgSTMD', 'vSTMD', 'vSTMD_F', 'vSTMD_M') 
+
+LC_model_list = ('LC11', 'LC18',)
 
 # dataset information
 datasetInfo = {
@@ -52,12 +55,12 @@ datasetInfo = {
 ristDatasetPath = os.path.join('D:/', 'STMD_Dataset', 'RIST')
 
 # model inference output folder
-modelOptFolder = os.path.join('D:/', 'STMD_Dataset', 'evaluate_RIST')
+modelOptFolder = os.path.join('D:/', 'STMD_Dataset', 'inference_RIST')
 
 # evaluation result folder
 evaluateResultFolder = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
-    'result', 'RIST_240Hz',
+    'evaluate_result', 'RIST',
     )
 
 

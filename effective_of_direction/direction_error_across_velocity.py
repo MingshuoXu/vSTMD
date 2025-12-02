@@ -1,10 +1,12 @@
 import os
 import sys
 import concurrent.futures
+import math
 
 import numpy as np
 from tqdm import tqdm
 import json
+import torch
 
 
 ProjectPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,10 +21,16 @@ sys.path.append(apiOpticFlowPth)
 from custom_API import (CustomFlowDiffuser, CustomRAFT, CustomSEA_RAFT,  # type: ignore
                         CustomMemFlow, CustomStreamFlow, CustomDpFlow, 
                         img2tensor, flow_to_ang) 
+from utils import custom_serialize
 
-directionalStmdList = ('DSTMD', 'STMDPlus', 'ApgSTMD', 'vSTMD', 'vSTMD_F') 
-opticflowModelList = ('RAFT', 'SEA_RAFT',
-                      'MemFlow', 'StreamFlow', 'DpFlow', 'FlowDiffuser') 
+directionalStmdList = (
+    'DSTMD', 'STMDPlus', 'ApgSTMD', 
+    'vSTMD', 'vSTMD_F', 'vSTMD_M', 
+    ) 
+opticflowModelList = (
+    'RAFT', 'SEA_RAFT', 'StreamFlow', 
+    'MemFlow', 'DpFlow', 'FlowDiffuser',
+    ) 
 V_LIST = [v for v in range(100, 3001, 100)]
 TIME_END = 500
 
@@ -43,8 +51,13 @@ def get_inference_output_path(model_name, velocity):
 
 
 def get_evaluate_output_path(velocity):
-    outputPath = os.path.join(ProjectPath, 'evaluate_result', 'vSTMD_Panorama_Stimuli',
+    
+    outputPath = os.path.join(ProjectPath, 'evaluate_result', 'vSTMD_Panorama_Stimuli', 'Bgr_dire=Leftward_v=250',
                               f'ET-Target_Num=1_W=5_H=5_V={velocity}_L=0-Traj=Ellipse_FPS=1000.json')
+    
+    if not os.path.exists(os.path.dirname(outputPath)):
+        os.makedirs(os.path.dirname(outputPath))
+
     return outputPath
 
 
@@ -56,11 +69,10 @@ def read_groundtruth(velocity, timeEnd):
         data = json.load(f)
 
     # groundtruth
-    posiGT = np.zeros((timeEnd,2))
+    posiGT = [[] for _ in range(timeEnd)]
     DireGT = np.zeros(timeEnd)
     for tt in range(0, timeEnd):
-        GT = data[tt]['bbox']
-        posiGT[tt,:] = (GT[0]+3, GT[1]+3)
+        posiGT[tt] = data[tt]['bbox']
         if tt > 0:
             DireGT[tt] = data[tt]['direction']
         else:
@@ -79,7 +91,11 @@ def _update_direction_evaluate_result_json(velocity, model_name, key, value):
     else:
         data = {}
 
-    data[model_name][key] = value
+    if 'model_name' in data.keys():
+        data[model_name][key] = value
+    else:
+        data[model_name] = {key: value}
+
     data = custom_serialize(data, indent=2)
 
     with open(json_file_name, 'w') as f:
@@ -87,10 +103,10 @@ def _update_direction_evaluate_result_json(velocity, model_name, key, value):
 
 
 # inference functions
-def inferece_STMD_direction(model_name, model, velocity, timeEnd):
+def inferece_STMD_direction(model_name, model, velocity, timeEnd, device='cpu'):
     # record the direction
 
-    def find_direction_within_radius(result, x0, y0, radius):
+    def find_direction_within_radius(result, bbox, radius):
         # get the response matrix and direction matrix
         response = result['response']
         direction = result['direction']
@@ -99,8 +115,9 @@ def inferece_STMD_direction(model_name, model, velocity, timeEnd):
         height, width = response.shape
 
         # create a mask to get the region of interest
-        x_indices, y_indices = np.ogrid[0:height, 0:width]
-        mask = (x_indices - x0) ** 2 + (y_indices - y0) ** 2 <= radius ** 2
+        y_indices, x_indices = np.ogrid[0:height, 0:width]
+        mask = ((bbox[0] - radius <= x_indices) & (x_indices <= bbox[0] + bbox[2] + radius)) & \
+               ((bbox[1] - radius <= y_indices) & (y_indices <= bbox[1] + bbox[3] + radius))
 
         # get the response matrix within the region
         region_response = np.where(mask, response, 0)
@@ -109,14 +126,14 @@ def inferece_STMD_direction(model_name, model, velocity, timeEnd):
         max_value = np.nanmax(region_response)
         if max_value > 0:
             xD, yD = np.unravel_index(np.nanargmax(region_response), region_response.shape)
-            return direction[xD, yD]  # return the direction of the maximum value
+            return float(direction[xD, yD])  # return the direction of the maximum value
         else:
-            return np.nan  # return NaN if no response is found
+            return float('nan')  # return NaN if no response is found
             
     ''' Input '''
     hSteam = ImgstreamReader(get_input_path(velocity))
 
-    posiGT, DireGT = read_groundtruth(velocity, timeEnd)
+    posiGT, _ = read_groundtruth(velocity, timeEnd)
 
     direction_list = [None for _ in range(timeEnd)]
 
@@ -124,13 +141,18 @@ def inferece_STMD_direction(model_name, model, velocity, timeEnd):
     for countT in range(timeEnd):
         # Get the next frame from the input source
         grayImg, _ = hSteam.get_next_frame()
+
+        if device == 'cuda':
+            grayImg = torch.from_numpy(grayImg).to('cuda').float().unsqueeze(0).unsqueeze(0)
         
         # Perform inference using the model
         resultvSTMD, _ = inference(model, grayImg)
+
+        if device == 'cuda':
+            resultvSTMD = {k: v.cpu().numpy().squeeze(0).squeeze(0) for k, v in resultvSTMD.items()}
         
         # 对两个结果集调用该函数
-        x0, y0 = posiGT[countT,:]
-        direction_list[countT] = find_direction_within_radius(resultvSTMD, x0, y0, 8)
+        direction_list[countT] = find_direction_within_radius(resultvSTMD, posiGT[countT], 3)
         
     with open( get_inference_output_path(model_name, velocity), 'w') as f:
         json.dump({'direction': direction_list}, f)
@@ -138,13 +160,15 @@ def inferece_STMD_direction(model_name, model, velocity, timeEnd):
 
 def inference_OF_models_direction(model_name, model, velocity, timeEnd):
 
-    def find_direction_within_radius(flow, direGT, x0, y0, radius):
+    def find_direction_within_radius(flow, bbox):
+
+        m, n = flow.shape[:2]
 
         angMtx = flow_to_ang(flow)  # Convert flow to angle matrix if needed
-        x1 = max(0, x0-radius)  # Ensure x is not negative
-        x2 = min(angMtx.shape[1], x0+radius)  # Ensure x does not exceed the width
-        y1 = max(0, y0-radius)  # Ensure y is not negative
-        y2 = min(angMtx.shape[0], y0+radius)
+        x1 = max(0, int(bbox[0]))  # Ensure x is not negative
+        y1 = max(0, int(bbox[1]))  # Ensure x does not exceed the width
+        x2 = min(n, int(bbox[0] + bbox[2]))  # Ensure y is not negative
+        y2 = min(m, int(bbox[1] + bbox[3]))
         region = angMtx[y1:y2, x1:x2]  # Extract the region of interest
 
         return region.flatten().tolist()
@@ -156,7 +180,7 @@ def inference_OF_models_direction(model_name, model, velocity, timeEnd):
                     'vSTMD_Panorama_Stimuli*.tif')
                     )
 
-    posiGT, DireGT = read_groundtruth(velocity, timeEnd)
+    posiGT, _ = read_groundtruth(velocity, timeEnd)
     
     direction_list = []
 
@@ -178,18 +202,16 @@ def inference_OF_models_direction(model_name, model, velocity, timeEnd):
             if isinstance(flow, list):
                 for j, f in enumerate(flow):
                     k = len(flow) - 1 - j
-                    x, y = posiGT[count-k]
-                    direGT = DireGT[count-k]
+                    bbox = posiGT[count-k]
                     if j < len(flow)-1:
                         # j=1 -> idx=-1; j=0 -> idx=-2; 
-                        direction_list[-k] = find_direction_within_radius(f, direGT, int(x), int(y), 8)
+                        direction_list[-k] = find_direction_within_radius(f, bbox)
                     else:
                         # j=2 -> append
-                        direction_list.append(find_direction_within_radius(f, direGT, int(x), int(y), 8))
+                        direction_list.append(find_direction_within_radius(f, bbox))
             else:
-                x, y = posiGT[count]
-                direGT = DireGT[count]
-                direction_list.append(find_direction_within_radius(flow, direGT, int(x), int(y), 8))
+                bbox = posiGT[count]
+                direction_list.append(find_direction_within_radius(flow, bbox))
         else:
             direction_list.append(np.nan)
         
@@ -197,10 +219,10 @@ def inference_OF_models_direction(model_name, model, velocity, timeEnd):
         json.dump({'direction': direction_list}, f)
 
 
-def _inference_STMD_task(model_name, velocity, timeEnd):
+def _inference_STMD_task(model_name, velocity, timeEnd, device='cpu'):
     
     ''' Initialize the model '''
-    model = instancing_model(model_name)
+    model = instancing_model(model_name, device)
 
     # set the parameter list
     tau = round(5 / (velocity / 1000))
@@ -219,13 +241,12 @@ def _inference_STMD_task(model_name, velocity, timeEnd):
         model.set_parameter( n3 = round(tau*0.3), tau3 = round(tau*0.6), 
                                 n4 = round(tau*0.5), tau4 = tau, 
                                 n5 = round(tau*0.8), tau5 = round(tau*1.6)
-                                )  
-           
+                                )            
 
     # init
     model.init_config()
 
-    inferece_STMD_direction(model_name, model, velocity, timeEnd)
+    inferece_STMD_direction(model_name, model, velocity, timeEnd, device)
     
 
 def _inference_OF_task(model_name, velocity, timeEnd):
@@ -251,16 +272,22 @@ def main_inference(max_workers=6):
     with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
         futures = []
         for v in V_LIST:
-            for model_name in directionalStmdList:
-                futures.append(executor.submit(_inference_STMD_task, model_name, v, time_end))
+            for model_name in directionalStmdList[:3]:
+                futures.append(executor.submit(_inference_STMD_task, model_name, v, time_end, 'cpu'))
         
-            for model_name in opticflowModelList:
-                futures.append(executor.submit(_inference_OF_task, model_name, v, time_end))
-
         for future in tqdm(concurrent.futures.as_completed(futures), 
                            total=len(futures), 
                            desc='inference direction'):
             future.result()
+
+    for v in tqdm(V_LIST):
+        for model_name in directionalStmdList[3:]:
+            _inference_STMD_task(model_name, v, time_end, 'cuda')
+
+
+    for model_name in tqdm(opticflowModelList, desc='inference optic flow direction'):
+        for v in tqdm(V_LIST, leave=False, desc='velocity'):
+            _inference_OF_task(model_name, v, time_end)
 
 
 # evaluation functions
@@ -286,14 +313,18 @@ def _evaluate_OF_task(model_name, velocity, timeEnd):
     # read inference result
     with open(get_inference_output_path(model_name, velocity), 'r') as f:
         data = json.load(f)
-    direction_list = np.array(data['direction'])
+    direction_list = data['direction']
 
     # read groundtruth
     _, direction_GT = read_groundtruth(velocity, timeEnd)
 
     direction_err_list = []
-    for directions in direction_list:
-        dire_err_list = abs(directions - direction_GT)  # Calculate the error
+    for i, directions in enumerate(direction_list):
+        if not isinstance(directions, list):
+            if math.isnan(directions):
+                direction_err_list.append(np.nan)
+                continue
+        dire_err_list = abs(directions - direction_GT[i])  # Calculate the error
         dire_err_list[dire_err_list > np.pi] = 2 * np.pi - dire_err_list[dire_err_list > np.pi]  # ensure the error is within [0, pi]
         sort_err_list = np.sort(dire_err_list)
         AE = np.mean(sort_err_list[:int(len(sort_err_list)/2)]) 
@@ -313,20 +344,21 @@ def main_evaluate(max_workers=6):
 
             for future in tqdm(concurrent.futures.as_completed(futures), 
                             total=len(futures), 
-                            desc='inference direction'):
+                            desc='evaluate direction'):
                 future.result()
 
 
     for model_name in opticflowModelList:
-        with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
+        with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
             futures = []
             for v in V_LIST:
                 futures.append(executor.submit(_evaluate_OF_task, model_name, v, TIME_END))
 
             for future in tqdm(concurrent.futures.as_completed(futures), 
                             total=len(futures), 
-                            desc='inference direction'):
+                            desc='evaluate direction'):
                 future.result()
+
 
 
 # collect results
@@ -339,13 +371,30 @@ def collect_results():
         with open(get_evaluate_output_path(v), 'r') as f:
             data = json.load(f)
         for model_name in directionalStmdList+opticflowModelList:
-            errDict[model_name][i] = data[model_name]['AAR']
+            try:
+                errDict[model_name][i] = data[model_name]['AAR']
+            except:
+                continue
+
+    save_dict = custom_serialize({'velocity': list(V_LIST), 'errDict': errDict, }, indent=2)
 
     with open(jsonFileName, 'w') as f:
-        json.dump({'velocity': list(V_LIST), 'errDict': errDict, }, f)
+        f.write(save_dict)
 
 
 if __name__ == '__main__':
-    main_inference(8)
-    # main_evaluate()
-    # collect_results()
+    # main_inference(6)
+    main_evaluate(12)
+    collect_results()
+
+    
+
+
+
+
+
+
+
+
+
+

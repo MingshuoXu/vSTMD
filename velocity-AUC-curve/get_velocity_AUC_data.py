@@ -15,7 +15,7 @@ from utils import custom_serialize
 
 # Configuration
 FPS = 1000
-TOTAL_FRAME = 1000
+TOTAL_FRAME = 500
 
 V_LIST = [_ for _ in range(100, 3001, 100)]
 TAU_LIST = [1,9,17,25,33]
@@ -141,8 +141,7 @@ def _FracSTMD_task(v, tau):
 
     '''inference'''
     modelOpt, _, _ = inference_task(modelName, inputpath, 'ImgstreamReader', startFrame=1, endFrame=TOTAL_FRAME, 
-                                    tau1 = tau
-                                    )
+                                    tau1 = tau)
 
     # save
     save_json(  {'modelOpt': modelOpt, 'modelDire': None},
@@ -183,10 +182,10 @@ def multi_process_inference(max_workers = 6):
     with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
         futures = []
         for v in V_LIST:
-            for tau in TAU_LIST:
-                futures.append(executor.submit(_ESTMD_task, v, tau))
-                futures.append(executor.submit(_DSTMD_task, v, tau))
-                futures.append(executor.submit(_FracSTMD_task, v, tau))
+            # for tau in TAU_LIST:
+            #     futures.append(executor.submit(_ESTMD_task, v, tau))
+            #     futures.append(executor.submit(_DSTMD_task, v, tau))
+            #     futures.append(executor.submit(_FracSTMD_task, v, tau))
             futures.append(executor.submit(_vSTMD_task, v))
             futures.append(executor.submit(_vSTMD_F_task, v))
 
@@ -223,7 +222,7 @@ def custom_evaluation(modelName, v, tau=None):
     groundTruth = _load_location_groundtruth(v, TOTAL_FRAME)
 
     # evaluate
-    AUC, AR, AP = evaluate_task(modelOpt, groundTruth, gTError=3, startFrame=1, endFrame=TOTAL_FRAME, plotFigures=False)
+    AUC, AR, AP = evaluate_task(modelOpt, groundTruth, gTError=2, startFrame=100, endFrame=TOTAL_FRAME, plotFigures=False)
 
     # save
     if tau is not None:
@@ -233,7 +232,6 @@ def custom_evaluation(modelName, v, tau=None):
 
 
 def multi_process_evaluation(max_workers = 6):
-    
     # with tau
     for model_name in modelNameList[:3]:
         for tau in TAU_LIST:
@@ -301,8 +299,8 @@ def collect_results():
 
 
 if __name__ == '__main__':    
-    multi_process_inference(10)
-    multi_process_evaluation(6)
+    # multi_process_inference(12)
+    multi_process_evaluation(12)
     collect_results()
 
 

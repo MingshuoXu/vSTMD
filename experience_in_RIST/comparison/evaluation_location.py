@@ -7,9 +7,34 @@ import concurrent.futures
 from tqdm import tqdm
 
 import config_task
-from config_task import stmdModelList, datasetInfo, ristDatasetPath, modelOptFolder, evaluateResultFolder
+from config_task import stmdModelList, LC_model_list, datasetInfo, ristDatasetPath, modelOptFolder, evaluateResultFolder
 from smalltargetmotiondetectors import util # type: ignore
 from smalltargetmotiondetectors.api import evaluate # type: ignore
+from utils import custom_serialize
+
+
+
+# update evaluate result json
+def _update_evaluate_result_json(file_name, model_name, update_dict):
+
+    if os.path.exists(file_name):
+        with open(file_name, 'r') as f:
+            data = json.load(f)
+    else:
+        data = {}
+
+
+    if model_name in data.keys():
+        for key, value in update_dict.items():
+            data[model_name][key] = value
+    else:
+        data[model_name] = update_dict
+
+
+    data = custom_serialize(data, indent=2)
+
+    with open(file_name, 'w') as f:
+        f.write(data)
 
 
 def _task(modelName, datasetName, startFrame, endFrame):
@@ -35,35 +60,26 @@ def _task(modelName, datasetName, startFrame, endFrame):
     f1_score = 2 * AR * AP / (AR + AP) if (AR + AP) != 0 else 0.0
 
     # 构建文件路径
-    file_path = os.path.join(evaluateResultFolder, datasetName, modelName + 'evaluate.json')
+    file_name = os.path.join(evaluateResultFolder, f'{datasetName}.json')
     # 创建父文件夹
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    os.makedirs(os.path.dirname(file_name), exist_ok=True)
 
     # 写入JSON文件
-    if os.path.exists(file_path):
-        with open(file_path, 'r') as json_file:
-            existing_data = json.load(json_file)
-        # Update the existing data
-        existing_data.update({
-            'AUC': aucOfROC,
-            'AR': AR,
-            'AP': AP,
-            'F1': f1_score,
-            'timePerImage': timePerImage
-        })
-        with open(file_path, 'w') as json_file:
-            json.dump(existing_data, json_file, indent=2)
-    else:
-        with open(file_path, 'w') as json_file:
-            json.dump({'AUC': aucOfROC, 'AR': AR, 'AP': AP, 'F1': f1_score, 'timePerImage': timePerImage}, json_file, indent=2)
+    _update_evaluate_result_json(file_name, modelName,
+                                 {  'AUC': aucOfROC,
+                                    'AR': AR,
+                                    'AP': AP,
+                                    'F1': f1_score,
+                                    'timePerImage': timePerImage} 
+                                )
 
 
-def main_evalu_STMD():
+def main_evaluate_location():
     with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
         futures = []
 
         for datasetName in datasetInfo.keys():
-            for modelName in stmdModelList:
+            for modelName in stmdModelList+LC_model_list:
                 future = executor.submit(_task, 
                                          modelName, datasetName, 0, len(datasetInfo[datasetName])
                                          )   
@@ -83,6 +99,6 @@ if __name__ == "__main__":
     
     print("start time:", datetime.now())
 
-    main_evalu_STMD()
+    main_evaluate_location()
 
     print("end time:", datetime.now())
