@@ -164,7 +164,7 @@ def _task_STMD(modelName, datasetName, startFrame, endFrame):
             j += 1
         if diError is not None:
             accAE.append(diError)  
-    AAE = np.mean(np.array(accAE))  # Average Angular Error
+    AAE = np.nanmean(np.array(accAE))  # Average Angular Error
     AAE = AAE if AAE < np.pi else 2 * np.pi - AAE  # Ensure AAE is in the range [0, pi]
 
     # 构建文件路径
@@ -196,7 +196,7 @@ if __name__ == "__main__":
     
     print("start time:", datetime.now())
 
-    main_evalu_OF()
+    # main_evalu_OF()
     main_evalu_STMD()
 
     print("end time:", datetime.now())

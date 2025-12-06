@@ -14,7 +14,6 @@ import numpy as np
 import time
 import ptlflow
 
-from vSTMD.vSTMD import vSTMD_gpu
 
 
 def flow_to_ang(flow):

@@ -12,4 +12,8 @@ elif platform.system() == 'Linux':
 # Add the path to the package containing the models
 sys.path.append(stmd_package_path)
 
+# dataset path
+ristDatasetPath = os.path.join('D:/', 'STMD_Dataset', 'RIST')
+
+
 # print('Succesfully add path: ''%s''\n' %stmd_package_path)

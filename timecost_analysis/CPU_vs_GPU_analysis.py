@@ -5,6 +5,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import json
 from tqdm import tqdm
 import torch
+import numpy as np
+import time
+
 
 import config
 from smalltargetmotiondetectors.model.vstmd import vSTMD, vSTMD_F # type: ignore
@@ -15,14 +18,12 @@ from RIST_config import datasetInfo, ristDatasetPath
 
 
 def _task_vSTMD_cpu(input_path):
-    ''' Dynamically create a video stream reader or other input type '''
 
     objIptStream = VidstreamReader(input_path)
 
     vSTMD_cpu = vSTMD(device='cpu')
     vSTMD_cpu.init_config()
     
-
     total_time_spend = 0
 
     ''' Run '''
@@ -39,9 +40,8 @@ def _task_vSTMD_cpu(input_path):
 
     return total_time_spend / i
 
-def _task_vSTMD_gpu(input_path):
-    ''' Dynamically create a video stream reader or other input type '''
 
+def _task_vSTMD_gpu(input_path):
 
     objIptStream = VidstreamReader(input_path)
 
@@ -59,15 +59,17 @@ def _task_vSTMD_gpu(input_path):
         gray_img_torch = torch.from_numpy(grayImg).float().unsqueeze(0).unsqueeze(0).to('cuda')
         
         # Perform inference using the model
-        _, time_spend = vSTMD_gpu.process(gray_img_torch)
+        time_start = time.time()
+        vSTMD_gpu.model_structure(gray_img_torch)
+        torch.cuda.synchronize()
+        time_spend = time.time() - time_start
         total_time_spend += time_spend
 
 
     return total_time_spend / i
 
-def _task_vSTMD_F_cpu(input_path):
-    ''' Dynamically create a video stream reader or other input type '''
 
+def _task_vSTMD_F_cpu(input_path):
 
     objIptStream = VidstreamReader(input_path)
 
@@ -90,9 +92,8 @@ def _task_vSTMD_F_cpu(input_path):
 
     return total_time_spend / i
 
-def _task_vSTMD_F_gpu(input_path):
-    ''' Dynamically create a video stream reader or other input type '''
 
+def _task_vSTMD_F_gpu(input_path):
 
     objIptStream = VidstreamReader(input_path)
 
@@ -110,7 +111,10 @@ def _task_vSTMD_F_gpu(input_path):
         gray_img_torch = torch.from_numpy(grayImg).float().unsqueeze(0).unsqueeze(0).to('cuda')
         
         # Perform inference using the model
-        _, time_spend = vSTMD_F_gpu.process(gray_img_torch)
+        time_start = time.time()
+        vSTMD_F_gpu.model_structure(gray_img_torch)
+        torch.cuda.synchronize()
+        time_spend = time.time() - time_start
         total_time_spend += time_spend
 
 
@@ -167,7 +171,9 @@ def show_timecost():
     table.add_row(["time cost"] + [f"{value:.6f}" for value in time_spend_dict.values()])
     print(table)
 
+        
+
 
 if __name__ == '__main__':
     main_inference()
-    # show_timecost()
+    show_timecost()

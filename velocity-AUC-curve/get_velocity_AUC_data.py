@@ -155,7 +155,7 @@ def _vSTMD_task(v):
     inputpath = _get_inputpath(v)
 
     '''inference'''
-    modelOpt, modelDire, _ = inference_task(modelName, inputpath, 'ImgstreamReader', startFrame=1, endFrame=TOTAL_FRAME)
+    modelOpt, modelDire, _ = inference_task(modelName, inputpath, 'ImgstreamReader', startFrame=1, endFrame=TOTAL_FRAME, device='cuda')
     
     # save
     save_json(  {'modelOpt': modelOpt, 'modelDire': modelDire},
@@ -169,7 +169,7 @@ def _vSTMD_F_task(v):
     inputpath = _get_inputpath(v)
 
     '''inference'''
-    modelOpt, modelDire, _ = inference_task(modelName, inputpath, 'ImgstreamReader', startFrame=1, endFrame=TOTAL_FRAME)
+    modelOpt, modelDire, _ = inference_task(modelName, inputpath, 'ImgstreamReader', startFrame=1, endFrame=TOTAL_FRAME, device='cuda')
     
     # save
     save_json(  {'modelOpt': modelOpt, 'modelDire': modelDire},
@@ -222,7 +222,7 @@ def custom_evaluation(modelName, v, tau=None):
     groundTruth = _load_location_groundtruth(v, TOTAL_FRAME)
 
     # evaluate
-    AUC, AR, AP = evaluate_task(modelOpt, groundTruth, gTError=2, startFrame=100, endFrame=TOTAL_FRAME, plotFigures=False)
+    AUC, AR, AP = evaluate_task(modelOpt, groundTruth, gTError=3, startFrame=1, endFrame=TOTAL_FRAME, plotFigures=False)
 
     # save
     if tau is not None:
@@ -233,17 +233,17 @@ def custom_evaluation(modelName, v, tau=None):
 
 def multi_process_evaluation(max_workers = 6):
     # with tau
-    for model_name in modelNameList[:3]:
-        for tau in TAU_LIST:
-            with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
-                futures = []
-                for v in V_LIST:
-                    futures.append(executor.submit(custom_evaluation, model_name, v, tau))
+    # for model_name in modelNameList[:3]:
+    #     for tau in TAU_LIST:
+    #         with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
+    #             futures = []
+    #             for v in V_LIST:
+    #                 futures.append(executor.submit(custom_evaluation, model_name, v, tau))
 
-                for future in tqdm(concurrent.futures.as_completed(futures),
-                                   desc=f'evaluate {model_name} tau={tau}',
-                                   total=len(futures)):
-                    future.result()
+    #             for future in tqdm(concurrent.futures.as_completed(futures),
+    #                                desc=f'evaluate {model_name} tau={tau}',
+    #                                total=len(futures)):
+    #                 future.result()
 
     # without tau
     for model_name in modelNameList[3:]:
@@ -299,7 +299,7 @@ def collect_results():
 
 
 if __name__ == '__main__':    
-    # multi_process_inference(12)
+    # multi_process_inference(2)
     multi_process_evaluation(12)
     collect_results()
 

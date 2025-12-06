@@ -11,12 +11,13 @@ sys.path.append(apiOpticFlowPth)
 
 # STMD models in task
 stmdModelList = (
-    'ESTMD', 'DSTMD', 'FracSTMD',  # some backbone models
-    'STMDPlus',  # with contrast patheway
-    'ApgSTMD',  # with attention and prediction mechanism
-    'FeedbackSTMD', 'FSTMD',  # with Feedback pathway
+    # 'ESTMD', 'DSTMD', 'FracSTMD',  # some backbone models
+    # 'STMDPlus',  # with contrast patheway
+    # 'ApgSTMD',  # with attention and prediction mechanism
+    # 'FeedbackSTMD', 'FSTMD',  # with Feedback pathway
     'vSTMD', # proposed model
     'vSTMD_F',  # proposed model
+    # 'vSTMD_M',  # proposed model with motion boundary extraction
     )
 
 
@@ -24,7 +25,9 @@ stmdModelList = (
 opticflowModelList = ('RAFT', 'SEA_RAFT',
                       'MemFlow', 'StreamFlow', 'DpFlow', 'FlowDiffuser') 
 
-directionalStmdList = ('DSTMD', 'STMDPlus', 'ApgSTMD', 'vSTMD', 'vSTMD_F', 'vSTMD_M') 
+directionalStmdList = ('DSTMD', 'STMDPlus', 'ApgSTMD', 'vSTMD', 'vSTMD_F', 
+                       'vSTMD_M',
+                       ) 
 
 LC_model_list = ('LC11', 'LC18',)
 

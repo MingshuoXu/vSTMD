@@ -17,7 +17,7 @@ from RIST_config import datasetInfo, ristDatasetPath
 
 
 
-class Delay_And_Correlate(backbone.ESTMDBackbone):
+class Delay_And_Correlate(backbone.FracSTMD):
     
     def process(self, iptMatrix):
         # Process input matrix through model components
@@ -180,6 +180,7 @@ def main_inference():
     with open(f'{os.path.abspath(__file__)[:-3]}.json', 'w') as f:
         json.dump(time_spend_dict, f, default=custom_serialize, indent=4)
 
+
 def show_timecost():
     with open(f'{os.path.abspath(__file__)[:-3]}.json', 'r') as f:
         time_spend_dict = json.load(f)
@@ -193,5 +194,5 @@ def show_timecost():
 
 
 if __name__ == '__main__':
-    # main_inference()
-    show_timecost()
+    main_inference()
+    # show_timecost()

@@ -24,8 +24,9 @@ from custom_API import (CustomFlowDiffuser, CustomRAFT, CustomSEA_RAFT,  # type:
 from utils import custom_serialize
 
 directionalStmdList = (
-    'DSTMD', 'STMDPlus', 'ApgSTMD', 
-    'vSTMD', 'vSTMD_F', 'vSTMD_M', 
+    # 'DSTMD', 'STMDPlus', 'ApgSTMD', 
+    'vSTMD', 'vSTMD_F', 
+    # 'vSTMD_M', 
     ) 
 opticflowModelList = (
     'RAFT', 'SEA_RAFT', 'StreamFlow', 
@@ -348,16 +349,16 @@ def main_evaluate(max_workers=6):
                 future.result()
 
 
-    for model_name in opticflowModelList:
-        with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
-            futures = []
-            for v in V_LIST:
-                futures.append(executor.submit(_evaluate_OF_task, model_name, v, TIME_END))
+    # for model_name in opticflowModelList:
+    #     with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
+    #         futures = []
+    #         for v in V_LIST:
+    #             futures.append(executor.submit(_evaluate_OF_task, model_name, v, TIME_END))
 
-            for future in tqdm(concurrent.futures.as_completed(futures), 
-                            total=len(futures), 
-                            desc='evaluate direction'):
-                future.result()
+    #         for future in tqdm(concurrent.futures.as_completed(futures), 
+    #                         total=len(futures), 
+    #                         desc='evaluate direction'):
+    #             future.result()
 
 
 

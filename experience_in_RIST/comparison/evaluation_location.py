@@ -7,7 +7,8 @@ import concurrent.futures
 from tqdm import tqdm
 
 import config_task
-from config_task import stmdModelList, LC_model_list, datasetInfo, ristDatasetPath, modelOptFolder, evaluateResultFolder
+from config_task import (stmdModelList, LC_model_list, datasetInfo, ristDatasetPath, 
+                         modelOptFolder, evaluateResultFolder)
 from smalltargetmotiondetectors import util # type: ignore
 from smalltargetmotiondetectors.api import evaluate # type: ignore
 from utils import custom_serialize
@@ -75,22 +76,26 @@ def _task(modelName, datasetName, startFrame, endFrame):
 
 
 def main_evaluate_location():
-    with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
-        futures = []
 
-        for datasetName in datasetInfo.keys():
-            for modelName in stmdModelList+LC_model_list:
+    for modelName in tqdm(stmdModelList+LC_model_list):
+
+        with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
+            futures = []
+
+            for datasetName in datasetInfo.keys():
+                
                 future = executor.submit(_task, 
-                                         modelName, datasetName, 0, len(datasetInfo[datasetName])
-                                         )   
+                                        modelName, datasetName, 0, len(datasetInfo[datasetName])
+                                        )   
                 futures.append(future)   
 
-        for future in tqdm(
-            concurrent.futures.as_completed(futures), 
-            desc='evaluate task',
-            total=len(datasetInfo) * len(stmdModelList) 
-            ):
-            future.result()
+            for future in tqdm(
+                concurrent.futures.as_completed(futures), 
+                desc='evaluate task',
+                total=len(futures),
+                leave=False,
+                ):
+                future.result()
 
 
 
