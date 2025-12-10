@@ -245,7 +245,10 @@ def optional_func(para):
     gLeak, alpha = para
     aucOfROC, AR, AP, AAE = para_to_performance(gLeak, alpha)
 
-    score = (1.5 - aucOfROC) * (AAE + 0.5)  # Example: maximize ROC, AR, AP and minimize AAE
+    if AAE > 1 or aucOfROC < 0.3:
+        score = 10
+    else:
+        score = 1-aucOfROC  # Example: maximize ROC, AR, AP and minimize AAE
     
     if np.isnan(score):
         return 1000
@@ -344,13 +347,13 @@ def bayes_option():
     on_step_callback = OptimizationCallback(LOG_PATH, ITEM_FOLDER)
     print("Starting Bayesian Optimization...")
     res = gp_minimize(
-        func = optional_func,              # the function to minimize
+        func = optional_func,       # the function to minimize
         dimensions=[(0.01, 0.99), (0.01, 0.99)],  # the bounds on each dimension of x
-        acq_func="EI",             # the acquisition function
-        n_calls=500,                 # the number of evaluations of f
-        n_random_starts=100,         # the number of random initialization points
-        random_state=25,            # the random seed
-        callback=on_step_callback,         # callback function to log progress
+        acq_func="EI",              # the acquisition function
+        n_calls=200,                # the number of evaluations of f
+        n_random_starts=50,        # the number of random initialization points
+        random_state=42,            # the random seed
+        callback=on_step_callback,  # callback function to log progress
         )
 
     print("\n===== FINAL BEST RESULT =====")

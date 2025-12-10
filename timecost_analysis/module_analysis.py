@@ -92,9 +92,9 @@ class CDGC(vstmd.vSTMD):
         # Process input matrix through model components
         self.hRetina.process(iptMatrix)
         self.hLamina.process(self.hRetina.Opt)
-        self.hMedulla.process(self.hLamina.Opt[0], self.hLamina.Opt[1])
 
         time_tic = time.time()
+        self.hMedulla.process(self.hLamina.Opt[0], self.hLamina.Opt[1])        
         # Process through Lobula and get response and direction
         direction = self.hLobula.hCollDireEnDecoding.process(self.hMedulla.Opt[0], 
                                                             self.hMedulla.Opt[1], 
@@ -151,7 +151,6 @@ def main_inference():
 
     time_in_dataset = {}
     for datasetName in tqdm(datasetInfo.keys()):
-        print(f'\n{datasetName}\t')
         # Dataset path
         inputPath = os.path.join(ristDatasetPath, datasetName, f'{datasetName}.mp4')
 
@@ -195,4 +194,4 @@ def show_timecost():
 
 if __name__ == '__main__':
     main_inference()
-    # show_timecost()
+    show_timecost()

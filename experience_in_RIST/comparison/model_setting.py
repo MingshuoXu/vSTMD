@@ -49,6 +49,7 @@ model_param_calculations = {
     "paravSTMD": lambda tau: {},
     "paravSTMD_F": lambda tau: {},
     "paravSTMD_M": lambda tau: {},
+    "paravSTMD_F_M": lambda tau: {},
 }
 
 # Output model parameters for each data set

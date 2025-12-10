@@ -137,8 +137,10 @@ def show_groundtruth(v):
 
 
 if __name__ == '__main__':
-    # for v in tqdm(range(50, 3001, 50), desc='Creating Groundtruth'):
-    #     gt = create_groundtruth(v)
-    #     save_groundtruth(gt, v)
+    for v in tqdm(
+        list(range(100, 1000, 100)) + list(range(1000, 2000, 200)) + list(range(2000, 10001, 500))
+        , desc='Creating Groundtruth'):
+        gt = create_groundtruth(v)
+        save_groundtruth(gt, v)
 
-    show_groundtruth(100)
+    # show_groundtruth(1000)

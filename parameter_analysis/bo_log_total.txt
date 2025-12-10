@@ -1,0 +1,1811 @@
+	-----------
+	auc=0.5453, AR=0.4270, AP=0.3302, AAE=1.5019
+iter-0: g_Leak=0.791, alpha=0.190, score=10.000, time=173.7s
+	-----------
+	auc=0.1787, AR=0.1493, AP=0.0917, AAE=1.3075
+iter-1: g_Leak=0.774, alpha=0.595, score=10.000, time=152.2s
+	-----------
+	auc=0.5359, AR=0.4230, AP=0.3063, AAE=1.0722
+iter-2: g_Leak=0.447, alpha=0.108, score=10.000, time=155.7s
+	-----------
+	auc=0.4746, AR=0.3962, AP=0.2988, AAE=0.8833
+iter-3: g_Leak=0.460, alpha=0.337, score=10.000, time=134.6s
+	-----------
+	auc=0.2712, AR=0.2650, AP=0.1764, AAE=0.7382
+iter-4: g_Leak=0.150, alpha=0.648, score=10.000, time=114.7s
+	-----------
+	auc=0.0879, AR=0.0980, AP=0.0590, AAE=1.6331
+iter-5: g_Leak=0.065, alpha=0.718, score=10.000, time=104.1s
+	-----------
+	auc=0.4228, AR=0.2636, AP=0.1729, AAE=1.4028
+iter-6: g_Leak=0.930, alpha=0.011, score=10.000, time=281.6s
+	-----------
+	auc=0.1820, AR=0.1340, AP=0.0538, AAE=1.4815
+iter-7: g_Leak=0.982, alpha=0.615, score=10.000, time=183.1s
+	-----------
+	auc=0.4950, AR=0.3412, AP=0.2335, AAE=1.4133
+iter-8: g_Leak=0.609, alpha=0.017, score=10.000, time=223.9s
+	-----------
+	auc=0.0239, AR=0.0254, AP=0.0144, AAE=1.3058
+iter-9: g_Leak=0.033, alpha=0.524, score=10.000, time=91.9s
+	-----------
+	auc=0.4973, AR=0.3889, AP=0.2724, AAE=1.1356
+iter-10: g_Leak=0.402, alpha=0.056, score=10.000, time=172.9s
+	-----------
+	auc=0.4029, AR=0.2727, AP=0.1745, AAE=1.6152
+iter-11: g_Leak=0.964, alpha=0.238, score=10.000, time=212.8s
+	-----------
+	auc=0.2084, AR=0.2155, AP=0.1391, AAE=1.1680
+iter-12: g_Leak=0.099, alpha=0.616, score=10.000, time=111.8s
+	-----------
+	auc=0.2307, AR=0.2225, AP=0.1504, AAE=0.6706
+iter-13: g_Leak=0.385, alpha=0.974, score=10.000, time=125.4s
+	-----------
+	auc=0.1975, AR=0.1877, AP=0.1241, AAE=0.7300
+iter-14: g_Leak=0.467, alpha=0.853, score=10.000, time=130.2s
+	-----------
+	auc=0.3230, AR=0.2834, AP=0.1988, AAE=1.2809
+iter-15: g_Leak=0.677, alpha=0.451, score=10.000, time=145.3s
+	-----------
+	auc=0.0071, AR=0.0072, AP=0.0042, AAE=nan
+iter-16: g_Leak=0.023, alpha=0.933, score=10.000, time=87.2s
+	-----------
+	auc=0.4210, AR=0.3660, AP=0.2712, AAE=1.0671
+iter-17: g_Leak=0.562, alpha=0.388, score=10.000, time=139.4s
+	-----------
+	auc=0.0246, AR=0.0241, AP=0.0132, AAE=0.9221
+iter-18: g_Leak=0.026, alpha=0.236, score=10.000, time=94.8s
+	-----------
+	auc=0.3144, AR=0.3046, AP=0.2126, AAE=0.5306
+iter-19: g_Leak=0.246, alpha=0.680, score=10.000, time=119.6s
+	-----------
+	auc=0.1454, AR=0.1301, AP=0.0798, AAE=0.9436
+iter-20: g_Leak=0.608, alpha=0.827, score=10.000, time=139.1s
+	-----------
+	auc=0.3721, AR=0.3181, AP=0.2161, AAE=0.5116
+iter-21: g_Leak=0.180, alpha=0.393, score=10.000, time=119.2s
+	-----------
+	auc=0.2727, AR=0.2695, AP=0.1825, AAE=0.6539
+iter-22: g_Leak=0.189, alpha=0.750, score=10.000, time=117.2s
+	-----------
+	auc=0.5224, AR=0.4119, AP=0.3052, AAE=0.9091
+iter-23: g_Leak=0.427, alpha=0.214, score=10.000, time=140.3s
+	-----------
+	auc=0.5544, AR=0.4221, AP=0.3059, AAE=1.4179
+iter-24: g_Leak=0.566, alpha=0.041, score=10.000, time=196.4s
+	-----------
+	auc=0.2650, AR=0.2149, AP=0.1423, AAE=1.5075
+iter-25: g_Leak=0.835, alpha=0.451, score=10.000, time=161.5s
+	-----------
+	auc=0.2246, AR=0.2168, AP=0.1462, AAE=0.6877
+iter-26: g_Leak=0.397, alpha=0.918, score=10.000, time=126.8s
+	-----------
+	auc=0.4243, AR=0.3560, AP=0.2630, AAE=1.4010
+iter-27: g_Leak=0.723, alpha=0.330, score=10.000, time=154.2s
+	-----------
+	auc=0.3022, AR=0.2754, AP=0.1927, AAE=0.9710
+iter-28: g_Leak=0.569, alpha=0.520, score=10.000, time=137.9s
+	-----------
+	auc=0.0880, AR=0.0547, AP=0.0200, AAE=1.4367
+iter-29: g_Leak=0.952, alpha=0.838, score=10.000, time=170.8s
+	-----------
+	auc=0.2295, AR=0.1960, AP=0.1288, AAE=1.3059
+iter-30: g_Leak=0.742, alpha=0.539, score=10.000, time=150.2s
+	-----------
+	auc=0.1517, AR=0.1370, AP=0.0854, AAE=0.9072
+iter-31: g_Leak=0.585, alpha=0.956, score=10.000, time=137.7s
+	-----------
+	auc=0.4980, AR=0.4114, AP=0.3144, AAE=1.2277
+iter-32: g_Leak=0.605, alpha=0.280, score=10.000, time=147.1s
+	-----------
+	auc=0.4655, AR=0.3678, AP=0.2557, AAE=0.6937
+iter-33: g_Leak=0.300, alpha=0.172, score=0.371, time=137.5s
+	-----------
+	auc=0.0171, AR=0.0170, AP=0.0099, AAE=1.0980
+iter-34: g_Leak=0.025, alpha=0.425, score=10.000, time=89.5s
+	-----------
+	auc=0.4912, AR=0.3988, AP=0.2976, AAE=0.7869
+iter-35: g_Leak=0.397, alpha=0.298, score=0.400, time=133.4s
+	-----------
+	auc=0.0215, AR=0.0206, AP=0.0115, AAE=0.8898
+iter-36: g_Leak=0.024, alpha=0.205, score=10.000, time=94.2s
+	-----------
+	auc=0.1141, AR=0.0946, AP=0.0543, AAE=1.1138
+iter-37: g_Leak=0.707, alpha=0.784, score=10.000, time=147.1s
+	-----------
+	auc=0.1438, AR=0.1286, AP=0.0788, AAE=0.9347
+iter-38: g_Leak=0.604, alpha=0.918, score=10.000, time=138.7s
+	-----------
+	auc=0.1262, AR=0.1098, AP=0.0650, AAE=0.9786
+iter-39: g_Leak=0.648, alpha=0.907, score=10.000, time=142.4s
+	-----------
+	auc=0.2619, AR=0.2106, AP=0.1387, AAE=1.5084
+iter-40: g_Leak=0.843, alpha=0.450, score=10.000, time=162.6s
+	-----------
+	auc=0.2740, AR=0.2628, AP=0.1728, AAE=0.6283
+iter-41: g_Leak=0.104, alpha=0.373, score=10.000, time=114.2s
+	-----------
+	auc=0.1769, AR=0.1563, AP=0.0985, AAE=1.1185
+iter-42: g_Leak=0.665, alpha=0.663, score=10.000, time=143.7s
+	-----------
+	auc=0.5003, AR=0.4125, AP=0.3151, AAE=1.1987
+iter-43: g_Leak=0.589, alpha=0.279, score=10.000, time=146.0s
+	-----------
+	auc=0.4234, AR=0.3676, AP=0.2730, AAE=1.0616
+iter-44: g_Leak=0.560, alpha=0.385, score=10.000, time=138.8s
+	-----------
+	auc=0.1055, AR=0.0698, AP=0.0258, AAE=1.4452
+iter-45: g_Leak=0.962, alpha=0.842, score=10.000, time=172.8s
+	-----------
+	auc=0.5129, AR=0.4144, AP=0.3182, AAE=1.4205
+iter-46: g_Leak=0.717, alpha=0.241, score=10.000, time=159.6s
+	-----------
+	auc=0.3971, AR=0.3074, AP=0.2036, AAE=0.8838
+iter-47: g_Leak=0.261, alpha=0.050, score=10.000, time=159.9s
+	-----------
+	auc=0.6021, AR=0.4712, AP=0.3639, AAE=1.4455
+iter-48: g_Leak=0.706, alpha=0.119, score=10.000, time=178.5s
+	-----------
+	auc=0.5275, AR=0.4162, AP=0.3091, AAE=0.9407
+iter-49: g_Leak=0.441, alpha=0.208, score=10.000, time=142.7s
+	-----------
+	auc=0.2145, AR=0.1556, AP=0.0922, AAE=1.5472
+iter-50: g_Leak=0.888, alpha=0.476, score=10.000, time=169.0s
+	-----------
+	auc=0.1992, AR=0.1839, AP=0.1214, AAE=0.8873
+iter-51: g_Leak=0.562, alpha=0.692, score=10.000, time=137.5s
+	-----------
+	auc=0.2818, AR=0.2734, AP=0.1821, AAE=0.7186
+iter-52: g_Leak=0.147, alpha=0.602, score=10.000, time=115.4s
+	-----------
+	auc=0.5461, AR=0.4352, AP=0.3313, AAE=1.1404
+iter-53: g_Leak=0.539, alpha=0.209, score=10.000, time=148.3s
+	-----------
+	auc=0.1080, AR=0.0606, AP=0.0251, AAE=1.5054
+iter-54: g_Leak=0.934, alpha=0.597, score=10.000, time=174.1s
+	-----------
+	auc=0.1109, AR=0.0924, AP=0.0530, AAE=1.0874
+iter-55: g_Leak=0.691, alpha=0.873, score=10.000, time=147.4s
+	-----------
+	auc=0.4810, AR=0.4004, AP=0.3038, AAE=1.2474
+iter-56: g_Leak=0.622, alpha=0.300, score=10.000, time=148.0s
+	-----------
+	auc=0.2762, AR=0.2670, AP=0.1753, AAE=0.6772
+iter-57: g_Leak=0.113, alpha=0.457, score=10.000, time=114.6s
+	-----------
+	auc=0.4015, AR=0.3412, AP=0.2394, AAE=0.5174
+iter-58: g_Leak=0.224, alpha=0.418, score=0.310, time=122.5s
+	-----------
+	auc=0.3698, AR=0.2974, AP=0.2102, AAE=1.5686
+iter-59: g_Leak=0.876, alpha=0.328, score=10.000, time=176.1s
+	-----------
+	auc=0.3177, AR=0.2883, AP=0.1906, AAE=0.5407
+iter-60: g_Leak=0.130, alpha=0.359, score=10.000, time=126.0s
+	-----------
+	auc=0.4160, AR=0.3295, AP=0.2390, AAE=1.5773
+iter-61: g_Leak=0.899, alpha=0.277, score=10.000, time=182.8s
+	-----------
+	auc=0.4517, AR=0.2960, AP=0.1963, AAE=1.3571
+iter-62: g_Leak=0.645, alpha=0.011, score=10.000, time=240.5s
+	-----------
+	auc=0.4768, AR=0.3872, AP=0.2845, AAE=0.6966
+iter-63: g_Leak=0.356, alpha=0.309, score=0.364, time=131.8s
+	-----------
+	auc=0.3305, AR=0.3042, AP=0.2068, AAE=0.5612
+iter-64: g_Leak=0.171, alpha=0.533, score=10.000, time=117.5s
+	-----------
+	auc=0.2279, AR=0.2159, AP=0.1453, AAE=0.7673
+iter-65: g_Leak=0.485, alpha=0.689, score=10.000, time=133.3s
+	-----------
+	auc=0.4522, AR=0.3584, AP=0.2506, AAE=0.6062
+iter-66: g_Leak=0.274, alpha=0.249, score=0.332, time=131.3s
+	-----------
+	auc=0.3723, AR=0.3101, AP=0.2059, AAE=0.5212
+iter-67: g_Leak=0.175, alpha=0.224, score=10.000, time=125.1s
+	-----------
+	auc=0.4085, AR=0.3576, AP=0.2637, AAE=1.0575
+iter-68: g_Leak=0.557, alpha=0.406, score=10.000, time=138.9s
+	-----------
+	auc=0.2051, AR=0.1997, AP=0.1259, AAE=0.6164
+iter-69: g_Leak=0.074, alpha=0.259, score=10.000, time=114.2s
+	-----------
+	auc=0.3104, AR=0.3021, AP=0.2109, AAE=0.5350
+iter-70: g_Leak=0.252, alpha=0.692, score=10.000, time=121.1s
+	-----------
+	auc=0.5846, AR=0.4596, AP=0.3579, AAE=1.4370
+iter-71: g_Leak=0.708, alpha=0.155, score=10.000, time=169.7s
+	-----------
+	auc=0.2944, AR=0.2057, AP=0.0895, AAE=1.5125
+iter-72: g_Leak=0.988, alpha=0.271, score=10.000, time=214.7s
+	-----------
+	auc=0.2072, AR=0.1292, AP=0.0564, AAE=1.5380
+iter-73: g_Leak=0.967, alpha=0.413, score=10.000, time=191.8s
+	-----------
+	auc=0.0731, AR=0.0775, AP=0.0447, AAE=1.0295
+iter-74: g_Leak=0.042, alpha=0.348, score=10.000, time=103.3s
+	-----------
+	auc=0.1826, AR=0.1630, AP=0.1042, AAE=1.0265
+iter-75: g_Leak=0.632, alpha=0.677, score=10.000, time=142.4s
+	-----------
+	auc=0.3808, AR=0.3399, AP=0.2483, AAE=0.9403
+iter-76: g_Leak=0.530, alpha=0.449, score=10.000, time=137.3s
+	-----------
+	auc=0.2562, AR=0.2365, AP=0.1615, AAE=0.9465
+iter-77: g_Leak=0.552, alpha=0.591, score=10.000, time=136.9s
+	-----------
+	auc=0.2465, AR=0.2390, AP=0.1552, AAE=0.7029
+iter-78: g_Leak=0.089, alpha=0.372, score=10.000, time=114.1s
+	-----------
+	auc=0.2824, AR=0.2781, AP=0.1915, AAE=0.5706
+iter-79: g_Leak=0.247, alpha=0.797, score=10.000, time=120.4s
+	-----------
+	auc=0.1957, AR=0.1855, AP=0.1225, AAE=0.7355
+iter-80: g_Leak=0.471, alpha=0.974, score=10.000, time=132.0s
+	-----------
+	auc=0.2280, AR=0.2196, AP=0.1485, AAE=0.6854
+iter-81: g_Leak=0.401, alpha=0.810, score=10.000, time=127.4s
+	-----------
+	auc=0.5741, AR=0.4483, AP=0.3491, AAE=1.5218
+iter-82: g_Leak=0.792, alpha=0.158, score=10.000, time=180.6s
+	-----------
+	auc=0.2170, AR=0.2048, AP=0.1369, AAE=0.8091
+iter-83: g_Leak=0.508, alpha=0.692, score=10.000, time=133.6s
+	-----------
+	auc=0.3805, AR=0.3088, AP=0.2210, AAE=1.5502
+iter-84: g_Leak=0.851, alpha=0.329, score=10.000, time=171.4s
+	-----------
+	auc=0.3004, AR=0.2936, AP=0.2032, AAE=0.5567
+iter-85: g_Leak=0.226, alpha=0.707, score=10.000, time=120.0s
+	-----------
+	auc=0.3752, AR=0.3098, AP=0.2218, AAE=1.4933
+iter-86: g_Leak=0.803, alpha=0.352, score=10.000, time=162.0s
+	-----------
+	auc=0.1683, AR=0.1782, AP=0.1127, AAE=1.3451
+iter-87: g_Leak=0.104, alpha=0.932, score=10.000, time=110.4s
+	-----------
+	auc=0.3714, AR=0.3390, AP=0.2469, AAE=0.6596
+iter-88: g_Leak=0.400, alpha=0.517, score=10.000, time=129.4s
+	-----------
+	auc=0.1090, AR=0.0761, AP=0.0395, AAE=1.4030
+iter-89: g_Leak=0.831, alpha=0.672, score=10.000, time=159.6s
+	-----------
+	auc=0.5339, AR=0.4262, AP=0.3293, AAE=1.4464
+iter-90: g_Leak=0.731, alpha=0.215, score=10.000, time=165.0s
+	-----------
+	auc=0.2060, AR=0.1919, AP=0.1277, AAE=0.8600
+iter-91: g_Leak=0.541, alpha=0.692, score=10.000, time=136.1s
+	-----------
+	auc=0.4205, AR=0.3359, AP=0.2273, AAE=0.5886
+iter-92: g_Leak=0.234, alpha=0.181, score=0.341, time=132.3s
+	-----------
+	auc=0.1580, AR=0.1077, AP=0.0439, AAE=1.4697
+iter-93: g_Leak=0.973, alpha=0.516, score=10.000, time=183.7s
+	-----------
+	auc=0.2755, AR=0.2703, AP=0.1858, AAE=0.5866
+iter-94: g_Leak=0.266, alpha=0.986, score=10.000, time=120.2s
+	-----------
+	auc=0.1289, AR=0.0790, AP=0.0317, AAE=1.4734
+iter-95: g_Leak=0.956, alpha=0.557, score=10.000, time=178.4s
+	-----------
+	auc=0.5134, AR=0.3980, AP=0.3034, AAE=1.5675
+iter-96: g_Leak=0.875, alpha=0.195, score=10.000, time=189.9s
+	-----------
+	auc=0.3093, AR=0.2981, AP=0.2089, AAE=0.5427
+iter-97: g_Leak=0.283, alpha=0.696, score=10.000, time=122.3s
+	-----------
+	auc=0.0651, AR=0.0391, AP=0.0189, AAE=1.3902
+iter-98: g_Leak=0.840, alpha=0.849, score=10.000, time=160.0s
+	-----------
+	auc=0.2215, AR=0.2137, AP=0.1437, AAE=0.6806
+iter-99: g_Leak=0.406, alpha=0.880, score=10.000, time=128.3s
+	-----------
+	auc=0.4257, AR=0.3453, AP=0.2402, AAE=0.5339
+iter-100: g_Leak=0.238, alpha=0.305, score=0.307, time=126.1s
+	-----------
+	auc=0.4842, AR=0.3944, AP=0.2931, AAE=0.7435
+iter-101: g_Leak=0.381, alpha=0.310, score=0.384, time=133.6s
+	-----------
+	auc=0.4749, AR=0.3739, AP=0.2654, AAE=0.6755
+iter-102: g_Leak=0.314, alpha=0.234, score=0.355, time=133.9s
+	-----------
+	auc=0.4343, AR=0.3463, AP=0.2380, AAE=0.5729
+iter-103: g_Leak=0.244, alpha=0.224, score=0.324, time=130.5s
+	-----------
+	auc=0.4657, AR=0.3668, AP=0.2577, AAE=0.6451
+iter-104: g_Leak=0.295, alpha=0.229, score=0.345, time=133.9s
+	-----------
+	auc=0.4129, AR=0.3458, AP=0.2433, AAE=0.5223
+iter-105: g_Leak=0.233, alpha=0.391, score=0.307, time=124.2s
+	-----------
+	auc=0.4248, AR=0.3409, AP=0.2324, AAE=0.5575
+iter-106: g_Leak=0.231, alpha=0.229, score=0.321, time=129.7s
+	-----------
+	auc=0.4877, AR=0.3847, AP=0.2786, AAE=0.7234
+iter-107: g_Leak=0.347, alpha=0.248, score=0.371, time=135.1s
+	-----------
+	auc=0.4728, AR=0.3730, AP=0.2620, AAE=0.6870
+iter-108: g_Leak=0.308, alpha=0.194, score=0.362, time=136.5s
+	-----------
+	auc=0.4778, AR=0.3813, AP=0.2769, AAE=0.6833
+iter-109: g_Leak=0.337, alpha=0.284, score=0.357, time=133.3s
+	-----------
+	auc=0.4889, AR=0.3971, AP=0.2958, AAE=0.7694
+iter-110: g_Leak=0.390, alpha=0.300, score=0.393, time=134.7s
+	-----------
+	auc=0.4372, AR=0.3515, AP=0.2456, AAE=0.5582
+iter-111: g_Leak=0.254, alpha=0.287, score=0.314, time=128.2s
+	-----------
+	auc=0.4288, AR=0.3427, AP=0.2339, AAE=0.5680
+iter-112: g_Leak=0.236, alpha=0.217, score=0.324, time=131.0s
+	-----------
+	auc=0.4843, AR=0.3864, AP=0.2825, AAE=0.7136
+iter-113: g_Leak=0.352, alpha=0.279, score=0.368, time=133.2s
+	-----------
+	auc=0.4809, AR=0.3944, AP=0.2943, AAE=0.7552
+iter-114: g_Leak=0.392, alpha=0.322, score=0.392, time=133.9s
+	-----------
+	auc=0.4113, AR=0.3438, AP=0.2413, AAE=0.5176
+iter-115: g_Leak=0.229, alpha=0.386, score=0.305, time=123.7s
+	-----------
+	auc=0.4829, AR=0.3789, AP=0.2714, AAE=0.7057
+iter-116: g_Leak=0.331, alpha=0.235, score=0.365, time=135.1s
+	-----------
+	auc=0.4057, AR=0.3437, AP=0.2418, AAE=0.5210
+iter-117: g_Leak=0.230, alpha=0.413, score=0.310, time=123.5s
+	-----------
+	auc=0.4332, AR=0.3471, AP=0.2399, AAE=0.5594
+iter-118: g_Leak=0.245, alpha=0.267, score=0.317, time=127.8s
+	-----------
+	auc=0.4688, AR=0.3699, AP=0.2593, AAE=0.6670
+iter-119: g_Leak=0.299, alpha=0.202, score=0.354, time=134.9s
+	-----------
+	auc=0.4499, AR=0.3608, AP=0.2559, AAE=0.5800
+iter-120: g_Leak=0.278, alpha=0.297, score=0.319, time=128.4s
+	-----------
+	auc=0.4461, AR=0.3570, AP=0.2508, AAE=0.5800
+iter-121: g_Leak=0.269, alpha=0.281, score=0.321, time=128.8s
+	-----------
+	auc=0.4549, AR=0.3621, AP=0.2552, AAE=0.6040
+iter-122: g_Leak=0.283, alpha=0.266, score=0.329, time=130.0s
+	-----------
+	auc=0.4585, AR=0.3717, AP=0.2685, AAE=0.6149
+iter-123: g_Leak=0.308, alpha=0.319, score=0.333, time=129.5s
+	-----------
+	auc=0.4690, AR=0.3745, AP=0.2703, AAE=0.6411
+iter-124: g_Leak=0.318, alpha=0.291, score=0.340, time=131.0s
+	-----------
+	auc=0.4613, AR=0.3689, AP=0.2643, AAE=0.6129
+iter-125: g_Leak=0.300, alpha=0.291, score=0.330, time=129.6s
+	-----------
+	auc=0.4860, AR=0.3907, AP=0.2875, AAE=0.7352
+iter-126: g_Leak=0.366, alpha=0.288, score=0.378, time=133.0s
+	-----------
+	auc=0.4786, AR=0.3778, AP=0.2633, AAE=0.7727
+iter-127: g_Leak=0.327, alpha=0.151, score=0.403, time=141.4s
+	-----------
+	auc=0.4277, AR=0.3494, AP=0.2453, AAE=0.5321
+iter-128: g_Leak=0.245, alpha=0.333, score=0.305, time=125.4s
+	-----------
+	auc=0.4210, AR=0.3372, AP=0.2281, AAE=0.5730
+iter-129: g_Leak=0.231, alpha=0.200, score=0.332, time=131.0s
+	-----------
+	auc=0.4580, AR=0.3786, AP=0.2772, AAE=0.6229
+iter-130: g_Leak=0.328, alpha=0.353, score=0.338, time=128.7s
+	-----------
+	auc=0.4453, AR=0.3676, AP=0.2660, AAE=0.5802
+iter-131: g_Leak=0.292, alpha=0.358, score=0.322, time=127.2s
+	-----------
+	auc=0.4510, AR=0.3663, AP=0.2629, AAE=0.5866
+iter-132: g_Leak=0.292, alpha=0.326, score=0.322, time=127.9s
+	-----------
+	auc=0.4465, AR=0.3725, AP=0.2715, AAE=0.5924
+iter-133: g_Leak=0.310, alpha=0.377, score=0.328, time=127.8s
+	-----------
+	auc=0.4353, AR=0.3577, AP=0.2550, AAE=0.5524
+iter-134: g_Leak=0.268, alpha=0.358, score=0.312, time=126.0s
+	-----------
+	auc=0.4574, AR=0.3762, AP=0.2744, AAE=0.6095
+iter-135: g_Leak=0.318, alpha=0.345, score=0.331, time=128.8s
+	-----------
+	auc=0.4377, AR=0.3560, AP=0.2519, AAE=0.5509
+iter-136: g_Leak=0.262, alpha=0.330, score=0.310, time=125.8s
+	-----------
+	auc=0.4415, AR=0.3612, AP=0.2583, AAE=0.5630
+iter-137: g_Leak=0.278, alpha=0.346, score=0.314, time=126.5s
+	-----------
+	auc=0.4883, AR=0.3840, AP=0.2725, AAE=0.7535
+iter-138: g_Leak=0.338, alpha=0.184, score=0.386, time=138.7s
+	-----------
+	auc=0.4807, AR=0.3785, AP=0.2670, AAE=0.7233
+iter-139: g_Leak=0.324, alpha=0.186, score=0.376, time=138.3s
+	-----------
+	auc=0.4495, AR=0.3711, AP=0.2694, AAE=0.5913
+iter-140: g_Leak=0.302, alpha=0.355, score=0.326, time=128.7s
+	-----------
+	auc=0.4067, AR=0.3429, AP=0.2410, AAE=0.5172
+iter-141: g_Leak=0.228, alpha=0.405, score=0.307, time=123.4s
+	-----------
+	auc=0.4265, AR=0.3528, AP=0.2502, AAE=0.5352
+iter-142: g_Leak=0.254, alpha=0.371, score=0.307, time=125.3s
+	-----------
+	auc=0.4430, AR=0.3527, AP=0.2443, AAE=0.5818
+iter-143: g_Leak=0.258, alpha=0.250, score=0.324, time=130.2s
+	-----------
+	auc=0.4202, AR=0.3461, AP=0.2423, AAE=0.5231
+iter-144: g_Leak=0.236, alpha=0.350, score=0.303, time=124.9s
+	-----------
+	auc=0.4655, AR=0.3829, AP=0.2813, AAE=0.6483
+iter-145: g_Leak=0.341, alpha=0.339, score=0.346, time=130.2s
+	-----------
+	auc=0.4381, AR=0.3721, AP=0.2735, AAE=0.5965
+iter-146: g_Leak=0.327, alpha=0.409, score=0.335, time=127.5s
+	-----------
+	auc=0.4451, AR=0.3738, AP=0.2740, AAE=0.5975
+iter-147: g_Leak=0.322, alpha=0.389, score=0.332, time=127.6s
+	-----------
+	auc=0.4478, AR=0.3770, AP=0.2779, AAE=0.6169
+iter-148: g_Leak=0.336, alpha=0.388, score=0.341, time=128.3s
+	-----------
+	auc=0.4315, AR=0.3532, AP=0.2497, AAE=0.5387
+iter-149: g_Leak=0.254, alpha=0.347, score=0.306, time=125.8s
+	-----------
+	auc=0.4692, AR=0.3705, AP=0.2566, AAE=0.7470
+iter-150: g_Leak=0.313, alpha=0.147, score=0.396, time=141.6s
+	-----------
+	auc=0.4562, AR=0.3536, AP=0.2410, AAE=1.0388
+iter-151: g_Leak=0.338, alpha=0.049, score=10.000, time=168.3s
+	-----------
+	auc=0.4254, AR=0.3631, AP=0.2634, AAE=0.5553
+iter-152: g_Leak=0.291, alpha=0.429, score=0.319, time=125.2s
+	-----------
+	auc=0.4304, AR=0.3625, AP=0.2616, AAE=0.5556
+iter-153: g_Leak=0.280, alpha=0.404, score=0.317, time=125.4s
+	-----------
+	auc=0.4341, AR=0.3668, AP=0.2667, AAE=0.5677
+iter-154: g_Leak=0.299, alpha=0.409, score=0.321, time=126.6s
+	-----------
+	auc=0.4742, AR=0.3743, AP=0.2614, AAE=0.7334
+iter-155: g_Leak=0.317, alpha=0.163, score=0.386, time=139.4s
+	-----------
+	auc=0.4203, AR=0.3629, AP=0.2647, AAE=0.5656
+iter-156: g_Leak=0.310, alpha=0.446, score=0.328, time=126.3s
+	-----------
+	auc=0.4460, AR=0.3539, AP=0.2443, AAE=0.6061
+iter-157: g_Leak=0.262, alpha=0.205, score=0.336, time=132.4s
+	-----------
+	auc=0.4303, AR=0.3671, AP=0.2685, AAE=0.5751
+iter-158: g_Leak=0.312, alpha=0.423, score=0.328, time=126.6s
+	-----------
+	auc=0.4184, AR=0.3567, AP=0.2561, AAE=0.5373
+iter-159: g_Leak=0.265, alpha=0.429, score=0.313, time=124.3s
+	-----------
+	auc=0.4251, AR=0.3574, AP=0.2562, AAE=0.5410
+iter-160: g_Leak=0.265, alpha=0.403, score=0.311, time=125.0s
+	-----------
+	auc=0.4188, AR=0.3587, AP=0.2589, AAE=0.5426
+iter-161: g_Leak=0.277, alpha=0.438, score=0.315, time=124.5s
+	-----------
+	auc=0.4277, AR=0.3436, AP=0.2364, AAE=0.5494
+iter-162: g_Leak=0.235, alpha=0.264, score=0.314, time=127.8s
+	-----------
+	auc=0.3967, AR=0.3412, AP=0.2404, AAE=0.5208
+iter-163: g_Leak=0.229, alpha=0.444, score=10.000, time=122.4s
+	-----------
+	auc=0.4130, AR=0.3480, AP=0.2463, AAE=0.5222
+iter-164: g_Leak=0.242, alpha=0.407, score=0.306, time=124.5s
+	-----------
+	auc=0.4367, AR=0.3473, AP=0.2367, AAE=0.6185
+iter-165: g_Leak=0.256, alpha=0.182, score=0.348, time=134.1s
+	-----------
+	auc=0.4227, AR=0.3597, AP=0.2591, AAE=0.5443
+iter-166: g_Leak=0.273, alpha=0.423, score=0.314, time=124.7s
+	-----------
+	auc=0.4768, AR=0.3770, AP=0.2712, AAE=0.6720
+iter-167: g_Leak=0.325, alpha=0.258, score=0.352, time=133.4s
+	-----------
+	auc=0.4674, AR=0.3874, AP=0.2879, AAE=0.6892
+iter-168: g_Leak=0.369, alpha=0.350, score=0.367, time=131.3s
+	-----------
+	auc=0.4750, AR=0.3901, AP=0.2901, AAE=0.7061
+iter-169: g_Leak=0.370, alpha=0.331, score=0.371, time=131.8s
+	-----------
+	auc=0.4337, AR=0.3446, AP=0.2337, AAE=0.6588
+iter-170: g_Leak=0.261, alpha=0.149, score=0.373, time=137.9s
+	-----------
+	auc=0.4224, AR=0.3615, AP=0.2622, AAE=0.5507
+iter-171: g_Leak=0.289, alpha=0.436, score=0.318, time=125.5s
+	-----------
+	auc=0.4495, AR=0.3562, AP=0.2442, AAE=0.6793
+iter-172: g_Leak=0.281, alpha=0.156, score=0.374, time=138.7s
+	-----------
+	auc=0.4272, AR=0.3685, AP=0.2715, AAE=0.6078
+iter-173: g_Leak=0.348, alpha=0.432, score=0.348, time=128.1s
+	-----------
+	auc=0.4421, AR=0.3768, AP=0.2796, AAE=0.6494
+iter-174: g_Leak=0.368, alpha=0.402, score=0.362, time=130.0s
+	-----------
+	auc=0.4539, AR=0.3812, AP=0.2824, AAE=0.6567
+iter-175: g_Leak=0.360, alpha=0.376, score=0.359, time=130.6s
+	-----------
+	auc=0.4309, AR=0.3436, AP=0.2336, AAE=0.5912
+iter-176: g_Leak=0.244, alpha=0.197, score=0.336, time=132.6s
+	-----------
+	auc=0.4372, AR=0.3737, AP=0.2759, AAE=0.6208
+iter-177: g_Leak=0.350, alpha=0.412, score=0.349, time=129.0s
+	-----------
+	auc=0.4204, AR=0.3484, AP=0.2455, AAE=0.5287
+iter-178: g_Leak=0.240, alpha=0.374, score=0.306, time=124.9s
+	-----------
+	auc=0.4260, AR=0.3396, AP=0.2296, AAE=0.6263
+iter-179: g_Leak=0.246, alpha=0.163, score=0.359, time=135.2s
+	-----------
+	auc=0.0183, AR=0.0132, AP=0.0074, AAE=1.1325
+iter-180: g_Leak=0.010, alpha=0.010, score=10.000, time=95.0s
+	-----------
+	auc=0.4221, AR=0.3600, AP=0.2596, AAE=0.5480
+iter-181: g_Leak=0.277, alpha=0.428, score=0.317, time=125.3s
+	-----------
+	auc=0.4323, AR=0.3455, AP=0.2378, AAE=0.5644
+iter-182: g_Leak=0.241, alpha=0.244, score=0.320, time=128.7s
+	-----------
+	auc=0.4264, AR=0.3670, AP=0.2694, AAE=0.5885
+iter-183: g_Leak=0.327, alpha=0.434, score=0.338, time=127.8s
+	-----------
+	auc=0.4067, AR=0.3443, AP=0.2422, AAE=0.5210
+iter-184: g_Leak=0.231, alpha=0.411, score=0.309, time=123.2s
+	-----------
+	auc=0.2531, AR=0.1711, AP=0.0625, AAE=1.5321
+iter-185: g_Leak=0.990, alpha=0.990, score=10.000, time=217.4s
+	-----------
+	auc=0.4383, AR=0.3659, AP=0.2648, AAE=0.5667
+iter-186: g_Leak=0.287, alpha=0.385, score=0.318, time=126.4s
+	-----------
+	auc=0.3962, AR=0.3204, AP=0.2153, AAE=0.6108
+iter-187: g_Leak=0.215, alpha=0.136, score=10.000, time=135.3s
+	-----------
+	auc=0.4367, AR=0.3465, AP=0.2357, AAE=0.6440
+iter-188: g_Leak=0.260, alpha=0.163, score=0.363, time=135.9s
+	-----------
+	auc=0.0780, AR=0.0541, AP=0.0288, AAE=1.2906
+iter-189: g_Leak=0.791, alpha=0.990, score=10.000, time=155.4s
+	-----------
+	auc=0.4361, AR=0.3527, AP=0.2478, AAE=0.5481
+iter-190: g_Leak=0.255, alpha=0.310, score=0.309, time=135.4s
+	-----------
+	auc=0.4273, AR=0.3708, AP=0.2745, AAE=0.6605
+iter-191: g_Leak=0.382, alpha=0.426, score=0.378, time=130.1s
+	-----------
+	auc=0.4282, AR=0.3411, AP=0.2311, AAE=0.6082
+iter-192: g_Leak=0.245, alpha=0.178, score=0.348, time=133.8s
+	-----------
+	auc=0.4320, AR=0.3720, AP=0.2753, AAE=0.6395
+iter-193: g_Leak=0.368, alpha=0.421, score=0.363, time=129.2s
+	-----------
+	auc=0.4825, AR=0.3791, AP=0.2691, AAE=0.7051
+iter-194: g_Leak=0.326, alpha=0.210, score=0.365, time=136.5s
+	-----------
+	auc=0.4379, AR=0.3764, AP=0.2800, AAE=0.7006
+iter-195: g_Leak=0.397, alpha=0.406, score=0.394, time=131.4s
+	-----------
+	auc=0.4533, AR=0.3827, AP=0.2848, AAE=0.6947
+iter-196: g_Leak=0.386, alpha=0.380, score=0.380, time=131.8s
+	-----------
+	auc=0.4691, AR=0.3801, AP=0.2774, AAE=0.6539
+iter-197: g_Leak=0.331, alpha=0.312, score=0.347, time=131.8s
+	-----------
+	auc=0.4501, AR=0.3553, AP=0.2432, AAE=0.7022
+iter-198: g_Leak=0.286, alpha=0.140, score=0.386, time=141.6s
+	-----------
+	auc=0.4230, AR=0.3420, AP=0.2359, AAE=0.5391
+iter-199: g_Leak=0.231, alpha=0.285, score=0.311, time=127.9s
+	-----------
+	auc=0.4372, AR=0.3751, AP=0.2785, AAE=0.6707
+iter-200: g_Leak=0.384, alpha=0.409, score=0.377, time=131.0s
+	-----------
+	auc=0.4701, AR=0.2962, AP=0.1635, AAE=1.5712
+iter-201: g_Leak=0.990, alpha=0.116, score=10.000, time=257.5s
+	-----------
+	auc=0.4054, AR=0.3430, AP=0.2410, AAE=0.5195
+iter-202: g_Leak=0.228, alpha=0.411, score=0.309, time=123.6s
+	-----------
+	auc=0.4205, AR=0.3558, AP=0.2547, AAE=0.5364
+iter-203: g_Leak=0.261, alpha=0.417, score=0.311, time=125.1s
+	-----------
+	auc=0.4187, AR=0.3488, AP=0.2462, AAE=0.5278
+iter-204: g_Leak=0.240, alpha=0.384, score=0.307, time=125.0s
+	-----------
+	auc=0.4148, AR=0.3629, AP=0.2663, AAE=0.5893
+iter-205: g_Leak=0.341, alpha=0.455, score=0.345, time=128.1s
+	-----------
+	auc=0.4179, AR=0.3655, AP=0.2692, AAE=0.6220
+iter-206: g_Leak=0.363, alpha=0.445, score=0.362, time=129.5s
+	-----------
+	auc=0.0058, AR=0.0053, AP=0.0035, AAE=nan
+iter-207: g_Leak=0.010, alpha=0.817, score=10.000, time=86.1s
+	-----------
+	auc=0.4202, AR=0.3648, AP=0.2681, AAE=0.5884
+iter-208: g_Leak=0.339, alpha=0.446, score=0.341, time=128.5s
+	-----------
+	auc=0.2497, AR=0.1720, AP=0.0641, AAE=1.5231
+iter-209: g_Leak=0.990, alpha=0.732, score=10.000, time=209.6s
+	-----------
+	auc=0.4836, AR=0.3833, AP=0.2780, AAE=0.7057
+iter-210: g_Leak=0.343, alpha=0.261, score=0.364, time=134.7s
+	-----------
+	auc=0.4657, AR=0.3683, AP=0.2608, AAE=0.6371
+iter-211: g_Leak=0.299, alpha=0.252, score=0.340, time=132.8s
+	-----------
+	auc=0.4437, AR=0.2858, AP=0.1897, AAE=1.3677
+iter-212: g_Leak=0.793, alpha=0.010, score=10.000, time=260.3s
+	-----------
+	auc=0.4250, AR=0.3502, AP=0.2466, AAE=0.5339
+iter-213: g_Leak=0.245, alpha=0.358, score=0.307, time=126.2s
+	-----------
+	auc=0.4653, AR=0.3700, AP=0.2646, AAE=0.6343
+iter-214: g_Leak=0.305, alpha=0.273, score=0.339, time=132.2s
+	-----------
+	auc=0.4572, AR=0.3615, AP=0.2518, AAE=0.6260
+iter-215: g_Leak=0.278, alpha=0.218, score=0.340, time=133.8s
+	-----------
+	auc=0.4872, AR=0.3837, AP=0.2710, AAE=0.7751
+iter-216: g_Leak=0.341, alpha=0.166, score=0.397, time=142.6s
+	-----------
+	auc=0.4577, AR=0.3619, AP=0.2509, AAE=0.6428
+iter-217: g_Leak=0.281, alpha=0.194, score=0.349, time=136.7s
+	-----------
+	auc=0.4213, AR=0.3685, AP=0.2733, AAE=0.7175
+iter-218: g_Leak=0.414, alpha=0.432, score=0.415, time=132.9s
+	-----------
+	auc=0.4271, AR=0.3717, AP=0.2755, AAE=0.7010
+iter-219: g_Leak=0.403, alpha=0.423, score=0.402, time=132.2s
+	-----------
+	auc=0.4155, AR=0.3654, AP=0.2701, AAE=0.6752
+iter-220: g_Leak=0.397, alpha=0.443, score=0.395, time=131.6s
+	-----------
+	auc=0.4116, AR=0.3368, AP=0.2320, AAE=0.5178
+iter-221: g_Leak=0.218, alpha=0.316, score=0.305, time=126.2s
+	-----------
+	auc=0.4192, AR=0.3426, AP=0.2382, AAE=0.5215
+iter-222: g_Leak=0.230, alpha=0.322, score=0.303, time=126.3s
+	-----------
+	auc=0.4132, AR=0.3368, AP=0.2315, AAE=0.5236
+iter-223: g_Leak=0.219, alpha=0.301, score=0.307, time=126.3s
+	-----------
+	auc=0.4472, AR=0.3616, AP=0.2572, AAE=0.5737
+iter-224: g_Leak=0.278, alpha=0.314, score=0.317, time=129.3s
+	-----------
+	auc=0.4475, AR=0.3798, AP=0.2823, AAE=0.6754
+iter-225: g_Leak=0.380, alpha=0.391, score=0.373, time=131.5s
+	-----------
+	auc=0.4550, AR=0.3792, AP=0.2795, AAE=0.6293
+iter-226: g_Leak=0.337, alpha=0.369, score=0.343, time=130.5s
+	-----------
+	auc=0.4394, AR=0.3690, AP=0.2684, AAE=0.5762
+iter-227: g_Leak=0.302, alpha=0.395, score=0.323, time=128.4s
+	-----------
+	auc=0.4209, AR=0.3596, AP=0.2594, AAE=0.5457
+iter-228: g_Leak=0.278, alpha=0.432, score=0.316, time=126.6s
+	-----------
+	auc=0.4119, AR=0.3601, AP=0.2630, AAE=0.5713
+iter-229: g_Leak=0.320, alpha=0.464, score=0.336, time=127.7s
+	-----------
+	auc=0.4041, AR=0.3424, AP=0.2405, AAE=0.5184
+iter-230: g_Leak=0.226, alpha=0.412, score=0.309, time=124.2s
+	-----------
+	auc=0.4163, AR=0.3622, AP=0.2651, AAE=0.5762
+iter-231: g_Leak=0.324, alpha=0.455, score=0.336, time=128.0s
+	-----------
+	auc=0.4171, AR=0.3401, AP=0.2350, AAE=0.5220
+iter-232: g_Leak=0.225, alpha=0.310, score=0.304, time=126.4s
+	-----------
+	auc=0.4928, AR=0.3953, AP=0.2919, AAE=0.7749
+iter-233: g_Leak=0.383, alpha=0.278, score=0.393, time=136.2s
+	-----------
+	auc=0.4681, AR=0.3893, AP=0.2901, AAE=0.7226
+iter-234: g_Leak=0.386, alpha=0.349, score=0.384, time=133.8s
+	-----------
+	auc=0.4608, AR=0.3857, AP=0.2869, AAE=0.6939
+iter-235: g_Leak=0.377, alpha=0.365, score=0.374, time=132.2s
+	-----------
+	auc=0.4425, AR=0.3505, AP=0.2391, AAE=0.6732
+iter-236: g_Leak=0.274, alpha=0.149, score=0.375, time=140.0s
+	-----------
+	auc=0.4693, AR=0.3705, AP=0.2561, AAE=0.7756
+iter-237: g_Leak=0.317, alpha=0.126, score=0.412, time=145.3s
+	-----------
+	auc=0.4876, AR=0.3841, AP=0.2687, AAE=0.8234
+iter-238: g_Leak=0.345, alpha=0.133, score=10.000, time=146.9s
+	-----------
+	auc=0.4581, AR=0.3627, AP=0.2497, AAE=0.7521
+iter-239: g_Leak=0.301, alpha=0.121, score=0.408, time=146.3s
+	-----------
+	auc=0.4833, AR=0.3808, AP=0.2683, AAE=0.7552
+iter-240: g_Leak=0.332, alpha=0.168, score=0.390, time=141.4s
+	-----------
+	auc=0.4646, AR=0.3667, AP=0.2532, AAE=0.7526
+iter-241: g_Leak=0.309, alpha=0.130, score=0.403, time=143.6s
+	-----------
+	auc=0.4176, AR=0.2649, AP=0.1703, AAE=1.3419
+iter-242: g_Leak=0.463, alpha=0.010, score=10.000, time=223.4s
+	-----------
+	auc=0.3894, AR=0.3499, AP=0.2546, AAE=0.5582
+iter-243: g_Leak=0.318, alpha=0.509, score=10.000, time=126.6s
+	-----------
+	auc=0.1487, AR=0.0726, AP=0.0361, AAE=1.1047
+iter-244: g_Leak=0.124, alpha=0.010, score=10.000, time=158.8s
+	-----------
+	auc=0.4920, AR=0.3910, AP=0.2864, AAE=0.7482
+iter-245: g_Leak=0.365, alpha=0.265, score=0.380, time=136.0s
+	-----------
+	auc=0.4312, AR=0.3586, AP=0.2572, AAE=0.5530
+iter-246: g_Leak=0.270, alpha=0.381, score=0.315, time=127.3s
+	-----------
+	auc=0.4034, AR=0.3587, AP=0.2646, AAE=0.7612
+iter-247: g_Leak=0.437, alpha=0.454, score=0.454, time=134.0s
+	-----------
+	auc=0.4085, AR=0.3628, AP=0.2680, AAE=0.7120
+iter-248: g_Leak=0.421, alpha=0.450, score=0.421, time=132.5s
+	-----------
+	auc=0.4143, AR=0.3653, AP=0.2705, AAE=0.7591
+iter-249: g_Leak=0.439, alpha=0.436, score=0.445, time=134.2s
+	-----------
+	auc=0.4116, AR=0.3640, AP=0.2694, AAE=0.7374
+iter-250: g_Leak=0.430, alpha=0.443, score=0.434, time=133.1s
+	-----------
+	auc=0.0068, AR=0.0062, AP=0.0041, AAE=nan
+iter-251: g_Leak=0.010, alpha=0.638, score=10.000, time=86.6s
+	-----------
+	auc=0.4156, AR=0.3607, AP=0.2626, AAE=0.5597
+iter-252: g_Leak=0.304, alpha=0.455, score=0.327, time=126.9s
+	-----------
+	auc=0.4766, AR=0.3760, AP=0.2620, AAE=0.7551
+iter-253: g_Leak=0.322, alpha=0.156, score=0.395, time=142.1s
+	-----------
+	auc=0.2430, AR=0.2447, AP=0.1628, AAE=0.7829
+iter-254: g_Leak=0.167, alpha=0.990, score=10.000, time=115.6s
+	-----------
+	auc=0.4029, AR=0.3410, AP=0.2393, AAE=0.5171
+iter-255: g_Leak=0.224, alpha=0.410, score=0.309, time=124.5s
+	-----------
+	auc=0.4349, AR=0.3760, AP=0.2799, AAE=0.7525
+iter-256: g_Leak=0.424, alpha=0.407, score=0.425, time=133.5s
+	-----------
+	auc=0.4497, AR=0.3818, AP=0.2849, AAE=0.7360
+iter-257: g_Leak=0.408, alpha=0.386, score=0.405, time=133.6s
+	-----------
+	auc=0.4869, AR=0.3830, AP=0.2709, AAE=0.7677
+iter-258: g_Leak=0.338, alpha=0.173, score=0.394, time=141.2s
+	-----------
+	auc=0.4926, AR=0.3867, AP=0.2774, AAE=0.7508
+iter-259: g_Leak=0.348, alpha=0.215, score=0.381, time=138.6s
+	-----------
+	auc=0.1123, AR=0.0941, AP=0.0541, AAE=1.0768
+iter-260: g_Leak=0.686, alpha=0.990, score=10.000, time=146.3s
+	-----------
+	auc=0.0614, AR=0.0314, AP=0.0140, AAE=1.4188
+iter-261: g_Leak=0.889, alpha=0.990, score=10.000, time=164.9s
+	-----------
+	auc=0.4639, AR=0.3786, AP=0.2765, AAE=0.6338
+iter-262: g_Leak=0.325, alpha=0.329, score=0.340, time=131.5s
+	-----------
+	auc=0.0115, AR=0.0089, AP=0.0056, AAE=1.1615
+iter-263: g_Leak=0.010, alpha=0.108, score=10.000, time=89.7s
+	-----------
+	auc=0.4502, AR=0.3565, AP=0.2477, AAE=0.6028
+iter-264: g_Leak=0.266, alpha=0.232, score=0.331, time=132.5s
+	-----------
+	auc=0.4516, AR=0.3693, AP=0.2668, AAE=0.5924
+iter-265: g_Leak=0.300, alpha=0.339, score=0.325, time=130.3s
+	-----------
+	auc=0.4893, AR=0.3845, AP=0.2741, AAE=0.7355
+iter-266: g_Leak=0.339, alpha=0.203, score=0.376, time=139.8s
+	-----------
+	auc=0.4624, AR=0.3836, AP=0.2839, AAE=0.6540
+iter-267: g_Leak=0.350, alpha=0.357, score=0.352, time=131.9s
+	-----------
+	auc=0.2594, AR=0.2607, AP=0.1759, AAE=0.6777
+iter-268: g_Leak=0.192, alpha=0.877, score=10.000, time=118.9s
+	-----------
+	auc=0.4636, AR=0.3663, AP=0.2528, AAE=0.7621
+iter-269: g_Leak=0.309, alpha=0.124, score=0.409, time=145.4s
+	-----------
+	auc=0.4607, AR=0.3641, AP=0.2528, AAE=0.6666
+iter-270: g_Leak=0.290, alpha=0.182, score=0.360, time=138.0s
+	-----------
+	auc=0.4564, AR=0.3675, AP=0.2634, AAE=0.5969
+iter-271: g_Leak=0.295, alpha=0.307, score=0.324, time=131.4s
+	-----------
+	auc=0.4377, AR=0.3769, AP=0.2805, AAE=0.7280
+iter-272: g_Leak=0.411, alpha=0.403, score=0.409, time=133.1s
+	-----------
+	auc=0.4886, AR=0.3832, AP=0.2747, AAE=0.7342
+iter-273: g_Leak=0.340, alpha=0.224, score=0.375, time=138.2s
+	-----------
+	auc=0.4243, AR=0.3388, AP=0.2292, AAE=0.5848
+iter-274: g_Leak=0.238, alpha=0.189, score=0.337, time=133.7s
+	-----------
+	auc=0.4149, AR=0.3408, AP=0.2368, AAE=0.5167
+iter-275: g_Leak=0.227, alpha=0.335, score=0.302, time=126.3s
+	-----------
+	auc=0.4710, AR=0.3845, AP=0.2828, AAE=0.6708
+iter-276: g_Leak=0.348, alpha=0.323, score=0.355, time=133.9s
+	-----------
+	auc=0.4558, AR=0.3637, AP=0.2581, AAE=0.6031
+iter-277: g_Leak=0.286, alpha=0.282, score=0.328, time=132.0s
+	-----------
+	auc=0.4444, AR=0.3544, AP=0.2473, AAE=0.5806
+iter-278: g_Leak=0.264, alpha=0.265, score=0.323, time=131.2s
+	-----------
+	auc=0.4464, AR=0.3776, AP=0.2791, AAE=0.6318
+iter-279: g_Leak=0.352, alpha=0.393, score=0.350, time=131.2s
+	-----------
+	auc=0.4377, AR=0.3624, AP=0.2606, AAE=0.5657
+iter-280: g_Leak=0.280, alpha=0.369, score=0.318, time=128.1s
+	-----------
+	auc=0.4208, AR=0.3583, AP=0.2576, AAE=0.5411
+iter-281: g_Leak=0.269, alpha=0.425, score=0.313, time=125.9s
+	-----------
+	auc=0.5824, AR=0.4587, AP=0.3503, AAE=1.3092
+iter-282: g_Leak=0.604, alpha=0.136, score=10.000, time=166.1s
+	-----------
+	auc=0.4154, AR=0.3614, AP=0.2640, AAE=0.5678
+iter-283: g_Leak=0.314, alpha=0.456, score=0.332, time=127.6s
+	-----------
+	auc=0.4206, AR=0.3623, AP=0.2637, AAE=0.5519
+iter-284: g_Leak=0.296, alpha=0.444, score=0.320, time=127.2s
+	-----------
+	auc=0.3774, AR=0.3412, AP=0.2488, AAE=0.8071
+iter-285: g_Leak=0.462, alpha=0.480, score=10.000, time=134.3s
+	-----------
+	auc=0.2650, AR=0.2602, AP=0.1783, AAE=0.6471
+iter-286: g_Leak=0.305, alpha=0.880, score=10.000, time=124.7s
+	-----------
+	auc=0.4097, AR=0.3622, AP=0.2668, AAE=0.6398
+iter-287: g_Leak=0.381, alpha=0.456, score=0.378, time=131.1s
+	-----------
+	auc=0.4171, AR=0.3661, AP=0.2699, AAE=0.6430
+iter-288: g_Leak=0.380, alpha=0.445, score=0.375, time=130.8s
+	-----------
+	auc=0.3957, AR=0.3277, AP=0.2218, AAE=0.5118
+iter-289: g_Leak=0.197, alpha=0.300, score=10.000, time=126.2s
+	-----------
+	auc=0.4949, AR=0.3893, AP=0.2776, AAE=0.7718
+iter-290: g_Leak=0.351, alpha=0.190, score=0.390, time=141.8s
+	-----------
+	auc=0.4173, AR=0.3396, AP=0.2342, AAE=0.5243
+iter-291: g_Leak=0.225, alpha=0.303, score=0.305, time=127.6s
+	-----------
+	auc=0.4146, AR=0.3389, AP=0.2343, AAE=0.5175
+iter-292: g_Leak=0.222, alpha=0.317, score=0.303, time=127.1s
+	-----------
+	auc=0.4669, AR=0.3898, AP=0.2913, AAE=0.7518
+iter-293: g_Leak=0.404, alpha=0.354, score=0.401, time=135.5s
+	-----------
+	auc=0.4605, AR=0.3864, AP=0.2886, AAE=0.7302
+iter-294: g_Leak=0.398, alpha=0.367, score=0.394, time=134.3s
+	-----------
+	auc=0.2734, AR=0.2627, AP=0.1818, AAE=0.6600
+iter-295: g_Leak=0.381, alpha=0.696, score=10.000, time=129.6s
+	-----------
+	auc=0.4192, AR=0.3522, AP=0.2502, AAE=0.5318
+iter-296: g_Leak=0.252, alpha=0.401, score=0.309, time=127.0s
+	-----------
+	auc=0.4150, AR=0.3443, AP=0.2410, AAE=0.5195
+iter-297: g_Leak=0.230, alpha=0.366, score=0.304, time=126.4s
+	-----------
+	auc=0.4432, AR=0.3516, AP=0.2405, AAE=0.7191
+iter-298: g_Leak=0.280, alpha=0.121, score=0.400, time=145.1s
+	-----------
+	auc=0.4959, AR=0.3908, AP=0.2842, AAE=0.7670
+iter-299: g_Leak=0.364, alpha=0.236, score=0.387, time=139.5s
+	-----------
+	auc=0.4152, AR=0.3385, AP=0.2335, AAE=0.5207
+iter-300: g_Leak=0.222, alpha=0.310, score=0.304, time=127.7s
+	-----------
+	auc=0.0722, AR=0.0383, AP=0.0171, AAE=1.4512
+iter-301: g_Leak=0.896, alpha=0.738, score=10.000, time=168.2s
+	-----------
+	auc=0.3941, AR=0.2369, AP=0.1491, AAE=1.5277
+iter-302: g_Leak=0.990, alpha=0.010, score=10.000, time=294.7s
+	-----------
+	auc=0.1830, AR=0.1916, AP=0.1222, AAE=1.2491
+iter-303: g_Leak=0.111, alpha=0.814, score=10.000, time=114.1s
+	-----------
+	auc=0.0947, AR=0.0694, AP=0.0377, AAE=1.2930
+iter-304: g_Leak=0.782, alpha=0.761, score=10.000, time=157.3s
+	-----------
+	auc=0.4814, AR=0.3957, AP=0.2963, AAE=0.7813
+iter-305: g_Leak=0.406, alpha=0.323, score=0.405, time=136.4s
+	-----------
+	auc=0.6004, AR=0.4571, AP=0.3466, AAE=1.5551
+iter-306: g_Leak=0.866, alpha=0.076, score=10.000, time=228.4s
+	-----------
+	auc=0.4742, AR=0.3923, AP=0.2931, AAE=0.7603
+iter-307: g_Leak=0.399, alpha=0.338, score=0.400, time=135.2s
+	-----------
+	auc=0.4741, AR=0.3730, AP=0.2629, AAE=0.6787
+iter-308: g_Leak=0.310, alpha=0.215, score=0.357, time=137.6s
+	-----------
+	auc=0.4696, AR=0.3707, AP=0.2562, AAE=0.7561
+iter-309: g_Leak=0.316, alpha=0.138, score=0.401, time=145.2s
+	-----------
+	auc=0.4183, AR=0.3400, AP=0.2344, AAE=0.5295
+iter-310: g_Leak=0.226, alpha=0.298, score=0.308, time=127.8s
+	-----------
+	auc=0.4020, AR=0.3404, AP=0.2387, AAE=0.5162
+iter-311: g_Leak=0.223, alpha=0.411, score=0.309, time=125.3s
+	-----------
+	auc=0.4498, AR=0.3579, AP=0.2461, AAE=0.7868
+iter-312: g_Leak=0.298, alpha=0.102, score=0.433, time=149.5s
+	-----------
+	auc=0.2477, AR=0.2214, AP=0.1496, AAE=1.1501
+iter-313: g_Leak=0.646, alpha=0.557, score=10.000, time=145.4s
+	-----------
+	auc=0.4518, AR=0.3759, AP=0.2749, AAE=0.6087
+iter-314: g_Leak=0.321, alpha=0.368, score=0.334, time=130.9s
+	-----------
+	auc=0.4315, AR=0.3480, AP=0.2425, AAE=0.5471
+iter-315: g_Leak=0.246, alpha=0.295, score=0.311, time=129.5s
+	-----------
+	auc=0.4588, AR=0.3626, AP=0.2539, AAE=0.6240
+iter-316: g_Leak=0.285, alpha=0.241, score=0.338, time=133.9s
+	-----------
+	auc=0.4928, AR=0.3872, AP=0.2804, AAE=0.7497
+iter-317: g_Leak=0.355, alpha=0.234, score=0.380, time=138.9s
+	-----------
+	auc=0.4377, AR=0.3696, AP=0.2704, AAE=0.5815
+iter-318: g_Leak=0.313, alpha=0.405, score=0.327, time=130.0s
+	-----------
+	auc=0.4650, AR=0.3751, AP=0.2718, AAE=0.6345
+iter-319: g_Leak=0.317, alpha=0.308, score=0.339, time=132.7s
+	-----------
+	auc=0.4496, AR=0.3564, AP=0.2444, AAE=0.7508
+iter-320: g_Leak=0.291, alpha=0.113, score=0.413, time=147.3s
+	-----------
+	auc=0.4338, AR=0.3710, AP=0.2731, AAE=0.6035
+iter-321: g_Leak=0.337, alpha=0.420, score=0.342, time=130.2s
+	-----------
+	auc=0.4694, AR=0.3859, AP=0.2853, AAE=0.6728
+iter-322: g_Leak=0.357, alpha=0.337, score=0.357, time=134.1s
+	-----------
+	auc=0.4159, AR=0.3457, AP=0.2430, AAE=0.5213
+iter-323: g_Leak=0.233, alpha=0.378, score=0.304, time=126.4s
+	-----------
+	auc=0.4310, AR=0.3500, AP=0.2454, AAE=0.5377
+iter-324: g_Leak=0.247, alpha=0.317, score=0.306, time=128.5s
+	-----------
+	auc=0.2247, AR=0.1983, AP=0.1271, AAE=0.5871
+iter-325: g_Leak=0.094, alpha=0.131, score=10.000, time=123.2s
+	-----------
+	auc=0.4970, AR=0.3943, AP=0.2892, AAE=0.7733
+iter-326: g_Leak=0.375, alpha=0.255, score=0.389, time=138.7s
+	-----------
+	auc=0.4765, AR=0.3840, AP=0.2811, AAE=0.6826
+iter-327: g_Leak=0.344, alpha=0.300, score=0.357, time=134.8s
+	-----------
+	auc=0.4433, AR=0.3564, AP=0.2515, AAE=0.5642
+iter-328: g_Leak=0.266, alpha=0.301, score=0.314, time=130.7s
+	-----------
+	auc=0.4106, AR=0.3623, AP=0.2663, AAE=0.6149
+iter-329: g_Leak=0.360, alpha=0.460, score=0.362, time=131.2s
+	-----------
+	auc=0.4715, AR=0.3727, AP=0.2659, AAE=0.6535
+iter-330: g_Leak=0.312, alpha=0.256, score=0.345, time=135.5s
+	-----------
+	auc=0.4164, AR=0.3641, AP=0.2677, AAE=0.6045
+iter-331: g_Leak=0.352, alpha=0.451, score=0.353, time=130.6s
+	-----------
+	auc=0.4432, AR=0.3607, AP=0.2569, AAE=0.5640
+iter-332: g_Leak=0.275, alpha=0.331, score=0.314, time=130.4s
+	-----------
+	auc=0.1783, AR=0.1664, AP=0.1080, AAE=0.8359
+iter-333: g_Leak=0.532, alpha=0.803, score=10.000, time=138.4s
+	-----------
+	auc=0.4142, AR=0.3393, AP=0.2349, AAE=0.5155
+iter-334: g_Leak=0.223, alpha=0.322, score=0.302, time=127.8s
+	-----------
+	auc=0.4734, AR=0.3758, AP=0.2710, AAE=0.6613
+iter-335: g_Leak=0.321, alpha=0.274, score=0.348, time=134.9s
+	-----------
+	auc=0.4481, AR=0.3552, AP=0.2440, AAE=0.6354
+iter-336: g_Leak=0.271, alpha=0.183, score=0.351, time=137.9s
+	-----------
+	auc=0.4931, AR=0.3900, AP=0.2844, AAE=0.7541
+iter-337: g_Leak=0.363, alpha=0.249, score=0.382, time=138.0s
+	-----------
+	auc=0.4478, AR=0.2910, AP=0.1934, AAE=1.3634
+iter-338: g_Leak=0.721, alpha=0.010, score=10.000, time=254.0s
+	-----------
+	auc=0.0056, AR=0.0052, AP=0.0034, AAE=nan
+iter-339: g_Leak=0.010, alpha=0.990, score=10.000, time=86.0s
+	-----------
+	auc=0.4441, AR=0.3697, AP=0.2685, AAE=0.5823
+iter-340: g_Leak=0.297, alpha=0.375, score=0.324, time=129.9s
+	-----------
+	auc=0.4418, AR=0.3498, AP=0.2391, AAE=0.6912
+iter-341: g_Leak=0.275, alpha=0.135, score=0.386, time=143.5s
+	-----------
+	auc=0.4146, AR=0.3383, AP=0.2332, AAE=0.5203
+iter-342: g_Leak=0.222, alpha=0.309, score=0.305, time=128.0s
+	-----------
+	auc=0.4862, AR=0.3968, AP=0.2965, AAE=0.7802
+iter-343: g_Leak=0.399, alpha=0.312, score=0.401, time=136.8s
+	-----------
+	auc=0.1627, AR=0.1205, AP=0.0679, AAE=1.4750
+iter-344: g_Leak=0.851, alpha=0.567, score=10.000, time=165.7s
+	-----------
+	auc=0.4502, AR=0.3830, AP=0.2865, AAE=0.7669
+iter-345: g_Leak=0.421, alpha=0.382, score=0.422, time=135.9s
+	-----------
+	auc=0.4583, AR=0.3864, AP=0.2887, AAE=0.7597
+iter-346: g_Leak=0.412, alpha=0.369, score=0.412, time=135.6s
+	-----------
+	auc=0.4325, AR=0.3619, AP=0.2610, AAE=0.5540
+iter-347: g_Leak=0.277, alpha=0.392, score=0.314, time=128.7s
+	-----------
+	auc=0.4432, AR=0.3521, AP=0.2432, AAE=0.5904
+iter-348: g_Leak=0.256, alpha=0.221, score=0.329, time=134.5s
+	-----------
+	auc=0.4375, AR=0.3576, AP=0.2542, AAE=0.5509
+iter-349: g_Leak=0.266, alpha=0.343, score=0.310, time=129.1s
+	-----------
+	auc=0.4287, AR=0.3452, AP=0.2388, AAE=0.5507
+iter-350: g_Leak=0.239, alpha=0.277, score=0.315, time=130.1s
+	-----------
+	auc=0.4126, AR=0.3637, AP=0.2677, AAE=0.6307
+iter-351: g_Leak=0.370, alpha=0.455, score=0.370, time=132.3s
+	-----------
+	auc=0.4322, AR=0.3747, AP=0.2792, AAE=0.7916
+iter-352: g_Leak=0.443, alpha=0.408, score=0.449, time=136.3s
+	-----------
+	auc=0.4347, AR=0.3657, AP=0.2648, AAE=0.5635
+iter-353: g_Leak=0.290, alpha=0.399, score=0.319, time=129.7s
+	-----------
+	auc=0.4466, AR=0.3648, AP=0.2620, AAE=0.5791
+iter-354: g_Leak=0.288, alpha=0.341, score=0.320, time=131.1s
+	-----------
+	auc=0.4582, AR=0.3632, AP=0.2503, AAE=0.7809
+iter-355: g_Leak=0.305, alpha=0.109, score=0.423, time=150.0s
+	-----------
+	auc=0.4386, AR=0.3782, AP=0.2820, AAE=0.7790
+iter-356: g_Leak=0.433, alpha=0.398, score=0.437, time=136.6s
+	-----------
+	auc=0.4636, AR=0.3660, AP=0.2556, AAE=0.6461
+iter-357: g_Leak=0.289, alpha=0.213, score=0.347, time=137.3s
+	-----------
+	auc=0.0850, AR=0.0627, AP=0.0337, AAE=1.2497
+iter-358: g_Leak=0.767, alpha=0.885, score=10.000, time=155.9s
+	-----------
+	auc=0.4212, AR=0.3452, AP=0.2413, AAE=0.5188
+iter-359: g_Leak=0.235, alpha=0.334, score=0.300, time=128.5s
+	-----------
+	auc=0.4536, AR=0.3800, AP=0.2809, AAE=0.6416
+iter-360: g_Leak=0.348, alpha=0.377, score=0.351, time=132.6s
+	-----------
+	auc=0.4922, AR=0.3871, AP=0.2755, AAE=0.7747
+iter-361: g_Leak=0.345, alpha=0.180, score=0.393, time=143.3s
+	-----------
+	auc=0.4254, AR=0.3545, AP=0.2526, AAE=0.5399
+iter-362: g_Leak=0.259, alpha=0.386, score=0.310, time=127.5s
+	-----------
+	auc=0.4977, AR=0.3907, AP=0.2815, AAE=0.7786
+iter-363: g_Leak=0.360, alpha=0.211, score=0.391, time=141.3s
+	-----------
+	auc=0.4800, AR=0.3911, AP=0.2890, AAE=0.7172
+iter-364: g_Leak=0.368, alpha=0.311, score=0.373, time=136.4s
+	-----------
+	auc=0.4281, AR=0.3724, AP=0.2771, AAE=0.7739
+iter-365: g_Leak=0.437, alpha=0.416, score=0.443, time=136.5s
+	-----------
+	auc=0.4265, AR=0.3647, AP=0.2659, AAE=0.5594
+iter-366: g_Leak=0.301, alpha=0.430, score=0.321, time=130.0s
+	-----------
+	auc=0.4611, AR=0.3662, AP=0.2599, AAE=0.6209
+iter-367: g_Leak=0.294, alpha=0.268, score=0.335, time=134.8s
+	-----------
+	auc=0.5619, AR=0.4426, AP=0.3298, AAE=1.1766
+iter-368: g_Leak=0.514, alpha=0.121, score=10.000, time=163.2s
+	-----------
+	auc=0.4790, AR=0.3779, AP=0.2668, AAE=0.6994
+iter-369: g_Leak=0.320, alpha=0.199, score=0.364, time=141.3s
+	-----------
+	auc=0.4024, AR=0.3412, AP=0.2394, AAE=0.5169
+iter-370: g_Leak=0.224, alpha=0.413, score=0.309, time=126.5s
+	-----------
+	auc=0.4421, AR=0.3578, AP=0.2532, AAE=0.5593
+iter-371: g_Leak=0.267, alpha=0.317, score=0.312, time=131.8s
+	-----------
+	auc=0.4257, AR=0.3423, AP=0.2344, AAE=0.5551
+iter-372: g_Leak=0.233, alpha=0.245, score=0.319, time=132.3s
+	-----------
+	auc=0.4623, AR=0.3709, AP=0.2671, AAE=0.6183
+iter-373: g_Leak=0.307, alpha=0.302, score=0.332, time=133.9s
+	-----------
+	auc=0.2676, AR=0.2599, AP=0.1789, AAE=0.6453
+iter-374: g_Leak=0.329, alpha=0.781, score=10.000, time=128.1s
+	-----------
+	auc=0.4138, AR=0.3478, AP=0.2456, AAE=0.5243
+iter-375: g_Leak=0.240, alpha=0.400, score=0.307, time=127.7s
+	-----------
+	auc=0.4731, AR=0.3734, AP=0.2616, AAE=0.7060
+iter-376: g_Leak=0.311, alpha=0.180, score=0.372, time=141.1s
+	-----------
+	auc=0.4308, AR=0.3544, AP=0.2517, AAE=0.5406
+iter-377: g_Leak=0.258, alpha=0.360, score=0.308, time=129.9s
+	-----------
+	auc=0.4283, AR=0.3435, AP=0.2352, AAE=0.5605
+iter-378: g_Leak=0.237, alpha=0.234, score=0.320, time=133.7s
+	-----------
+	auc=0.4325, AR=0.3690, AP=0.2707, AAE=0.5874
+iter-379: g_Leak=0.323, alpha=0.421, score=0.333, time=131.2s
+	-----------
+	auc=0.4383, AR=0.3484, AP=0.2392, AAE=0.5871
+iter-380: g_Leak=0.250, alpha=0.210, score=0.330, time=136.1s
+	-----------
+	auc=0.4158, AR=0.3347, AP=0.2261, AAE=0.5591
+iter-381: g_Leak=0.223, alpha=0.212, score=0.327, time=133.9s
+	-----------
+	auc=0.4581, AR=0.3744, AP=0.2720, AAE=0.6122
+iter-382: g_Leak=0.312, alpha=0.333, score=0.332, time=133.7s
+	-----------
+	auc=0.4421, AR=0.3521, AP=0.2433, AAE=0.5804
+iter-383: g_Leak=0.254, alpha=0.236, score=0.324, time=135.0s
+	-----------
+	auc=0.4308, AR=0.3489, AP=0.2440, AAE=0.5433
+iter-384: g_Leak=0.246, alpha=0.306, score=0.309, time=131.8s
+	-----------
+	auc=0.4719, AR=0.3786, AP=0.2750, AAE=0.6606
+iter-385: g_Leak=0.329, alpha=0.296, score=0.349, time=136.4s
+	-----------
+	auc=0.4199, AR=0.3585, AP=0.2579, AAE=0.5427
+iter-386: g_Leak=0.271, alpha=0.430, score=0.315, time=129.0s
+	-----------
+	auc=0.4205, AR=0.3377, AP=0.2289, AAE=0.5618
+iter-387: g_Leak=0.229, alpha=0.214, score=0.326, time=134.0s
+	-----------
+	auc=0.4958, AR=0.3892, AP=0.2787, AAE=0.7630
+iter-388: g_Leak=0.351, alpha=0.202, score=0.385, time=142.8s
+	-----------
+	auc=0.4151, AR=0.3427, AP=0.2395, AAE=0.5156
+iter-389: g_Leak=0.228, alpha=0.351, score=0.302, time=128.7s
+	-----------
+	auc=0.4130, AR=0.3321, AP=0.2242, AAE=0.5676
+iter-390: g_Leak=0.222, alpha=0.197, score=0.333, time=134.6s
+	-----------
+	auc=0.4415, AR=0.3747, AP=0.2760, AAE=0.6133
+iter-391: g_Leak=0.340, alpha=0.403, score=0.342, time=133.2s
+	-----------
+	auc=0.4069, AR=0.3611, AP=0.2665, AAE=0.6792
+iter-392: g_Leak=0.404, alpha=0.457, score=0.403, time=134.7s
+	-----------
+	auc=0.4513, AR=0.3740, AP=0.2723, AAE=0.6002
+iter-393: g_Leak=0.312, alpha=0.360, score=0.329, time=133.1s
+	-----------
+	auc=0.4251, AR=0.3467, AP=0.2422, AAE=0.5274
+iter-394: g_Leak=0.239, alpha=0.322, score=0.303, time=130.0s
+	-----------
+	auc=0.4125, AR=0.3643, AP=0.2694, AAE=0.6906
+iter-395: g_Leak=0.408, alpha=0.446, score=0.406, time=135.5s
+	-----------
+	auc=0.4587, AR=0.3628, AP=0.2498, AAE=0.7017
+iter-396: g_Leak=0.294, alpha=0.158, score=0.380, time=143.7s
+	-----------
+	auc=0.3148, AR=0.2682, AP=0.1862, AAE=1.3991
+iter-397: g_Leak=0.749, alpha=0.432, score=10.000, time=157.4s
+	-----------
+	auc=0.4308, AR=0.3423, AP=0.2322, AAE=0.6289
+iter-398: g_Leak=0.251, alpha=0.166, score=0.358, time=139.7s
+	-----------
+	auc=0.4406, AR=0.3499, AP=0.2397, AAE=0.6045
+iter-399: g_Leak=0.256, alpha=0.195, score=0.338, time=137.5s
+	-----------
+	auc=0.4180, AR=0.3456, AP=0.2417, AAE=0.5225
+iter-400: g_Leak=0.234, alpha=0.359, score=0.304, time=129.3s
+	-----------
+	auc=0.3920, AR=0.2429, AP=0.1523, AAE=1.3293
+iter-401: g_Leak=0.398, alpha=0.010, score=10.000, time=220.2s
+	-----------
+	auc=0.4210, AR=0.3686, AP=0.2739, AAE=0.7982
+iter-402: g_Leak=0.452, alpha=0.423, score=0.462, time=138.6s
+	-----------
+	auc=0.1401, AR=0.1158, AP=0.0682, AAE=1.2098
+iter-403: g_Leak=0.740, alpha=0.681, score=10.000, time=155.7s
+	-----------
+	auc=0.4389, AR=0.3512, AP=0.2447, AAE=0.5695
+iter-404: g_Leak=0.256, alpha=0.273, score=0.320, time=133.3s
+	-----------
+	auc=0.4314, AR=0.3457, AP=0.2381, AAE=0.5562
+iter-405: g_Leak=0.239, alpha=0.255, score=0.316, time=133.3s
+	-----------
+	auc=0.4154, AR=0.3383, AP=0.2331, AAE=0.5241
+iter-406: g_Leak=0.222, alpha=0.303, score=0.306, time=130.3s
+	-----------
+	auc=0.4523, AR=0.3581, AP=0.2464, AAE=0.6632
+iter-407: g_Leak=0.280, alpha=0.173, score=0.363, time=141.3s
+	-----------
+	auc=0.4306, AR=0.3562, AP=0.2540, AAE=0.5465
+iter-408: g_Leak=0.264, alpha=0.371, score=0.311, time=130.8s
+	-----------
+	auc=0.4022, AR=0.3411, AP=0.2392, AAE=0.5163
+iter-409: g_Leak=0.224, alpha=0.414, score=0.309, time=127.7s
+	-----------
+	auc=0.4294, AR=0.3638, AP=0.2632, AAE=0.5571
+iter-410: g_Leak=0.289, alpha=0.414, score=0.318, time=130.5s
+	-----------
+	auc=0.4543, AR=0.3644, AP=0.2599, AAE=0.5929
+iter-411: g_Leak=0.288, alpha=0.297, score=0.324, time=134.0s
+	-----------
+	auc=0.4533, AR=0.3587, AP=0.2486, AAE=0.6237
+iter-412: g_Leak=0.272, alpha=0.202, score=0.341, time=138.3s
+	-----------
+	auc=0.4929, AR=0.3930, AP=0.2888, AAE=0.7643
+iter-413: g_Leak=0.374, alpha=0.270, score=0.388, time=139.8s
+	-----------
+	auc=0.4132, AR=0.3615, AP=0.2647, AAE=0.5774
+iter-414: g_Leak=0.331, alpha=0.461, score=0.339, time=132.1s
+	-----------
+	auc=0.4829, AR=0.3806, AP=0.2744, AAE=0.7021
+iter-415: g_Leak=0.335, alpha=0.249, score=0.363, time=139.3s
+	-----------
+	auc=0.4582, AR=0.3632, AP=0.2555, AAE=0.6186
+iter-416: g_Leak=0.287, alpha=0.254, score=0.335, time=136.4s
+	-----------
+	auc=0.4877, AR=0.3943, AP=0.2917, AAE=0.7529
+iter-417: g_Leak=0.378, alpha=0.293, score=0.386, time=139.0s
+	-----------
+	auc=0.4330, AR=0.3523, AP=0.2481, AAE=0.5424
+iter-418: g_Leak=0.253, alpha=0.327, score=0.308, time=131.5s
+	-----------
+	auc=0.4516, AR=0.3814, AP=0.2834, AAE=0.6674
+iter-419: g_Leak=0.370, alpha=0.383, score=0.366, time=134.9s
+	-----------
+	auc=0.4135, AR=0.3380, AP=0.2332, AAE=0.5174
+iter-420: g_Leak=0.221, alpha=0.315, score=0.303, time=129.9s
+	-----------
+	auc=0.4607, AR=0.3814, AP=0.2807, AAE=0.6356
+iter-421: g_Leak=0.339, alpha=0.354, score=0.343, time=134.8s
+	-----------
+	auc=0.4097, AR=0.3626, AP=0.2674, AAE=0.6620
+iter-422: g_Leak=0.392, alpha=0.454, score=0.391, time=134.8s
+	-----------
+	auc=0.4182, AR=0.3525, AP=0.2512, AAE=0.5322
+iter-423: g_Leak=0.254, alpha=0.409, score=0.310, time=129.7s
+	-----------
+	auc=0.4198, AR=0.3623, AP=0.2640, AAE=0.5610
+iter-424: g_Leak=0.304, alpha=0.447, score=0.326, time=138.6s
+	-----------
+	auc=0.4188, AR=0.3604, AP=0.2611, AAE=0.5464
+iter-425: g_Leak=0.286, alpha=0.444, score=0.318, time=132.9s
+	-----------
+	auc=0.1733, AR=0.1619, AP=0.1046, AAE=0.8428
+iter-426: g_Leak=0.530, alpha=0.990, score=10.000, time=139.4s
+	-----------
+	auc=0.4162, AR=0.3344, AP=0.2258, AAE=0.5641
+iter-427: g_Leak=0.225, alpha=0.203, score=0.329, time=135.2s
+	-----------
+	auc=0.4405, AR=0.3624, AP=0.2602, AAE=0.5706
+iter-428: g_Leak=0.281, alpha=0.357, score=0.319, time=131.9s
+	-----------
+	auc=0.4431, AR=0.3718, AP=0.2715, AAE=0.5876
+iter-429: g_Leak=0.311, alpha=0.391, score=0.327, time=132.3s
+	-----------
+	auc=0.4692, AR=0.3694, AP=0.2611, AAE=0.6564
+iter-430: g_Leak=0.304, alpha=0.239, score=0.348, time=138.3s
+	-----------
+	auc=0.4225, AR=0.3515, AP=0.2490, AAE=0.5316
+iter-431: g_Leak=0.250, alpha=0.382, score=0.307, time=129.8s
+	-----------
+	auc=0.1123, AR=0.1232, AP=0.0756, AAE=1.5770
+iter-432: g_Leak=0.081, alpha=0.990, score=10.000, time=111.1s
+	-----------
+	auc=0.0621, AR=0.0320, AP=0.0129, AAE=1.4221
+iter-433: g_Leak=0.911, alpha=0.908, score=10.000, time=173.4s
+	-----------
+	auc=0.4753, AR=0.3915, AP=0.2917, AAE=0.7256
+iter-434: g_Leak=0.381, alpha=0.334, score=0.381, time=137.3s
+	-----------
+	auc=0.4271, AR=0.3576, AP=0.2563, AAE=0.5461
+iter-435: g_Leak=0.267, alpha=0.393, score=0.313, time=131.5s
+	-----------
+	auc=0.4788, AR=0.3799, AP=0.2750, AAE=0.6794
+iter-436: g_Leak=0.333, alpha=0.270, score=0.354, time=139.2s
+	-----------
+	auc=0.4493, AR=0.3584, AP=0.2515, AAE=0.5889
+iter-437: g_Leak=0.274, alpha=0.270, score=0.324, time=135.8s
+	-----------
+	auc=0.4679, AR=0.3815, AP=0.2795, AAE=0.6512
+iter-438: g_Leak=0.336, alpha=0.325, score=0.347, time=136.0s
+	-----------
+	auc=0.4562, AR=0.3606, AP=0.2517, AAE=0.6178
+iter-439: g_Leak=0.278, alpha=0.232, score=0.336, time=137.8s
+	-----------
+	auc=0.4267, AR=0.3501, AP=0.2462, AAE=0.5294
+iter-440: g_Leak=0.245, alpha=0.345, score=0.303, time=131.2s
+	-----------
+	auc=0.4302, AR=0.3657, AP=0.2662, AAE=0.5652
+iter-441: g_Leak=0.300, alpha=0.419, score=0.322, time=132.1s
+	-----------
+	auc=0.4232, AR=0.3416, AP=0.2352, AAE=0.5432
+iter-442: g_Leak=0.230, alpha=0.276, score=0.313, time=133.3s
+	-----------
+	auc=0.4384, AR=0.3532, AP=0.2481, AAE=0.5533
+iter-443: g_Leak=0.256, alpha=0.297, score=0.311, time=134.2s
+	-----------
+	auc=0.4815, AR=0.3873, AP=0.2844, AAE=0.7095
+iter-444: g_Leak=0.355, alpha=0.294, score=0.368, time=139.3s
+	-----------
+	auc=0.4615, AR=0.3845, AP=0.2852, AAE=0.6686
+iter-445: g_Leak=0.362, alpha=0.362, score=0.360, time=136.4s
+	-----------
+	auc=0.4389, AR=0.3504, AP=0.2425, AAE=0.5706
+iter-446: g_Leak=0.252, alpha=0.258, score=0.320, time=134.8s
+	-----------
+	auc=0.4959, AR=0.3888, AP=0.2807, AAE=0.7702
+iter-447: g_Leak=0.358, alpha=0.222, score=0.388, time=143.0s
+	-----------
+	auc=0.4510, AR=0.3572, AP=0.2478, AAE=0.6070
+iter-448: g_Leak=0.267, alpha=0.218, score=0.333, time=138.4s
+	-----------
+	auc=0.4301, AR=0.3705, AP=0.2736, AAE=0.6228
+iter-449: g_Leak=0.357, alpha=0.425, score=0.355, time=135.2s
+	-----------
+	auc=0.4516, AR=0.3647, AP=0.2606, AAE=0.5858
+iter-450: g_Leak=0.287, alpha=0.314, score=0.321, time=135.0s
+	-----------
+	auc=0.4176, AR=0.3438, AP=0.2401, AAE=0.5169
+iter-451: g_Leak=0.231, alpha=0.343, score=0.301, time=131.2s
+	-----------
+	auc=0.2562, AR=0.2528, AP=0.1657, AAE=0.8536
+iter-452: g_Leak=0.111, alpha=0.532, score=10.000, time=121.0s
+	-----------
+	auc=0.4768, AR=0.3755, AP=0.2685, AAE=0.6777
+iter-453: g_Leak=0.321, alpha=0.245, score=0.355, time=139.9s
+	-----------
+	auc=0.4174, AR=0.3343, AP=0.2260, AAE=0.5738
+iter-454: g_Leak=0.229, alpha=0.191, score=0.334, time=137.6s
+	-----------
+	auc=0.4695, AR=0.3698, AP=0.2597, AAE=0.6606
+iter-455: g_Leak=0.301, alpha=0.218, score=0.350, time=141.2s
+	-----------
+	auc=0.4413, AR=0.3663, AP=0.2649, AAE=0.5727
+iter-456: g_Leak=0.288, alpha=0.371, score=0.320, time=133.4s
+	-----------
+	auc=0.4178, AR=0.3392, AP=0.2334, AAE=0.5307
+iter-457: g_Leak=0.225, alpha=0.292, score=0.309, time=133.3s
+	-----------
+	auc=0.4483, AR=0.3548, AP=0.2430, AAE=0.7220
+iter-458: g_Leak=0.286, alpha=0.127, score=0.398, time=150.0s
+	-----------
+	auc=0.4434, AR=0.3799, AP=0.2836, AAE=0.7537
+iter-459: g_Leak=0.420, alpha=0.393, score=0.419, time=140.8s
+	-----------
+	auc=0.4508, AR=0.3605, AP=0.2547, AAE=0.5890
+iter-460: g_Leak=0.277, alpha=0.284, score=0.323, time=137.0s
+	-----------
+	auc=0.4675, AR=0.3695, AP=0.2563, AAE=0.7165
+iter-461: g_Leak=0.307, alpha=0.162, score=0.382, time=145.8s
+	-----------
+	auc=0.2573, AR=0.2514, AP=0.1721, AAE=0.6505
+iter-462: g_Leak=0.326, alpha=0.990, score=10.000, time=129.8s
+	-----------
+	auc=0.4018, AR=0.3409, AP=0.2391, AAE=0.5163
+iter-463: g_Leak=0.224, alpha=0.414, score=0.309, time=129.3s
+	-----------
+	auc=0.4616, AR=0.3791, AP=0.2772, AAE=0.6330
+iter-464: g_Leak=0.330, alpha=0.340, score=0.341, time=137.0s
+	-----------
+	auc=0.4039, AR=0.3589, AP=0.2648, AAE=0.7365
+iter-465: g_Leak=0.429, alpha=0.455, score=0.439, time=138.0s
+	-----------
+	auc=0.4265, AR=0.3661, AP=0.2676, AAE=0.5751
+iter-466: g_Leak=0.316, alpha=0.433, score=0.330, time=133.5s
+	-----------
+	auc=0.4472, AR=0.3638, AP=0.2603, AAE=0.5737
+iter-467: g_Leak=0.283, alpha=0.328, score=0.317, time=135.0s
+	-----------
+	auc=0.4327, AR=0.3534, AP=0.2493, AAE=0.5422
+iter-468: g_Leak=0.254, alpha=0.337, score=0.308, time=134.3s
+	-----------
+	auc=0.4968, AR=0.3995, AP=0.2968, AAE=0.7987
+iter-469: g_Leak=0.396, alpha=0.277, score=0.402, time=142.8s
+	-----------
+	auc=0.4950, AR=0.4014, AP=0.3004, AAE=0.8181
+iter-470: g_Leak=0.411, alpha=0.292, score=10.000, time=142.0s
+	-----------
+	auc=0.4953, AR=0.3982, AP=0.2951, AAE=0.7893
+iter-471: g_Leak=0.391, alpha=0.278, score=0.398, time=142.2s
+	-----------
+	auc=0.5054, AR=0.3981, AP=0.2920, AAE=0.8168
+iter-472: g_Leak=0.387, alpha=0.232, score=10.000, time=144.1s
+	-----------
+	auc=0.4787, AR=0.3945, AP=0.2951, AAE=0.7703
+iter-473: g_Leak=0.403, alpha=0.329, score=0.402, time=140.6s
+	-----------
+	auc=0.3417, AR=0.2021, AP=0.1206, AAE=1.2761
+iter-474: g_Leak=0.306, alpha=0.010, score=10.000, time=210.0s
+	-----------
+	auc=0.4934, AR=0.3986, AP=0.2964, AAE=0.7864
+iter-475: g_Leak=0.394, alpha=0.286, score=0.398, time=142.1s
+	-----------
+	auc=0.4343, AR=0.3755, AP=0.2800, AAE=0.8583
+iter-476: g_Leak=0.472, alpha=0.399, score=10.000, time=141.9s
+	-----------
+	auc=0.0749, AR=0.0384, AP=0.0187, AAE=1.2345
+iter-477: g_Leak=0.067, alpha=0.010, score=10.000, time=137.7s
+	-----------
+	auc=0.4709, AR=0.3920, AP=0.2932, AAE=0.7746
+iter-478: g_Leak=0.412, alpha=0.345, score=0.410, time=140.4s
+	-----------
+	auc=0.4202, AR=0.3683, AP=0.2735, AAE=0.7846
+iter-479: g_Leak=0.447, alpha=0.425, score=0.455, time=140.4s
+	-----------
+	auc=0.5542, AR=0.4417, AP=0.3407, AAE=1.3370
+iter-480: g_Leak=0.653, alpha=0.200, score=10.000, time=163.9s
+	-----------
+	auc=0.4950, AR=0.3929, AP=0.2878, AAE=0.7643
+iter-481: g_Leak=0.371, alpha=0.257, score=0.386, time=142.0s
+	-----------
+	auc=0.4880, AR=0.3973, AP=0.2967, AAE=0.7764
+iter-482: g_Leak=0.395, alpha=0.306, score=0.397, time=141.5s
+	-----------
+	auc=0.5541, AR=0.4166, AP=0.3184, AAE=1.5693
+iter-483: g_Leak=0.927, alpha=0.136, score=10.000, time=227.7s
+	-----------
+	auc=0.2282, AR=0.1231, AP=0.0652, AAE=1.1527
+iter-484: g_Leak=0.183, alpha=0.010, score=10.000, time=186.0s
+	-----------
+	auc=0.4321, AR=0.2774, AP=0.1806, AAE=1.3461
+iter-485: g_Leak=0.518, alpha=0.010, score=10.000, time=232.9s
+	-----------
+	auc=0.3583, AR=0.3153, AP=0.2269, AAE=1.1426
+iter-486: g_Leak=0.623, alpha=0.435, score=10.000, time=149.5s
+	-----------
+	auc=0.0935, AR=0.0732, AP=0.0403, AAE=1.1813
+iter-487: g_Leak=0.738, alpha=0.990, score=10.000, time=156.3s
+	-----------
+	auc=0.1333, AR=0.1176, AP=0.0710, AAE=0.9672
+iter-488: g_Leak=0.629, alpha=0.990, score=10.000, time=147.0s
+	-----------
+	auc=0.4356, AR=0.2767, AP=0.1826, AAE=1.3865
+iter-489: g_Leak=0.850, alpha=0.010, score=10.000, time=274.0s
+	-----------
+	auc=0.2309, AR=0.2203, AP=0.1490, AAE=0.6998
+iter-490: g_Leak=0.437, alpha=0.733, score=10.000, time=137.2s
+	-----------
+	auc=0.0642, AR=0.0383, AP=0.0186, AAE=1.3930
+iter-491: g_Leak=0.840, alpha=0.990, score=10.000, time=165.8s
+	-----------
+	auc=0.4176, AR=0.3375, AP=0.2298, AAE=0.5435
+iter-492: g_Leak=0.223, alpha=0.246, score=0.317, time=134.4s
+	-----------
+	auc=0.4181, AR=0.3369, AP=0.2289, AAE=0.5500
+iter-493: g_Leak=0.223, alpha=0.232, score=0.320, time=135.2s
+	-----------
+	auc=0.4216, AR=0.3401, AP=0.2330, AAE=0.5435
+iter-494: g_Leak=0.227, alpha=0.258, score=0.314, time=134.6s
+	-----------
+	auc=0.4955, AR=0.3945, AP=0.2900, AAE=0.7743
+iter-495: g_Leak=0.378, alpha=0.265, score=0.391, time=142.2s
+	-----------
+	auc=0.2701, AR=0.2688, AP=0.1832, AAE=0.6127
+iter-496: g_Leak=0.217, alpha=0.990, score=10.000, time=123.8s
+	-----------
+	auc=0.0756, AR=0.0437, AP=0.0162, AAE=1.4347
+iter-497: g_Leak=0.940, alpha=0.990, score=10.000, time=176.6s
+	-----------
+	auc=0.4094, AR=0.3376, AP=0.2340, AAE=0.5137
+iter-498: g_Leak=0.220, alpha=0.342, score=0.303, time=131.0s
+	-----------
+	auc=0.4090, AR=0.3399, AP=0.2370, AAE=0.5112
+iter-499: g_Leak=0.222, alpha=0.365, score=0.302, time=130.9s
+
+===== FINAL BEST RESULT =====
+Best params: g_Leak=0.235, alpha=0.334
+Best score: -0.300
+
+
+
+	-----------
+	auc=0.5453, AR=0.4270, AP=0.3302, AAE=1.5019
+iter-0: g_Leak=0.791, alpha=0.190, score=10.000, time=296.4s
+	-----------
+	auc=0.1787, AR=0.1493, AP=0.0917, AAE=1.3075
+iter-1: g_Leak=0.774, alpha=0.595, score=10.000, time=236.0s
+	-----------
+	auc=0.5359, AR=0.4230, AP=0.3063, AAE=1.0722
+iter-2: g_Leak=0.447, alpha=0.108, score=10.000, time=250.7s
+	-----------
+	auc=0.4746, AR=0.3962, AP=0.2988, AAE=0.8833
+iter-3: g_Leak=0.460, alpha=0.337, score=10.000, time=198.9s
+	-----------
+	auc=0.2712, AR=0.2650, AP=0.1764, AAE=0.7382
+iter-4: g_Leak=0.150, alpha=0.648, score=10.000, time=151.1s
+	-----------
+	auc=0.0879, AR=0.0980, AP=0.0590, AAE=1.6331
+iter-5: g_Leak=0.065, alpha=0.718, score=10.000, time=136.2s
+	-----------
+	auc=0.4228, AR=0.2636, AP=0.1729, AAE=1.4028
+iter-6: g_Leak=0.930, alpha=0.011, score=10.000, time=566.0s
+	-----------
+	auc=0.1820, AR=0.1340, AP=0.0538, AAE=1.4815
+iter-7: g_Leak=0.982, alpha=0.615, score=10.000, time=336.5s
+	-----------
+	auc=0.4950, AR=0.3412, AP=0.2335, AAE=1.4133
+iter-8: g_Leak=0.609, alpha=0.017, score=10.000, time=460.1s
+	-----------
+	auc=0.0239, AR=0.0254, AP=0.0144, AAE=1.3058
+iter-9: g_Leak=0.033, alpha=0.524, score=10.000, time=125.2s
+	-----------
+	auc=0.4973, AR=0.3889, AP=0.2724, AAE=1.1356
+iter-10: g_Leak=0.402, alpha=0.056, score=10.000, time=296.6s
+	-----------
+	auc=0.4029, AR=0.2727, AP=0.1745, AAE=1.6152
+iter-11: g_Leak=0.964, alpha=0.238, score=10.000, time=408.3s
+	-----------
+	auc=0.2084, AR=0.2155, AP=0.1391, AAE=1.1680
+iter-12: g_Leak=0.099, alpha=0.616, score=10.000, time=145.7s
+	-----------
+	auc=0.2307, AR=0.2225, AP=0.1504, AAE=0.6706
+iter-13: g_Leak=0.385, alpha=0.974, score=10.000, time=182.7s
+	-----------
+	auc=0.1975, AR=0.1877, AP=0.1241, AAE=0.7300
+iter-14: g_Leak=0.467, alpha=0.853, score=10.000, time=198.2s
+	-----------
+	auc=0.3230, AR=0.2834, AP=0.1988, AAE=1.2809
+iter-15: g_Leak=0.677, alpha=0.451, score=10.000, time=225.2s
+	-----------
+	auc=0.0071, AR=0.0072, AP=0.0042, AAE=nan
+iter-16: g_Leak=0.023, alpha=0.933, score=10.000, time=118.1s
+	-----------
+	auc=0.4210, AR=0.3660, AP=0.2712, AAE=1.0671
+iter-17: g_Leak=0.562, alpha=0.388, score=10.000, time=144.5s
+	-----------
+	auc=0.0246, AR=0.0241, AP=0.0132, AAE=0.9221
+iter-18: g_Leak=0.026, alpha=0.236, score=10.000, time=76.6s
+	-----------
+	auc=0.3144, AR=0.3046, AP=0.2126, AAE=0.5306
+iter-19: g_Leak=0.246, alpha=0.680, score=10.000, time=90.7s
+	-----------
+	auc=0.2525, AR=0.1706, AP=0.0624, AAE=1.5285
+iter-20: g_Leak=0.990, alpha=0.980, score=10.000, time=167.8s
+	-----------
+	auc=0.2299, AR=0.1580, AP=0.0581, AAE=1.5157
+iter-21: g_Leak=0.987, alpha=0.987, score=10.000, time=147.6s
+	-----------
+	auc=0.0218, AR=0.0171, AP=0.0093, AAE=1.2408
+iter-22: g_Leak=0.020, alpha=0.011, score=10.000, time=79.7s
+	-----------
+	auc=0.2003, AR=0.1401, AP=0.0521, AAE=1.5094
+iter-23: g_Leak=0.983, alpha=0.987, score=10.000, time=138.9s
+	-----------
+	auc=0.4309, AR=0.2701, AP=0.1770, AAE=1.5298
+iter-24: g_Leak=0.989, alpha=0.016, score=10.000, time=242.4s
+	-----------
+	auc=0.0102, AR=0.0108, AP=0.0061, AAE=nan
+iter-25: g_Leak=0.030, alpha=0.984, score=10.000, time=73.4s
+	-----------
+	auc=0.0169, AR=0.0132, AP=0.0077, AAE=1.2000
+iter-26: g_Leak=0.012, alpha=0.029, score=10.000, time=73.9s
+	-----------
+	auc=0.2301, AR=0.1580, AP=0.0581, AAE=1.5187
+iter-27: g_Leak=0.987, alpha=0.987, score=10.000, time=148.6s
+	-----------
+	auc=0.0057, AR=0.0053, AP=0.0035, AAE=nan
+iter-28: g_Leak=0.011, alpha=0.988, score=10.000, time=64.3s
+	-----------
+	auc=0.4695, AR=0.3081, AP=0.2090, AAE=1.5493
+iter-29: g_Leak=0.987, alpha=0.024, score=10.000, time=243.9s
+	-----------
+	auc=0.0234, AR=0.0186, AP=0.0100, AAE=1.3355
+iter-30: g_Leak=0.025, alpha=0.013, score=10.000, time=80.8s
+	-----------
+	auc=0.2275, AR=0.1563, AP=0.0576, AAE=1.5106
+iter-31: g_Leak=0.987, alpha=0.985, score=10.000, time=150.7s
+	-----------
+	auc=0.4208, AR=0.2624, AP=0.1700, AAE=1.5009
+iter-32: g_Leak=0.987, alpha=0.014, score=10.000, time=536.6s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0034, AAE=nan
+iter-33: g_Leak=0.013, alpha=0.988, score=10.000, time=133.0s
+	-----------
+	auc=0.0184, AR=0.0143, AP=0.0081, AAE=1.2068
+iter-34: g_Leak=0.011, alpha=0.014, score=10.000, time=130.6s
+	-----------
+	auc=0.2317, AR=0.1588, AP=0.0581, AAE=1.5241
+iter-35: g_Leak=0.987, alpha=0.977, score=10.000, time=368.8s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0034, AAE=nan
+iter-36: g_Leak=0.015, alpha=0.988, score=10.000, time=100.9s
+	-----------
+	auc=0.4026, AR=0.2450, AP=0.1565, AAE=1.4818
+iter-37: g_Leak=0.981, alpha=0.010, score=10.000, time=267.1s
+	-----------
+	auc=0.0176, AR=0.0138, AP=0.0079, AAE=1.3160
+iter-38: g_Leak=0.011, alpha=0.017, score=10.000, time=79.6s
+	-----------
+	auc=0.1933, AR=0.1360, AP=0.0507, AAE=1.5129
+iter-39: g_Leak=0.983, alpha=0.987, score=10.000, time=149.9s
+	-----------
+	auc=0.0062, AR=0.0062, AP=0.0036, AAE=nan
+iter-40: g_Leak=0.019, alpha=0.987, score=10.000, time=67.7s
+	-----------
+	auc=0.4083, AR=0.2502, AP=0.1606, AAE=1.5108
+iter-41: g_Leak=0.985, alpha=0.011, score=10.000, time=264.4s
+	-----------
+	auc=0.0208, AR=0.0170, AP=0.0092, AAE=1.2751
+iter-42: g_Leak=0.019, alpha=0.013, score=10.000, time=81.4s
+	-----------
+	auc=0.2473, AR=0.1673, AP=0.0611, AAE=1.5255
+iter-43: g_Leak=0.989, alpha=0.989, score=10.000, time=163.6s
+	-----------
+	auc=0.0062, AR=0.0061, AP=0.0036, AAE=nan
+iter-44: g_Leak=0.019, alpha=0.985, score=10.000, time=66.6s
+	-----------
+	auc=0.4233, AR=0.2639, AP=0.1710, AAE=1.5311
+iter-45: g_Leak=0.989, alpha=0.015, score=10.000, time=261.1s
+	-----------
+	auc=0.0200, AR=0.0155, AP=0.0086, AAE=1.2127
+iter-46: g_Leak=0.014, alpha=0.012, score=10.000, time=75.7s
+	-----------
+	auc=0.1287, AR=0.0887, AP=0.0334, AAE=1.4577
+iter-47: g_Leak=0.971, alpha=0.990, score=10.000, time=134.5s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0035, AAE=nan
+iter-48: g_Leak=0.012, alpha=0.990, score=10.000, time=64.2s
+	-----------
+	auc=0.4184, AR=0.2601, AP=0.1678, AAE=1.5126
+iter-49: g_Leak=0.987, alpha=0.013, score=10.000, time=263.3s
+	-----------
+	auc=0.0175, AR=0.0138, AP=0.0079, AAE=1.2634
+iter-50: g_Leak=0.012, alpha=0.025, score=10.000, time=77.1s
+	-----------
+	auc=0.1361, AR=0.0946, AP=0.0354, AAE=1.4616
+iter-51: g_Leak=0.973, alpha=0.982, score=10.000, time=139.2s
+	-----------
+	auc=0.0062, AR=0.0061, AP=0.0036, AAE=nan
+iter-52: g_Leak=0.019, alpha=0.990, score=10.000, time=67.2s
+	-----------
+	auc=0.4541, AR=0.2935, AP=0.1961, AAE=1.5350
+iter-53: g_Leak=0.987, alpha=0.020, score=10.000, time=258.6s
+	-----------
+	auc=0.0193, AR=0.0162, AP=0.0090, AAE=1.2823
+iter-54: g_Leak=0.018, alpha=0.021, score=10.000, time=77.5s
+	-----------
+	auc=0.2265, AR=0.1556, AP=0.0573, AAE=1.5107
+iter-55: g_Leak=0.987, alpha=0.983, score=10.000, time=150.1s
+	-----------
+	auc=0.4191, AR=0.2606, AP=0.1686, AAE=1.4969
+iter-56: g_Leak=0.984, alpha=0.013, score=10.000, time=261.9s
+	-----------
+	auc=0.2355, AR=0.1610, AP=0.0590, AAE=1.5178
+iter-57: g_Leak=0.988, alpha=0.989, score=10.000, time=153.0s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0034, AAE=nan
+iter-58: g_Leak=0.014, alpha=0.989, score=10.000, time=65.2s
+	-----------
+	auc=0.0189, AR=0.0155, AP=0.0086, AAE=1.3339
+iter-59: g_Leak=0.015, alpha=0.015, score=10.000, time=76.8s
+	-----------
+	auc=0.4092, AR=0.2508, AP=0.1613, AAE=1.4684
+iter-60: g_Leak=0.979, alpha=0.011, score=10.000, time=255.5s
+	-----------
+	auc=0.0057, AR=0.0055, AP=0.0032, AAE=nan
+iter-61: g_Leak=0.017, alpha=0.985, score=10.000, time=67.1s
+	-----------
+	auc=0.0185, AR=0.0153, AP=0.0087, AAE=1.2875
+iter-62: g_Leak=0.015, alpha=0.020, score=10.000, time=75.8s
+	-----------
+	auc=0.2029, AR=0.1420, AP=0.0525, AAE=1.5017
+iter-63: g_Leak=0.984, alpha=0.986, score=10.000, time=141.7s
+	-----------
+	auc=0.0063, AR=0.0063, AP=0.0037, AAE=nan
+iter-64: g_Leak=0.020, alpha=0.988, score=10.000, time=67.5s
+	-----------
+	auc=0.4247, AR=0.2651, AP=0.1723, AAE=1.5249
+iter-65: g_Leak=0.989, alpha=0.015, score=10.000, time=261.9s
+	-----------
+	auc=0.0210, AR=0.0162, AP=0.0088, AAE=1.1310
+iter-66: g_Leak=0.016, alpha=0.011, score=10.000, time=78.2s
+	-----------
+	auc=0.2174, AR=0.1507, AP=0.0554, AAE=1.4958
+iter-67: g_Leak=0.986, alpha=0.988, score=10.000, time=146.6s
+	-----------
+	auc=0.4122, AR=0.2538, AP=0.1636, AAE=1.5072
+iter-68: g_Leak=0.987, alpha=0.012, score=10.000, time=263.0s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0034, AAE=nan
+iter-69: g_Leak=0.015, alpha=0.988, score=10.000, time=66.7s
+	-----------
+	auc=0.0194, AR=0.0160, AP=0.0089, AAE=1.2818
+iter-70: g_Leak=0.017, alpha=0.015, score=10.000, time=77.8s
+	-----------
+	auc=0.2176, AR=0.1508, AP=0.0556, AAE=1.4966
+iter-71: g_Leak=0.986, alpha=0.975, score=10.000, time=146.9s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0035, AAE=nan
+iter-72: g_Leak=0.012, alpha=0.986, score=10.000, time=66.0s
+	-----------
+	auc=0.4688, AR=0.3073, AP=0.2079, AAE=1.5341
+iter-73: g_Leak=0.984, alpha=0.023, score=10.000, time=257.8s
+	-----------
+	auc=0.0194, AR=0.0143, AP=0.0079, AAE=1.1430
+iter-74: g_Leak=0.013, alpha=0.010, score=10.000, time=76.8s
+	-----------
+	auc=0.1919, AR=0.1353, AP=0.0502, AAE=1.5129
+iter-75: g_Leak=0.983, alpha=0.986, score=10.000, time=142.1s
+	-----------
+	auc=0.0192, AR=0.0147, AP=0.0082, AAE=1.1854
+iter-76: g_Leak=0.012, alpha=0.012, score=10.000, time=75.8s
+	-----------
+	auc=0.0057, AR=0.0055, AP=0.0033, AAE=nan
+iter-77: g_Leak=0.016, alpha=0.986, score=10.000, time=67.5s
+	-----------
+	auc=0.4181, AR=0.2589, AP=0.1688, AAE=1.4488
+iter-78: g_Leak=0.972, alpha=0.012, score=10.000, time=254.2s
+	-----------
+	auc=0.1691, AR=0.1204, AP=0.0456, AAE=1.5011
+iter-79: g_Leak=0.979, alpha=0.990, score=10.000, time=138.2s
+	-----------
+	auc=0.4049, AR=0.2465, AP=0.1572, AAE=1.5061
+iter-80: g_Leak=0.986, alpha=0.011, score=10.000, time=261.4s
+	-----------
+	auc=0.0077, AR=0.0078, AP=0.0045, AAE=nan
+iter-81: g_Leak=0.024, alpha=0.989, score=10.000, time=69.1s
+	-----------
+	auc=0.0190, AR=0.0148, AP=0.0084, AAE=1.3162
+iter-82: g_Leak=0.012, alpha=0.014, score=10.000, time=75.1s
+	-----------
+	auc=0.1744, AR=0.1241, AP=0.0468, AAE=1.4926
+iter-83: g_Leak=0.980, alpha=0.983, score=10.000, time=134.9s
+	-----------
+	auc=0.4278, AR=0.2691, AP=0.1757, AAE=1.5211
+iter-84: g_Leak=0.988, alpha=0.015, score=10.000, time=238.7s
+	-----------
+	auc=0.0057, AR=0.0053, AP=0.0035, AAE=nan
+iter-85: g_Leak=0.011, alpha=0.988, score=10.000, time=63.0s
+	-----------
+	auc=0.0173, AR=0.0134, AP=0.0077, AAE=1.2913
+iter-86: g_Leak=0.011, alpha=0.023, score=10.000, time=71.5s
+	-----------
+	auc=0.2121, AR=0.1476, AP=0.0542, AAE=1.4915
+iter-87: g_Leak=0.985, alpha=0.975, score=10.000, time=136.3s
+	-----------
+	auc=0.4484, AR=0.2891, AP=0.1925, AAE=1.5224
+iter-88: g_Leak=0.987, alpha=0.019, score=10.000, time=225.8s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0034, AAE=nan
+iter-89: g_Leak=0.015, alpha=0.988, score=10.000, time=62.6s
+	-----------
+	auc=0.0178, AR=0.0144, AP=0.0082, AAE=1.2951
+iter-90: g_Leak=0.013, alpha=0.022, score=10.000, time=70.5s
+	-----------
+	auc=0.2132, AR=0.1483, AP=0.0544, AAE=1.4921
+iter-91: g_Leak=0.985, alpha=0.982, score=10.000, time=135.3s
+	-----------
+	auc=0.4140, AR=0.2551, AP=0.1653, AAE=1.4925
+iter-92: g_Leak=0.983, alpha=0.012, score=10.000, time=227.3s
+	-----------
+	auc=0.0057, AR=0.0054, AP=0.0034, AAE=nan
+iter-93: g_Leak=0.013, alpha=0.986, score=10.000, time=62.5s
+	-----------
+	auc=0.0170, AR=0.0132, AP=0.0076, AAE=1.3079
+iter-94: g_Leak=0.010, alpha=0.017, score=10.000, time=69.7s
+	-----------
+	auc=0.2190, AR=0.1517, AP=0.0559, AAE=1.4935
+iter-95: g_Leak=0.986, alpha=0.989, score=10.000, time=136.9s
+	-----------
+	auc=0.4437, AR=0.2841, AP=0.1886, AAE=1.5209
+iter-96: g_Leak=0.985, alpha=0.018, score=10.000, time=226.7s
+	-----------
+	auc=0.0200, AR=0.0164, AP=0.0089, AAE=1.2128
+iter-97: g_Leak=0.017, alpha=0.014, score=10.000, time=74.6s
+	-----------
+	auc=0.0058, AR=0.0054, AP=0.0035, AAE=nan
+iter-98: g_Leak=0.012, alpha=0.989, score=10.000, time=62.6s
+	-----------
+	auc=0.0058, AR=0.0054, AP=0.0035, AAE=nan
+iter-99: g_Leak=0.012, alpha=0.984, score=10.000, time=62.3s
+
+===== FINAL BEST RESULT =====
+Best params: g_Leak=0.791, alpha=0.190
+Best score: -10.000

@@ -1,31 +1,16 @@
-"`
 **/__pycache__
 **/.vscode
 **/.venv/
-"`
-
-"`
-**/VisionEgg.log
-"`
 
 
-"`
-comparison_models/FlowDiffuser/
-comparison_models/MemFlow/
-comparison_models/RAFT/
-comparison_models/SEA_RAFT/
-comparison_models/StreamFlow/
-comparison_models/vSTMD/
-"`
 
-"`
+!comparison_models/LC_neuron
+!comparison_models/custom_API.py
+comparison_models/**
+
+
 old_**
-"`
 
-"`
+
 **.zip
-"`
 
-"`
-.vscode/
-"`
