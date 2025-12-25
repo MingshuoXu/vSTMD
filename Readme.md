@@ -46,28 +46,57 @@ The project is in the pre-publication phase. Some code and data have been omitte
 
 ## Repository Contents
 
-- **`comparison_models/`**: under update
+- **`comparison_models/`**: 
+  - `custom_API.py`: custom API for comparison models.
+  - `LC_neuron.py`: LC11 and LC18 neuron models.
 
 - **`demo/`**: a demo for vSTMD and vSTMD-F.
 
-- **`effective_of_direction/`**: Code for evaluating the effectiveness of direction.
+- **`demo_videos/`**: some example videos and gifs.
 
-- **`example_result/`**: some example videos and gifs.
+- **`effective_of_direction/`**: Code for evaluating the effectiveness of direction (Sect. V-B2 in the main text).
+  - `show_result.ipynb`: Tab II in the main text, and Tab. III in the supplementary material.
 
-- **`experience_in_RIST/`**: evaluation and ablation in RIST.
+- **`evaluate_result/`**: some results.
+  - `RIST/`: results for RIST dataset.
+  - `vSTMD_Panorama_Stimuli/`: results for panoramic stimuli.
+  - `XS-VID/`: results for XS-VID dataset.
 
-- **`groundtruth/`**: Some groundtruth in the panoramic datasets
+- **`experience_in_RIST/`**: experiments in RIST.
+  - `ablation/`: ablation studies (Sect. V-D in the main text).
+    - `show_ablation_result.ipynb`: Tab. IV in the main text.
+  - `comparison/`: comparison with other models (Sect. V-C in the main text).
+    - `show_result_in_RIST.ipynb`: Tab. III in the main text.
+  - `parameter_analysis/`: parameter analysis.
+    - `parameter_analysis.py`: Fig. 4 in the supplementary material.
+  - `statistics_mean_para/`: statistical results for mean parameter settings.
+    - `velocity_range.py`: Fig. 1-3 in the supplementary material.
+  - `visulize_for_RIST/`: visualization for RIST dataset. (Sect. V-C in the main text).
+    - `visulize_by_plt.py`: Fig. 8 in the main text.
 
-- **`new_correlation_modelling/`**: for principle visualization
+- **`experience_in_XS-VID/`**: experiments in XS-VID dataset (Sect. VI-C2 in the main text).
+  - `show_result_in_XS-VID.ipynb`: Tab. VI in the main text.
 
-- **`parameter_analysis/`**: parameter analysis
+- **`groundtruth/`**: Some groundtruth in the panoramic datasets (Sect. V-B in the main text).
+
+- **`maritime/`**: maritime search and rescue related code. (Sect. VI-C1 in the main text).
+  - `inference_model.py`: Tab. I and II in the supplementary material.
+  - `model_demo.py`: maritime demo for vSTMD and vSTMD-F. Fig. 6 in the supplementary material.
+
+- **`modelling_plot/`**: for principle visualization (Sect. IV in the main text).
+  - `various_velocity_effectiveness.py`: Fig. 3 in the main text.
+  - `leaky_integrate_model.m`: Fig. 4 in the main text.
+  - `direction_modelling.m`: Fig. 6 in the main text.
 
 - **`response_curve/`**: response curves
+  - `size_and_contrast_cruve.py`: Fig. 5 in the supplementary material.
 
-- **`result/`**: some evaluation results.
+- **`timecost_analysis/`**: time cost analysis (Sect. V-E in the main text).
+  - `module_analysis.py`: Tab. V in the main text.
+  - `CPU_vs_GPU_analysis.py`: Tab III　in the main text.
  
-- **`velocity-AUC-curve/`**: module comparison between dynamic-and-correlation and delay-and-correlation.
-
+- **`velocity-AUC-curve/`**: module comparison between dynamic-and-correlation and delay-and-correlation. (Sect. V-B1 in the main text).
+  - visualize_velocity_AUC_curve.py: Fig. 7 in the main text.
 
 ## Limitations
 - The full implementation, including parameter configurations and complete data processing pipelines, will be released after the publication of the related article.
