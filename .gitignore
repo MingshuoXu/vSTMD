@@ -14,3 +14,8 @@ old_**
 
 **.zip
 
+maritime/videos/**
+maritime/results/**
+maritime/annotations/**
+
+**.pkl

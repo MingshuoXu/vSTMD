@@ -206,8 +206,8 @@ def main_inference(max_workers = 8):
                 futures.append(executor.submit(ESTMD_task, v, tau))
                 futures.append(executor.submit(DSTMD_task, v, tau))
                 futures.append(executor.submit(FeedbackSTMD_task, v, tau))
-            futures.append(executor.submit(vSTMD_task, v))
-            futures.append(executor.submit(vSTMD_F_task, v))
+            # futures.append(executor.submit(vSTMD_task, v))
+            # futures.append(executor.submit(vSTMD_F_task, v))
 
 
         for future in tqdm(concurrent.futures.as_completed(futures), 
@@ -318,8 +318,8 @@ def collect_results():
     
 
 if __name__ == '__main__':
-    main_inference(12)
-    main_evaluation(12)
+    main_inference(6)
+    main_evaluation(6)
     collect_results()
 
 

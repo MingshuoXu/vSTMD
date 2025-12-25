@@ -31,7 +31,7 @@ def update_data(updated_dict):
     existing_data.update(updated_dict)
 
     with open(file_path, 'w') as json_file:
-        json.dump(existing_data, json_file )
+        json.dump(existing_data, json_file, indent=4)
 
 def _task_GT(datasetName):
     # Load annotations
@@ -150,16 +150,18 @@ def _task_STMD(modelName, datasetName, startFrame, endFrame):
     directions = []
     j = 0
     for i in range(startFrame, endFrame):
+        gt_x, gt_y, w, h = bboxData[i]
+
         if len(respResults[i]) == 0:
-            responses.append((-1, -1, -1))
+            responses.append((gt_x, gt_y, 0))
             directions.append(math.nan)  
             continue
 
-        x, y, w, h = bboxData[i]
+        
         
         filtered_pairs = [(a_row[2], b_row[2], a_row[0], a_row[1]) 
                           for a_row, b_row in zip(respResults[i], direResluts[j]) 
-                          if (x - 1 <= a_row[0] <= x + w + 1) and (y - 1 <= a_row[1] <= y + h + 1)
+                          if (gt_x - 1 <= a_row[0] <= gt_x + w + 1) and (gt_y - 1 <= a_row[1] <= gt_y + h + 1)
                           ]
 
         if filtered_pairs:  # 如果有满足条件的元素
@@ -168,12 +170,12 @@ def _task_STMD(modelName, datasetName, startFrame, endFrame):
             j += 1
             if abs(dire - direGTs[i]) < np.pi:
                 directions.append(dire)  
-                responses.append((x, y, 1))  # 1 is a placeholder for confidence
+                responses.append((gt_x, gt_y, 1))  # 1 is a placeholder for confidence
             else:
-                responses.append((-1, -1, -1))
+                responses.append((gt_x, gt_y, 0))
                 directions.append(math.nan)
         else:
-            responses.append((-1, -1, -1))
+            responses.append((gt_x, gt_y, 0))
             directions.append(math.nan)
 
     update_data({f'{datasetName}_{modelName}': {'response': responses,

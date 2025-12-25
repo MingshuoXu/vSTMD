@@ -10,9 +10,9 @@ import config_task
 from config_task import ablationModel, datasetInfo, ristDatasetPath, modelOptFolder
 from smalltargetmotiondetectors.api import evaluate # type: ignore
 
-def main_infer_STMD():
+def main_infer_STMD(max_workers=8):
 
-    with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
         futures = []
 
         for datasetName in datasetInfo.keys():
@@ -61,6 +61,7 @@ if __name__ == "__main__":
     
     print("start time:", datetime.now())
 
-    main_infer_STMD()
+    main_infer_STMD(12)
+    # _task('vSTMD_without_CDGC', 'GX010071-1')   
 
     print("end time:", datetime.now())

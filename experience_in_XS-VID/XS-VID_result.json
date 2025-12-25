@@ -1,0 +1,312 @@
+{
+    "AR_es": {
+        "UAVTOD_DJI0824Part5_0": {
+            "yoloft-L": 0.6722205392305362,
+            "FracSTMD": 0.21084519842471977,
+            "vSTMD_F": 0.5649803089972736
+        },
+        "UAVTOD_DJI0824Part5_1": {
+            "yoloft-L": 0.7029023746701847,
+            "FracSTMD": 0.26437994722955144,
+            "vSTMD_F": 0.6147757255936676
+        },
+        "UAVTOD_DJI0827Part1_0": {
+            "yoloft-L": 0.37572254335260113,
+            "FracSTMD": 0.3495409724583475,
+            "vSTMD_F": 0.7252635158109486
+        },
+        "UAVTOD_DJI0827Part1_1": {
+            "yoloft-L": 0.4178136059771923,
+            "FracSTMD": 0.23515532835233977,
+            "vSTMD_F": 0.6415650806134486
+        },
+        "UAVTOD_DJI0828Part1_0": {
+            "yoloft-L": 0.47015873015873016,
+            "FracSTMD": 0.12825396825396826,
+            "vSTMD_F": 0.5425396825396825
+        },
+        "UAVTOD_DJI0828Part1_1": {
+            "yoloft-L": 0.4284188034188034,
+            "FracSTMD": 0.11217948717948718,
+            "vSTMD_F": 0.5833333333333334
+        },
+        "UAVTOD_DJI0830Part3_0": {
+            "yoloft-L": 0.21298701298701297,
+            "FracSTMD": 0.2961038961038961,
+            "vSTMD_F": 0.37922077922077924
+        },
+        "UAVTOD_DJI0830Part3_1": {
+            "yoloft-L": 0.8243243243243243,
+            "FracSTMD": 0.24324324324324326,
+            "vSTMD_F": 0.5945945945945946
+        },
+        "UAVTOD_DJI0833Part4_0": {
+            "yoloft-L": 0.813953488372093,
+            "FracSTMD": 0.1511627906976744,
+            "vSTMD_F": 0.813953488372093
+        },
+        "UAVTOD_DJI0833Part4_1": {
+            "yoloft-L": 0.8876404494382022,
+            "FracSTMD": 0.2247191011235955,
+            "vSTMD_F": 0.797752808988764
+        },
+        "UAVTOD_DJI0839Part3_0": {
+            "yoloft-L": 0.16458333333333333,
+            "FracSTMD": 0.03958333333333333,
+            "vSTMD_F": 0.5875
+        },
+        "UAVTOD_DJI0839Part3_1": {
+            "yoloft-L": 0.31316725978647686,
+            "FracSTMD": 0.2206405693950178,
+            "vSTMD_F": 0.708185053380783
+        }
+    },
+    "AR_es_move": {
+        "UAVTOD_DJI0824Part5_0": {
+            "yoloft-L": 0.7057308435286542,
+            "FracSTMD": 0.19929169349645848,
+            "vSTMD_F": 0.5701867353509337
+        },
+        "UAVTOD_DJI0824Part5_1": {
+            "yoloft-L": 0.7505787037037037,
+            "FracSTMD": 0.25,
+            "vSTMD_F": 0.6313657407407407
+        },
+        "UAVTOD_DJI0827Part1_0": {
+            "yoloft-L": 0.7262872628726287,
+            "FracSTMD": 0.45867208672086723,
+            "vSTMD_F": 0.8197831978319783
+        },
+        "UAVTOD_DJI0827Part1_1": {
+            "yoloft-L": 0.49742962056303547,
+            "FracSTMD": 0.2423500611995104,
+            "vSTMD_F": 0.6624235006119951
+        },
+        "UAVTOD_DJI0828Part1_0": {
+            "yoloft-L": 0.6294913672421839,
+            "FracSTMD": 0.1404573028464769,
+            "vSTMD_F": 0.6052263182454503
+        },
+        "UAVTOD_DJI0828Part1_1": {
+            "yoloft-L": 0.5608391608391609,
+            "FracSTMD": 0.13286713286713286,
+            "vSTMD_F": 0.6097902097902098
+        },
+        "UAVTOD_DJI0830Part3_0": {
+            "yoloft-L": 0.5454545454545454,
+            "FracSTMD": 0.14772727272727273,
+            "vSTMD_F": 0.5568181818181818
+        },
+        "UAVTOD_DJI0830Part3_1": {
+            "yoloft-L": 0.8243243243243243,
+            "FracSTMD": 0.24324324324324326,
+            "vSTMD_F": 0.5945945945945946
+        },
+        "UAVTOD_DJI0833Part4_0": {
+            "yoloft-L": 0.813953488372093,
+            "FracSTMD": 0.1511627906976744,
+            "vSTMD_F": 0.813953488372093
+        },
+        "UAVTOD_DJI0833Part4_1": {
+            "yoloft-L": 0.8876404494382022,
+            "FracSTMD": 0.2247191011235955,
+            "vSTMD_F": 0.797752808988764
+        },
+        "UAVTOD_DJI0839Part3_0": {
+            "yoloft-L": 0.49166666666666664,
+            "FracSTMD": 0.10833333333333334,
+            "vSTMD_F": 0.6416666666666667
+        },
+        "UAVTOD_DJI0839Part3_1": {
+            "yoloft-L": 0.47802197802197804,
+            "FracSTMD": 0.31868131868131866,
+            "vSTMD_F": 0.7472527472527473
+        }
+    },
+    "AR_et": {
+        "UAVTOD_DJI0824Part5_0": {
+            "yoloft-L": 0.09411764705882353,
+            "FracSTMD": 0.11176470588235295,
+            "vSTMD_F": 0.28823529411764703
+        },
+        "UAVTOD_DJI0824Part5_1": {
+            "yoloft-L": 0.09734513274336283,
+            "FracSTMD": 0.26548672566371684,
+            "vSTMD_F": 0.46017699115044247
+        },
+        "UAVTOD_DJI0827Part1_0": {
+            "yoloft-L": 0.017467248908296942,
+            "FracSTMD": 0.27510917030567683,
+            "vSTMD_F": 0.5021834061135371
+        },
+        "UAVTOD_DJI0827Part1_1": {
+            "yoloft-L": 0.07006369426751592,
+            "FracSTMD": 0.2908704883227176,
+            "vSTMD_F": 0.5583864118895966
+        },
+        "UAVTOD_DJI0828Part1_0": {
+            "yoloft-L": 0.216,
+            "FracSTMD": 0.144,
+            "vSTMD_F": 0.512
+        },
+        "UAVTOD_DJI0828Part1_1": {
+            "yoloft-L": 0.03571428571428571,
+            "FracSTMD": 0.32142857142857145,
+            "vSTMD_F": 0.5
+        },
+        "UAVTOD_DJI0830Part3_0": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 0.0,
+            "vSTMD_F": 0.3333333333333333
+        },
+        "UAVTOD_DJI0830Part3_1": {
+            "yoloft-L": 0.2,
+            "FracSTMD": 0.0,
+            "vSTMD_F": 0.4
+        },
+        "UAVTOD_DJI0833Part4_0": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 0.6666666666666666,
+            "vSTMD_F": 1.0
+        },
+        "UAVTOD_DJI0833Part4_1": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 1.0,
+            "vSTMD_F": 1.0
+        },
+        "UAVTOD_DJI0839Part3_0": {
+            "yoloft-L": 0.05555555555555555,
+            "FracSTMD": 0.3333333333333333,
+            "vSTMD_F": 0.3888888888888889
+        },
+        "UAVTOD_DJI0839Part3_1": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 0.26666666666666666,
+            "vSTMD_F": 0.4
+        }
+    },
+    "AR_et_move": {
+        "UAVTOD_DJI0824Part5_0": {
+            "yoloft-L": 0.1839080459770115,
+            "FracSTMD": 0.13793103448275862,
+            "vSTMD_F": 0.367816091954023
+        },
+        "UAVTOD_DJI0824Part5_1": {
+            "yoloft-L": 0.08737864077669903,
+            "FracSTMD": 0.24271844660194175,
+            "vSTMD_F": 0.46601941747572817
+        },
+        "UAVTOD_DJI0827Part1_0": {
+            "yoloft-L": 0.031746031746031744,
+            "FracSTMD": 0.4444444444444444,
+            "vSTMD_F": 0.626984126984127
+        },
+        "UAVTOD_DJI0827Part1_1": {
+            "yoloft-L": 0.04827586206896552,
+            "FracSTMD": 0.20689655172413793,
+            "vSTMD_F": 0.6655172413793103
+        },
+        "UAVTOD_DJI0828Part1_0": {
+            "yoloft-L": 0.2066115702479339,
+            "FracSTMD": 0.14049586776859505,
+            "vSTMD_F": 0.512396694214876
+        },
+        "UAVTOD_DJI0828Part1_1": {
+            "yoloft-L": 0.037037037037037035,
+            "FracSTMD": 0.3333333333333333,
+            "vSTMD_F": 0.48148148148148145
+        },
+        "UAVTOD_DJI0830Part3_0": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 0.0,
+            "vSTMD_F": 0.3333333333333333
+        },
+        "UAVTOD_DJI0830Part3_1": {
+            "yoloft-L": 0.2,
+            "FracSTMD": 0.0,
+            "vSTMD_F": 0.4
+        },
+        "UAVTOD_DJI0833Part4_0": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 0.6666666666666666,
+            "vSTMD_F": 1.0
+        },
+        "UAVTOD_DJI0833Part4_1": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 1.0,
+            "vSTMD_F": 1.0
+        },
+        "UAVTOD_DJI0839Part3_0": {
+            "yoloft-L": 0.09090909090909091,
+            "FracSTMD": 0.45454545454545453,
+            "vSTMD_F": 0.2727272727272727
+        },
+        "UAVTOD_DJI0839Part3_1": {
+            "yoloft-L": 0.0,
+            "FracSTMD": 0.4,
+            "vSTMD_F": 0.4
+        }
+    },
+    "FPS": {
+        "UAVTOD_DJI0824Part5_0": {
+            "yoloft-L": 7.336469796918403,
+            "FracSTMD": 193.49372543463906,
+            "vSTMD_F": 145.32218073755413
+        },
+        "UAVTOD_DJI0824Part5_1": {
+            "yoloft-L": 7.756229167395139,
+            "FracSTMD": 219.16757931031927,
+            "vSTMD_F": 138.70634014344185
+        },
+        "UAVTOD_DJI0827Part1_0": {
+            "yoloft-L": 7.865200694333377,
+            "FracSTMD": 211.19596595015398,
+            "vSTMD_F": 140.1746153963499
+        },
+        "UAVTOD_DJI0827Part1_1": {
+            "yoloft-L": 8.139005002967842,
+            "FracSTMD": 206.70440753543636,
+            "vSTMD_F": 128.64157245376484
+        },
+        "UAVTOD_DJI0828Part1_0": {
+            "yoloft-L": 7.755175800066957,
+            "FracSTMD": 204.05994081237873,
+            "vSTMD_F": 140.90881210864327
+        },
+        "UAVTOD_DJI0828Part1_1": {
+            "yoloft-L": 7.776531983698816,
+            "FracSTMD": 207.1445924306419,
+            "vSTMD_F": 135.28536093357036
+        },
+        "UAVTOD_DJI0830Part3_0": {
+            "yoloft-L": 7.756238202978865,
+            "FracSTMD": 217.34942888535684,
+            "vSTMD_F": 136.75158094946502
+        },
+        "UAVTOD_DJI0830Part3_1": {
+            "yoloft-L": 7.753095989142536,
+            "FracSTMD": 222.25121004932927,
+            "vSTMD_F": 137.5602353793655
+        },
+        "UAVTOD_DJI0833Part4_0": {
+            "yoloft-L": 8.17381077288576,
+            "FracSTMD": 217.67452964148814,
+            "vSTMD_F": 124.76875883980449
+        },
+        "UAVTOD_DJI0833Part4_1": {
+            "yoloft-L": 8.139602340338016,
+            "FracSTMD": 226.41600059979757,
+            "vSTMD_F": 120.29148479051784
+        },
+        "UAVTOD_DJI0839Part3_0": {
+            "yoloft-L": 8.115928321500428,
+            "FracSTMD": 221.3040176193339,
+            "vSTMD_F": 126.3520402741323
+        },
+        "UAVTOD_DJI0839Part3_1": {
+            "yoloft-L": 8.100356832023074,
+            "FracSTMD": 216.23105556268933,
+            "vSTMD_F": 121.03559245293306
+        }
+    }
+}

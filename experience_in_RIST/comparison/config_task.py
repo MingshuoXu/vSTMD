@@ -1,5 +1,6 @@
 import os
 import sys
+import platform
 
 ProjectPath = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(ProjectPath)
@@ -11,7 +12,8 @@ sys.path.append(apiOpticFlowPth)
 
 # STMD models in task
 stmdModelList = (
-    'ESTMD', 'DSTMD', 'FracSTMD',  # some backbone models
+    'ESTMD', 'DSTMD', 
+    'FracSTMD',  # some backbone models
     'STMDPlus',  # with contrast patheway
     'ApgSTMD',  # with attention and prediction mechanism
     'FeedbackSTMD', 'FSTMD',  # with Feedback pathway
@@ -53,17 +55,29 @@ datasetInfo = {
     'GX010337-1': list(range(700)),
 }
 
-# dataset path
-ristDatasetPath = os.path.join('D:/', 'STMD_Dataset', 'RIST')
 
-# model inference output folder
-modelOptFolder = os.path.join('D:/', 'STMD_Dataset', 'inference_RIST')
+if platform.system() == 'Linux':
+    ristDatasetPath = os.path.join('/mnt', 'windows_D', 'STMD_Dataset', 'RIST')
+    
+    # model inference output folder
+    modelOptFolder = os.path.join('/mnt', 'windows_D', 'STMD_Dataset', 'inference_RIST')
+    # evaluation result folder
+    evaluateResultFolder = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+        'evaluate_result', 'RIST',
+        )
+else:
+    # dataset path
+    ristDatasetPath = os.path.join('D:/', 'STMD_Dataset', 'RIST')
 
-# evaluation result folder
-evaluateResultFolder = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
-    'evaluate_result', 'RIST',
-    )
+    # model inference output folder
+    modelOptFolder = os.path.join('D:/', 'STMD_Dataset', 'inference_RIST')
+
+    # evaluation result folder
+    evaluateResultFolder = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+        'evaluate_result', 'RIST',
+        )
 
 
 

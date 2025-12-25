@@ -77,7 +77,7 @@ def _task(modelName, datasetName, startFrame, endFrame):
 
 def main_evaluate_location():
 
-    for modelName in tqdm(stmdModelList+LC_model_list):
+    for modelName in tqdm(stmdModelList+LC_model_list, desc='Evaluating location'):
 
         with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
             futures = []
@@ -89,12 +89,7 @@ def main_evaluate_location():
                                         )   
                 futures.append(future)   
 
-            for future in tqdm(
-                concurrent.futures.as_completed(futures), 
-                desc='evaluate task',
-                total=len(futures),
-                leave=False,
-                ):
+            for future in concurrent.futures.as_completed(futures):
                 future.result()
 
 

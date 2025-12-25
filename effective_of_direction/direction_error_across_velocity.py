@@ -21,7 +21,6 @@ sys.path.append(apiOpticFlowPth)
 from custom_API import (CustomFlowDiffuser, CustomRAFT, CustomSEA_RAFT,  # type: ignore
                         CustomMemFlow, CustomStreamFlow, CustomDpFlow, 
                         img2tensor, flow_to_ang) 
-from utils import custom_serialize
 
 directionalStmdList = (
     'DSTMD', 'STMDPlus', 'ApgSTMD', 
@@ -226,23 +225,20 @@ def _inference_STMD_task(model_name, velocity, timeEnd, device='cpu'):
     model = instancing_model(model_name, device)
 
     # set the parameter list
-    tau = round(5 / (velocity / 1000))
+    tau = max(round(5 / (velocity / 1000)), 2)
 
     if model_name == 'DSTMD':
-        model.set_parameter( n4 = round(tau*0.3), tau4 = round(tau*0.6), 
-                                n5 = round(tau*0.5), tau5 = tau, 
-                                n6 = round(tau*0.8), tau6 = round(tau*1.6)
-                                )  
+        model.set_parameter(n4 = round(tau*0.3), tau4 = round(tau*0.6), 
+                            n5 = round(tau*0.5), tau5 = tau, 
+                            n6 = round(tau*0.8), tau6 = round(tau*1.6) )  
     elif model_name == 'STMDPlus':
-        model.set_parameter( n3 = round(tau*0.3), tau3 = round(tau*0.6), 
-                                n4 = round(tau*0.5), tau4 = tau, 
-                                n5 = round(tau*0.8), tau5 = round(tau*1.6)
-                                )  
+        model.set_parameter(n3 = round(tau*0.3), tau3 = round(tau*0.6), 
+                            n4 = round(tau*0.5), tau4 = tau, 
+                            n5 = round(tau*0.8), tau5 = round(tau*1.6) )  
     elif model_name == 'ApgSTMD':
-        model.set_parameter( n3 = round(tau*0.3), tau3 = round(tau*0.6), 
-                                n4 = round(tau*0.5), tau4 = tau, 
-                                n5 = round(tau*0.8), tau5 = round(tau*1.6)
-                                )            
+        model.set_parameter(n3 = round(tau*0.3), tau3 = round(tau*0.6), 
+                            n4 = round(tau*0.5), tau4 = tau, 
+                            n5 = round(tau*0.8), tau5 = round(tau*1.6) )         
 
     # init
     model.init_config()
@@ -275,8 +271,8 @@ def main_inference(max_workers=6):
         for v in V_LIST:
             for model_name in directionalStmdList[:3]:
                 futures.append(executor.submit(_inference_STMD_task, model_name, v, time_end, 'cpu'))
-            for model_name in directionalStmdList[3:]:
-                futures.append(executor.submit(_inference_STMD_task, model_name, v, time_end, 'cuda'))
+            # for model_name in directionalStmdList[3:]:
+            #     futures.append(executor.submit(_inference_STMD_task, model_name, v, time_end, 'cuda'))
         
         for future in tqdm(concurrent.futures.as_completed(futures), 
                            total=len(futures), 
@@ -284,9 +280,9 @@ def main_inference(max_workers=6):
             future.result()
 
 
-    for model_name in tqdm(opticflowModelList, desc=f'inference {model_name} direction'):
-        for v in tqdm(V_LIST, leave=False, desc='velocity'):
-            _inference_OF_task(model_name, v, time_end)
+    # for model_name in tqdm(opticflowModelList, desc=f'inference optical direction'):
+    #     for v in tqdm(V_LIST, leave=False, desc='velocity'):
+    #         _inference_OF_task(model_name, v, time_end)
 
 
 # evaluation functions
@@ -347,16 +343,16 @@ def main_evaluate(max_workers=6):
                 future.result()
 
 
-    for model_name in opticflowModelList:
-        with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
-            futures = []
-            for v in V_LIST:
-                futures.append(executor.submit(_evaluate_OF_task, model_name, v, TIME_END))
+    # for model_name in opticflowModelList:
+    #     with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
+    #         futures = []
+    #         for v in V_LIST:
+    #             futures.append(executor.submit(_evaluate_OF_task, model_name, v, TIME_END))
 
-            for future in tqdm(concurrent.futures.as_completed(futures), 
-                            total=len(futures), 
-                            desc='evaluate direction'):
-                future.result()
+    #         for future in tqdm(concurrent.futures.as_completed(futures), 
+    #                         total=len(futures), 
+    #                         desc='evaluate direction'):
+    #             future.result()
 
 
 
@@ -382,8 +378,8 @@ def collect_results():
 
 
 if __name__ == '__main__':
-    main_inference(6)
-    main_evaluate(12)
+    # main_inference(6)
+    # main_evaluate(8)
     collect_results()
 
     

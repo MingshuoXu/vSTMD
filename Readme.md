@@ -24,6 +24,17 @@ The following MP4 files are available for download in higher resolution compared
 - [Download: Flying Bird (The second GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F_flying_bird.mp4)
 - [Download: Result for RIST-GX010290-1](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F-GX010290-1.mp4)
 
+## Application Scenarios
+- Maritime Search and Rescue
+  - YouTube Link:
+    - [![demo1](https://img.youtube.com/vi/iS50CqMW3hg/0.jpg)](https://youtu.be/iS50CqMW3hg)
+    - [![demo2](https://img.youtube.com/vi/yvSobdLzTRo/0.jpg)](https://youtu.be/yvSobdLzTRo)
+    - [![demo3](https://img.youtube.com/vi/ga12Pt6Zucw/0.jpg)](https://youtu.be/ga12Pt6Zucw)
+    - [![demo4](https://img.youtube.com/vi/9IWyRQUEtGU/0.jpg)](https://youtu.be/9IWyRQUEtGU)
+    - [![demo5](https://img.youtube.com/vi/xqy9B-ARLPU/0.jpg)](https://youtu.be/xqy9B-ARLPU)
+
+  - Dataset link:
+    - SeaDronesSee: https://seadronessee.cs.uni-tuebingen.de/home
 
 ## Pioneer Program
 

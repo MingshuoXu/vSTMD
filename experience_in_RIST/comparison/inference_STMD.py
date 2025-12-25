@@ -14,8 +14,7 @@ from smalltargetmotiondetectors.api import evaluate # type: ignore
 
 def main_infer_STMD():
 
-    for datasetName in datasetInfo.keys():
-        print(f'\n{datasetName}\t')
+    for datasetName in tqdm(datasetInfo.keys()):
         # Dataset path
         inputPath = os.path.join(ristDatasetPath, datasetName, f'{datasetName}.mp4')
         # Output path
@@ -23,8 +22,7 @@ def main_infer_STMD():
         if not os.path.exists(outputFolder):
             os.makedirs(outputFolder)
  
-        for modelName in stmdModelList:
-            print(f'{modelName} ', end='')
+        for modelName in tqdm(stmdModelList, desc=f'Processing dataset: {datasetName}', leave=False):
 
             inferOpt, inferDire, totalRunningTime = evaluate.inference_task(
                     modelName, 
@@ -33,8 +31,6 @@ def main_infer_STMD():
                     startFrame = 0, 
                     endFrame = len(datasetInfo[datasetName]), 
                     **modelParas[datasetName]['para'+modelName])
-
-            print(f'running time: {totalRunningTime:.1f} s\t')
 
             # Save results
             with open(os.path.join(outputFolder, f'{modelName}_result.json'), 'w') as f:
@@ -90,7 +86,7 @@ if __name__ == "__main__":
     
     print("start time:", datetime.now())
 
-    # main_infer_STMD()
-    quick_infer_STMD()
+    main_infer_STMD()
+    # quick_infer_STMD()
 
     print("end time:", datetime.now())

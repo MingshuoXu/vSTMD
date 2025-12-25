@@ -1,66 +1,71 @@
 import os
+ITEM_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import sys
+sys.path.append(ITEM_DIR)
 import time
+
 import torch
+import cv2
 
 # DEVICE = 'cpu' # 
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
-
-# Get the full path of this file
-filePath = os.path.realpath(__file__)
-# Find the index of '/+smalltargetmotiondetectors/'
-indexPath = filePath.rfind('OneDrive')
 # Add the path to the package containing the models
-STMD_PYTHON_PATH = os.path.join(filePath[:indexPath], 'OneDrive', '1_Code', '0_GitHub',
-                                 'Small-Target-Motion-Detectors', 'python')
+STMD_PYTHON_PATH = os.path.join('D:/', '11_Code', 'Small-Target-Motion-Detectors', 'python')
 sys.path.append(STMD_PYTHON_PATH)
-
-from smalltargetmotiondetectors.api import (instancing_model, get_visualize_handle, inference) # type: ignore
+from smalltargetmotiondetectors.api import (instancing_model, inference) # type: ignore
 from smalltargetmotiondetectors.util.iostream import VidstreamReader, ImgstreamReader # type: ignore
-from smalltargetmotiondetectors.util.compute_module import matrix_to_sparse_list # type: ignore
+
+from utils import show_result_in_cv2, FrameIterator
 
 
-''' Model instantiation '''
-objModel = instancing_model('vSTMD_F', device=DEVICE)
-# objModel = instancing_model('vSTMD', device=DEVICE)
+def inference_and_show(model, sequence_iterator, visulize_name = 'Result', show_number=10):
+
+    total_time = 0
+    '''Run inference'''
+    while True:
+
+        # Get the next frame from the input source
+        gray_img, color_img, cap = sequence_iterator.get_next_frame()
+        if gray_img is None:
+            break
+
+        if DEVICE == 'cuda':
+            gray_img = torch.from_numpy(gray_img).to(device=DEVICE).float().unsqueeze(0).unsqueeze(0)
+        
+        # Perform inference using the model
+        result, run_time = inference(model, gray_img)
+        total_time += run_time
+        
+        
+        cap = show_result_in_cv2(visulize_name, color_img, result, show_number=show_number, device=DEVICE)
+
+        if cap is False:
+            break
+
+    print(f"Total processing time: {total_time:.4f} seconds")
 
 
-''' Input '''
-hSteam = VidstreamReader(os.path.join('D:', 'STMD_Dataset', 'RIST', 'GX010290-1', 'GX010290-1.mp4'))
+def main():
+    ''' Model instantiation '''
+    model = instancing_model('vSTMD_F', device=DEVICE)
+    ''' Initialize the model '''
+    # set the parameter list
+    model.set_para()
+    # print the parameter list
+    model.print_para()
+    # init
+    model.init_config()
 
-
-''' Get visualization handle '''
-hVisual = get_visualize_handle(objModel.__class__.__name__)
-
-
-''' Initialize the model '''
-# set the parameter list
-objModel.set_para()
-# print the parameter list
-objModel.print_para()
-# init
-objModel.init_config()
-
-
-totalTime = 0
-'''Run inference'''
-while hSteam.hasFrame and hVisual.hasFigHandle:
-
-    # Get the next frame from the input source
-    grayImg, colorImg = hSteam.get_next_frame()
-
-    if DEVICE == 'cuda':
-        grayImg = torch.from_numpy(grayImg).to(device=DEVICE).float().unsqueeze(0).unsqueeze(0)
+    # sequence_iterator = FrameIterator(os.path.join('D:/', 'STMD_Dataset', 'RIST', 'GX010290-1', 'GX010290-1.mp4'), is_video=True)
+    sequence_iterator = FrameIterator(os.path.join('D:/', 'STMD_Dataset', 'XS-VID', 'images', 'UAVTOD_DJI0824Part5_0'), is_video=False)
     
-    # Perform inference using the model
-    result, runTime = inference(objModel, grayImg)
-    totalTime += runTime
-    
-    # Visualize the result
-    if DEVICE == 'cuda':
-        result = {k: v.cpu().numpy().squeeze(0).squeeze(0) if isinstance(v, torch.Tensor) else v for k, v in result.items()}
-    hVisual.show_result(colorImg, result, runTime)
+    ''' Get visualization handle '''
+    cv2.namedWindow('Result', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('Result', sequence_iterator.img_width, sequence_iterator.img_height)
 
-print(f"Total time: {totalTime:.4f} seconds")
+    inference_and_show(model, sequence_iterator, show_number=10)
 
+
+if __name__ == '__main__':
+    main()
 

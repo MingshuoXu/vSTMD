@@ -178,16 +178,30 @@ def _task_STMD(modelName, datasetName, startFrame, endFrame):
                                 )
 
 
-def main_evalu_OF():
-    for datasetName in tqdm(datasetInfo.keys()):
-        for modelName in opticflowModelList:
-            _task_OF(modelName, datasetName, 1, len(datasetInfo[datasetName])-2)   
+def main(max_workers=12):
+    for modelName in tqdm(opticflowModelList, desc='Optic Flow direction evaluation'):
+        with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
+            for datasetName in datasetInfo.keys():
+                futures.append(
+                    executor.submit(_task_OF, modelName, datasetName, 1, len(datasetInfo[datasetName])-2)   
+                )
+
+            for future in concurrent.futures.as_completed(futures):
+                future.result()
 
 
-def main_evalu_STMD():
-    for datasetName in tqdm(datasetInfo.keys()):
-        for modelName in directionalStmdList:
-            _task_STMD(modelName, datasetName, 1, len(datasetInfo[datasetName])-2)
+    for modelName in tqdm(directionalStmdList, desc='STMD direction evaluation'):
+        with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
+            for datasetName in datasetInfo.keys():
+                futures.append(
+                    executor.submit(_task_STMD, modelName, datasetName, 1, len(datasetInfo[datasetName])-2)   
+                )
+                
+            for future in concurrent.futures.as_completed(futures):
+                future.result()
+
     
 
 
@@ -196,8 +210,8 @@ if __name__ == "__main__":
     
     print("start time:", datetime.now())
 
-    # main_evalu_OF()
-    main_evalu_STMD()
+    main()
+
 
     print("end time:", datetime.now())
 

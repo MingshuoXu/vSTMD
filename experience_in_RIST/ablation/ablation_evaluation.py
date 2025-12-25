@@ -1,6 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from math import atan2
 
 import json
@@ -12,8 +13,35 @@ import config_task
 from config_task import ablationModel, datasetInfo, ristDatasetPath, modelOptFolder, evaluateResultFolder
 from smalltargetmotiondetectors import util # type: ignore
 from smalltargetmotiondetectors.api import evaluate # type: ignore
+from utils import custom_serialize
 
 evaluateModelList = ablationModel + ('vSTMD', 'vSTMD_F')
+
+def update_evaluate_result(dataset_name, model_name, new_data):
+
+    # 构建文件路径
+    file_path = os.path.join(evaluateResultFolder, f'{dataset_name}.json')
+    # 创建父文件夹
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+
+    # 写入JSON文件
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as json_file:
+            existing_data = json.load(json_file)
+        if model_name not in existing_data:
+            existing_data[model_name] = new_data
+        else:
+            for key, value in new_data.items():
+                existing_data[model_name][key] = value
+    else:
+        existing_data = {model_name: new_data}
+
+    save_data = custom_serialize(existing_data, indent=2)
+    
+    with open(file_path, 'w') as f:
+        f.write(save_data)
+
 
 def _task(modelName, datasetName, startFrame, endFrame):
     # loas inference result
@@ -51,29 +79,15 @@ def _task(modelName, datasetName, startFrame, endFrame):
 
     AAE = _directional_task(inferResult, direResluts, bboxData, directions, endFrame)
 
-    # 构建文件路径
-    file_path = os.path.join(evaluateResultFolder, datasetName, modelName + 'evaluate.json')
-    # 创建父文件夹
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
     # 写入JSON文件
-    if os.path.exists(file_path):
-        with open(file_path, 'r') as json_file:
-            existing_data = json.load(json_file)
-        # Update the existing data
-        existing_data.update({
-            'AUC': aucOfROC,
-            'AR': AR,
-            'AP': AP,
-            'F1': f1_score,
-            'AAE': AAE,
-            'timePerImage': timePerImage
-        })
-        with open(file_path, 'w') as json_file:
-            json.dump(existing_data, json_file, indent=2)
-    else:
-        with open(file_path, 'w') as json_file:
-            json.dump({'AUC': aucOfROC, 'AR': AR, 'AP': AP, 'F1': f1_score, 'timePerImage': timePerImage}, json_file, indent=2)
+    update_evaluate_result(datasetName, modelName, {'AUC': aucOfROC,
+                                                    'AR': AR,
+                                                    'AP': AP,
+                                                    'F1': f1_score,
+                                                    'AAE': AAE,
+                                                    'timePerImage': timePerImage}
+                                                    )
     
 
 def _directional_task(respResults, direResluts, bboxData, directions, endFrame):
@@ -122,21 +136,19 @@ def _directional_task(respResults, direResluts, bboxData, directions, endFrame):
 
 
 def main_evalu_STMD():
-    with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
-        futures = []
+    for modelName in tqdm(evaluateModelList):
+        with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
+            futures = []
 
-        for datasetName in datasetInfo.keys():
-            for modelName in evaluateModelList:
-                future = executor.submit(_task, 
-                                         modelName, datasetName, 0, len(datasetInfo[datasetName])
-                                         )   
-                futures.append(future)   
-
-        for future in tqdm(
-            concurrent.futures.as_completed(futures), 
-            desc='evaluate task',
-            total=len(futures)
-            ):
+            for datasetName in datasetInfo.keys():
+                futures.append(executor.submit(_task, 
+                                                modelName, 
+                                                datasetName, 
+                                                0, 
+                                                len(datasetInfo[datasetName])
+                                                ))   
+                
+        for future in concurrent.futures.as_completed(futures):
             future.done()
 
 

@@ -46,6 +46,10 @@ model_param_calculations = {
         'n3': max(round(tau / 2), 1),
         'tau3': max(tau, 1),
     },
+    "paraFSTMD": lambda tau: {
+        'n3': max(round(tau / 2), 1),
+        'tau3': max(tau, 1),
+    },
     "paravSTMD": lambda tau: {},
     "paravSTMD_F": lambda tau: {},
     "paravSTMD_M": lambda tau: {},

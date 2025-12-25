@@ -52,7 +52,7 @@ datasetInfo = {
 ristDatasetPath = os.path.join('D:/', 'STMD_Dataset', 'RIST')
 
 # model inference output folder
-modelOptFolder = os.path.join('D:/', 'STMD_Dataset', 'evaluate_RIST')
+modelOptFolder = os.path.join('D:/', 'STMD_Dataset', 'inference_RIST')
 
 # evaluation result folder
 evaluateResultFolder = os.path.join(
