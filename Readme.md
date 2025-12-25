@@ -20,9 +20,9 @@ This repository is an official implementation of the <vSTMD: Visual Motion Detec
 
 The following MP4 files are available for download in higher resolution compared to the GIF previews above. These videos provide clearer details for analysis and demonstration.
 
-- [Download: Flying Butterfly (The first GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F_butterfly.mp4)
-- [Download: Flying Bird (The second GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F_flying_bird.mp4)
-- [Download: Result for RIST-GX010290-1](https://github.com/mingshuoxu/vSTMD/raw/main/example_result/vSTMD_F-GX010290-1.mp4)
+- [Download: Flying Butterfly (The first GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/demo_videos/vSTMD_F_butterfly.mp4)
+- [Download: Flying Bird (The second GIF above)](https://github.com/mingshuoxu/vSTMD/raw/main/demo_videos/vSTMD_F_flying_bird.mp4)
+- [Download: Result for RIST-GX010290-1](https://github.com/mingshuoxu/vSTMD/raw/main/demo_videos/vSTMD_F-GX010290-1.mp4)
 
 ## Application Scenarios
 - Maritime Search and Rescue
@@ -38,7 +38,7 @@ The following MP4 files are available for download in higher resolution compared
 
 ## Pioneer Program
 
-To explore the capabilities of vSTMD and vSTMD-F, you can download the repository from [GitHub: Small-Target-Motion-Detectors](https://github.com/MingshuoXu/Small-Target-Motion-Detectors). After downloading, you can run `start_by_python.py` using Python to get started.
+To explore the capabilities of vSTMD and vSTMD-F, you can download the repository from [GitHub: Small-Target-Motion-Detectors - v2.1.0](https://github.com/MingshuoXu/Small-Target-Motion-Detectors/tree/v2.1.0). After downloading, you can run `start_by_python.py` using Python to get started.
 
 ## Current Status
 
