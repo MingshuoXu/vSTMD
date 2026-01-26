@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This repository is an official implementation of the <vSTMD: Visual Motion Detection for Extremely Tiny Target at Various Velocities>. The full work is under review for publication, and therefore only selected components are made available at this time.
+This repository is an official implementation of the <vSTMD: Visual Motion Detection for Extremely Tiny Target at Various Velocities>[	arXiv:2501.13054](https://arxiv.org/abs/2501.13054). The full work is under review for publication, and therefore only selected components are made available at this time.
 
 ## Sample Videos
 

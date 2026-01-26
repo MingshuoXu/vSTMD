@@ -5,7 +5,6 @@ import glob
 
 import json
 import numpy as np
-from scipy.ndimage import maximum_filter
 import torch.nn.functional as F
 import cv2
 import torch
